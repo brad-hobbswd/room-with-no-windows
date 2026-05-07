@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chapter Eleven | Repetition and the Fear Beneath It</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== RESET ===== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* ===== BODY ===== */
+
+body{
+background:#f6f2eb;
+color:#1f1f1f;
+font-family:'Inter',sans-serif;
+line-height:2;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+linear-gradient(rgba(246,242,235,0.97), rgba(246,242,235,0.97)),
+url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+opacity:0.06;
+pointer-events:none;
+z-index:-1;
+}
+
+/* ===== HEADER ===== */
+
+.site-header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:24px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+backdrop-filter:blur(12px);
+background:rgba(246,242,235,0.45);
+border-bottom:1px solid rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:1.5rem;
+}
+
+.nav-links{
+display:flex;
+gap:32px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#1f1f1f;
+font-size:0.88rem;
+letter-spacing:1px;
+text-transform:uppercase;
+transition:opacity 0.3s ease;
+}
+
+.nav-links a:hover{
+opacity:0.55;
+}
+
+/* ===== HERO ===== */
+
+.chapter-hero{
+padding:220px 8% 120px;
+text-align:center;
+}
+
+.chapter-number{
+font-size:0.92rem;
+letter-spacing:4px;
+text-transform:uppercase;
+opacity:0.6;
+margin-bottom:24px;
+}
+
+.chapter-hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(3.5rem,8vw,6rem);
+font-weight:400;
+line-height:1;
+margin-bottom:28px;
+}
+
+.chapter-intro{
+max-width:760px;
+margin:0 auto;
+font-size:1.05rem;
+color:#444;
+}
+
+/* ===== DIVIDER ===== */
+
+.divider{
+width:1px;
+height:100px;
+background:rgba(0,0,0,0.12);
+margin:0 auto;
+}
+
+/* ===== CHAPTER CONTENT ===== */
+
+.chapter-content{
+padding:120px 8%;
+}
+
+.chapter-inner{
+max-width:760px;
+margin:0 auto;
+}
+
+.chapter-inner p{
+font-size:1.08rem;
+color:#333;
+margin-bottom:34px;
+}
+
+/* ===== DROP CAP ===== */
+
+.chapter-inner p:first-of-type::first-letter{
+font-family:'Cormorant Garamond',serif;
+font-size:5.5rem;
+float:left;
+line-height:0.8;
+padding-right:12px;
+padding-top:10px;
+font-weight:500;
+}
+
+/* ===== NAVIGATION ===== */
+
+.chapter-navigation{
+padding:120px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:30px;
+max-width:1100px;
+margin:0 auto;
+}
+
+.chapter-navigation a{
+text-decoration:none;
+color:#1f1f1f;
+border:1px solid rgba(0,0,0,0.12);
+padding:18px 28px;
+letter-spacing:1px;
+text-transform:uppercase;
+font-size:0.82rem;
+transition:all 0.35s ease;
+background:rgba(255,255,255,0.45);
+backdrop-filter:blur(8px);
+}
+
+.chapter-navigation a:hover{
+background:#1f1f1f;
+color:#f6f2eb;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+padding:40px 8% 60px;
+text-align:center;
+font-size:0.9rem;
+opacity:0.55;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+.site-header{
+padding:20px 6%;
+}
+
+.nav-links{
+gap:18px;
+}
+
+.nav-links a{
+font-size:0.72rem;
+}
+
+.chapter-hero{
+padding:190px 7% 100px;
+}
+
+.chapter-content{
+padding:90px 7%;
+}
+
+.chapter-inner p{
+font-size:1rem;
+}
+
+.chapter-navigation{
+padding:90px 7%;
+flex-direction:column;
+}
+
+.chapter-navigation a{
+width:100%;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+
+<header class="site-header">
+
+<div class="logo">
+The Room Without Windows
+</div>
+
+<nav class="nav-links">
+<a href="../index.html">Home</a>
+<a href="../chapters.html">Chapters</a>
+<a href="../about.html">About</a>
+</nav>
+
+</header>
+
+<!-- ===== HERO ===== -->
+
+<section class="chapter-hero">
+
+<div class="chapter-number">
+Chapter Eleven
+</div>
+
+<h1>
+Repetition and the<br>Fear Beneath It
+</h1>
+
+<p class="chapter-intro">
+Elior discovers that repetition can steady faith, yet also conceal the fear hidden beneath honest prayer.
+</p>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== CHAPTER CONTENT ===== -->
+
+<section class="chapter-content">
+
+<div class="chapter-inner">
+
+<p>
+Elior became aware of repetition the way one becomes aware of a sound that has been present for a long time but only now separates itself from the background.
+</p>
+
+<p>
+It was not limited to prayer. He heard it in speech, in work, in the way people returned to familiar gestures even after circumstances had shifted. Repetition carried reassurance. One could rely on it when direction faltered. It promised continuity when little else felt stable.
+</p>
+
+<p>
+Prayer, he saw now, depended on that promise.
+</p>
+
+<p>
+The city thrived on repetition. The same phrases rose at predictable hours. The same words were trusted because they had been spoken before, because they had endured. To repeat was to align oneself with what had not failed.
+</p>
+
+<p>
+Elior understood the comfort of this intimately.
+</p>
+
+<p>
+He felt it when he stood on familiar ground, shaping wood as he always had, following methods proven over time. In that context, repetition was not avoidance. It was wisdom.
+</p>
+
+<p>
+Prayer, however, had begun to resist the same logic.
+</p>
+
+<p>
+When Elior stood before God repeating phrases he no longer inhabited, something hollow surfaced. The words no longer steadied him. Instead, they widened the distance he hoped they would close. The safety they offered concealed a deeper unease, one he had not wanted to examine.
+</p>
+
+<p>
+The fear itself was simple.
+</p>
+
+<p>
+What if, without repetition, nothing arrived?
+</p>
+
+<p>
+What if prayer failed once the scaffolding was removed? What if the presence he hoped for was not assured, not responsive to persistence or correct phrasing?
+</p>
+
+<p>
+Repetition shielded him from these questions.
+</p>
+
+<p>
+One evening, standing near a familiar gathering place, Elior listened as prayers unfolded in their expected forms. Each phrase leaned confidently into the next, supported not by the interior state of the speaker but by tradition itself. The rhythm reassured those who listened. The sound alone signaled faithfulness.
+</p>
+
+<p>
+Elior felt no contempt.
+</p>
+
+<p>
+He felt recognition.
+</p>
+
+<p>
+There had been a time when those words had steadied him as well, when repetition served as bridge rather than barrier, allowing him to speak before he understood, to remain when clarity failed.
+</p>
+
+<p>
+The difficulty now was not repetition itself.
+</p>
+
+<p>
+It was his dependence on it.
+</p>
+
+<p>
+In the room without windows, repetition dissolved immediately. Words either emerged honestly or they did not appear at all. Memory could not sustain them. Silence refused to carry them forward.
+</p>
+
+<p>
+Elior realized then how often repetition functioned as defense.
+</p>
+
+<p>
+Repeated phrases masked vulnerability. They filled the space where doubt might surface. They allowed prayer to conclude cleanly, relieving the one praying from remaining exposed.
+</p>
+
+<p>
+Without repetition, the unfinished persisted.
+</p>
+
+<p>
+That unfinishedness unsettled him deeply.
+</p>
+
+<p>
+One morning, he tested this awareness.
+</p>
+
+<p>
+Standing alone in his home, he allowed the opening words of a familiar prayer to rise, then stopped deliberately. The abrupt interruption felt impolite, almost transgressive. The silence that followed seemed sharp, nearly accusatory.
+</p>
+
+<p>
+He waited.
+</p>
+
+<p>
+Nothing came to reassure him.
+</p>
+
+<p>
+Discomfort asserted itself quickly. His body tightened. His attention reached for something dependable. Repetition waited patiently at the edge of his awareness, ready to rescue him from uncertainty.
+</p>
+
+<p>
+He did not take it.
+</p>
+
+<p>
+What remained was fear, quiet and persistent rather than dramatic. Fear that absence might be all there was. Fear that God might not meet him unless he properly initiated the exchange.
+</p>
+
+<p>
+Elior stayed there until the fear loosened its grip.
+</p>
+
+<p>
+It did not disappear. It settled into something closer to honesty.
+</p>
+
+<p>
+Without repetition, prayer demanded courage rather than competence.
+</p>
+
+<p>
+The recognition did not free him.
+</p>
+
+<p>
+It bound him more closely to the difficulty of faith.
+</p>
+
+<p>
+In the days that followed, Elior noticed how easily repetition returned. In public settings, he spoke familiar words without hesitation. In private, he sometimes reached for them instinctively when silence felt too wide.
+</p>
+
+<p>
+He did not condemn this.
+</p>
+
+<p>
+Repetition, he suspected, would always remain part of belief. The danger lay not in repeating, but in allowing repetition to replace presence.
+</p>
+
+<p>
+One night, after leaving the room without windows without having spoken at all, Elior understood something quietly. Repetition was not wrong. It was merciful. But it could not sustain the weight of relationship.
+</p>
+
+<p>
+Relationship required exposure.
+</p>
+
+<p>
+Exposure required fear.
+</p>
+
+<p>
+He lay awake long after the city had quieted, aware that prayer had become more demanding, not less. The ease of speech had given way to the insistence of honesty, even when honesty offered no resolution.
+</p>
+
+<p>
+Repetition waited nearby, reliable and available.
+</p>
+
+<p>
+Elior did not reject it.
+</p>
+
+<p>
+He simply no longer allowed it to speak in his place.
+</p>
+
+<p>
+The fear beneath prayer remained.
+</p>
+
+<p>
+And somehow, prayer continued all the same.
+</p>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== NAVIGATION ===== -->
+
+<section class="chapter-navigation">
+
+<a href="chapter10.html">
+← Previous Chapter
+</a>
+
+<a href="chapter12.html">
+Next Chapter →
+</a>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+© Bradley Hobbs • The Room Without Windows
+</footer>
+
+</body>
+</html>
