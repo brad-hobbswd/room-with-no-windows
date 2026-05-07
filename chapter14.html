@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chapter Fourteen | The Risk of Simplicity</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== RESET ===== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* ===== BODY ===== */
+
+body{
+background:#f6f2eb;
+color:#1f1f1f;
+font-family:'Inter',sans-serif;
+line-height:2;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+linear-gradient(rgba(246,242,235,0.97), rgba(246,242,235,0.97)),
+url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+opacity:0.06;
+pointer-events:none;
+z-index:-1;
+}
+
+/* ===== HEADER ===== */
+
+.site-header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:24px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+backdrop-filter:blur(12px);
+background:rgba(246,242,235,0.45);
+border-bottom:1px solid rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:1.5rem;
+}
+
+.nav-links{
+display:flex;
+gap:32px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#1f1f1f;
+font-size:0.88rem;
+letter-spacing:1px;
+text-transform:uppercase;
+transition:opacity 0.3s ease;
+}
+
+.nav-links a:hover{
+opacity:0.55;
+}
+
+/* ===== HERO ===== */
+
+.chapter-hero{
+padding:220px 8% 120px;
+text-align:center;
+}
+
+.chapter-number{
+font-size:0.92rem;
+letter-spacing:4px;
+text-transform:uppercase;
+opacity:0.6;
+margin-bottom:24px;
+}
+
+.chapter-hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(3.5rem,8vw,6rem);
+font-weight:400;
+line-height:1;
+margin-bottom:28px;
+}
+
+.chapter-intro{
+max-width:760px;
+margin:0 auto;
+font-size:1.05rem;
+color:#444;
+}
+
+/* ===== DIVIDER ===== */
+
+.divider{
+width:1px;
+height:100px;
+background:rgba(0,0,0,0.12);
+margin:0 auto;
+}
+
+/* ===== CHAPTER CONTENT ===== */
+
+.chapter-content{
+padding:120px 8%;
+}
+
+.chapter-inner{
+max-width:760px;
+margin:0 auto;
+}
+
+.chapter-inner p{
+font-size:1.08rem;
+color:#333;
+margin-bottom:34px;
+}
+
+/* ===== DROP CAP ===== */
+
+.chapter-inner p:first-of-type::first-letter{
+font-family:'Cormorant Garamond',serif;
+font-size:5.5rem;
+float:left;
+line-height:0.8;
+padding-right:12px;
+padding-top:10px;
+font-weight:500;
+}
+
+/* ===== NAVIGATION ===== */
+
+.chapter-navigation{
+padding:120px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:30px;
+max-width:1100px;
+margin:0 auto;
+}
+
+.chapter-navigation a{
+text-decoration:none;
+color:#1f1f1f;
+border:1px solid rgba(0,0,0,0.12);
+padding:18px 28px;
+letter-spacing:1px;
+text-transform:uppercase;
+font-size:0.82rem;
+transition:all 0.35s ease;
+background:rgba(255,255,255,0.45);
+backdrop-filter:blur(8px);
+}
+
+.chapter-navigation a:hover{
+background:#1f1f1f;
+color:#f6f2eb;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+padding:40px 8% 60px;
+text-align:center;
+font-size:0.9rem;
+opacity:0.55;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+.site-header{
+padding:20px 6%;
+}
+
+.nav-links{
+gap:18px;
+}
+
+.nav-links a{
+font-size:0.72rem;
+}
+
+.chapter-hero{
+padding:190px 7% 100px;
+}
+
+.chapter-content{
+padding:90px 7%;
+}
+
+.chapter-inner p{
+font-size:1rem;
+}
+
+.chapter-navigation{
+padding:90px 7%;
+flex-direction:column;
+}
+
+.chapter-navigation a{
+width:100%;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+
+<header class="site-header">
+
+<div class="logo">
+The Room Without Windows
+</div>
+
+<nav class="nav-links">
+<a href="../index.html">Home</a>
+<a href="../chapters.html">Chapters</a>
+<a href="../about.html">About</a>
+</nav>
+
+</header>
+
+<!-- ===== HERO ===== -->
+
+<section class="chapter-hero">
+
+<div class="chapter-number">
+Chapter Fourteen
+</div>
+
+<h1>
+The Risk of<br>Simplicity
+</h1>
+
+<p class="chapter-intro">
+Elior discovers that simplicity in prayer demands more honesty, more restraint, and more courage than complexity ever did.
+</p>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== CHAPTER CONTENT ===== -->
+
+<section class="chapter-content">
+
+<div class="chapter-inner">
+
+<p>
+Simplicity did not appeal to Elior at first.
+</p>
+
+<p>
+From a distance, it sounded virtuous. Closer, it revealed itself as something far less reassuring. Simplicity removed options. It stripped away the elaborate shapes of prayer that allowed intention to hide beneath language. It offered no place for performance, no buffer between desire and exposure.
+</p>
+
+<p>
+Still, it continued to claim his attention.
+</p>
+
+<p>
+It appeared quietly, not as instruction, but as absence. Each time Elior entered the room without windows and found that no words rose naturally, he felt the pull of something unadorned. The prayers that once crowded his thoughts now lingered farther back, as though aware that their presence might disrupt something more fragile.
+</p>
+
+<p>
+He began to notice how much effort even restrained prayer required.
+</p>
+
+<p>
+Speaking had always demanded skill: the right words, the right cadence, the right assurance. Simplicity demanded something more exacting. It required that he remain with what he actually carried, no more and no less. When he attempted to add to it, the moment collapsed.
+</p>
+
+<p>
+One afternoon, lingering near the workshop door, Elior felt an impulse to pray, faint but persistent. The urge startled him. Nothing marked the moment as sacred. The workday was ending. The street outside was busy and unremarkable.
+</p>
+
+<p>
+He searched for words and found none.
+</p>
+
+<p>
+The lack embarrassed him.
+</p>
+
+<p>
+Prayer without language felt improper, as though he were failing to complete an obligation. He reached for a phrase small enough to fit the moment, something restrained yet recognizable.
+</p>
+
+<p>
+Instead, what arose was a simple awareness of need, unframed and without direction. It did not lift toward heaven. It remained within him, exposed and unresolved.
+</p>
+
+<p>
+He stayed where he was.
+</p>
+
+<p>
+The simplicity of the moment frightened him.
+</p>
+
+<p>
+Without language, there was no distance between what he felt and what was offered. He could not soften it or elevate it. He could only allow it to remain unfinished.
+</p>
+
+<p>
+This, he sensed dimly, was the risk.
+</p>
+
+<p>
+Simplicity could not impress. It could not reassure. It could not even confirm that prayer had occurred. It reduced the act to attention without signal.
+</p>
+
+<p>
+Later that evening, he returned to the room.
+</p>
+
+<p>
+The silence gathered around him as it had before, familiar yet unpredictable. He sat against the wall and waited without intention.
+</p>
+
+<p>
+He considered speaking a single word, recalling the moment that had unsettled him earlier. The impulse felt wrong. Even that word, once honest, now threatened to become a form.
+</p>
+
+<p>
+He let it pass.
+</p>
+
+<p>
+What followed felt precarious, almost negligent. There was nothing to record, nothing to recall. No time kept. No structure maintained.
+</p>
+
+<p>
+He began to suspect that simplicity might resemble failure to anyone who did not experience it from within.
+</p>
+
+<p>
+The thought disturbed him deeply.
+</p>
+
+<p>
+If prayer grew simpler, it would also grow quieter. It would leave no evidence for others. It would not earn trust. It would not invite admiration. It would not even confirm belief.
+</p>
+
+<p>
+Simplicity, he realized, required anonymity.
+</p>
+
+<p>
+The old desire for recognition surfaced briefly, familiar and comforting. He remembered how spoken prayer drew affirmation, how visible devotion relieved uncertainty.
+</p>
+
+<p>
+Simplicity offered none of that.
+</p>
+
+<p>
+It left him alone with what he trusted but could not justify.
+</p>
+
+<p>
+Elior remained in the room longer than usual. When he finally stood, it was not because the moment had resolved, but because his body tired of stillness.
+</p>
+
+<p>
+Outside, the city moved in steady rhythm. Voices rose confidently through open spaces. Words filled the air.
+</p>
+
+<p>
+Elior listened only briefly before turning away.
+</p>
+
+<p>
+He wondered whether simplicity would endure, or whether it would gradually give way to habit. He knew himself too well to trust sudden clarity. Complexity remained readily available.
+</p>
+
+<p>
+Simplicity did not prevent him from speaking.
+</p>
+
+<p>
+It simply refused to carry words he did not mean.
+</p>
+
+<p>
+Later, as he prepared for sleep, Elior felt no reassurance and reached no conclusion. What remained was restraint, a growing reluctance to speak without knowing whether speech would interfere with what was quietly taking shape.
+</p>
+
+<p>
+Simplicity, he suspected, would continue to demand more of him than complexity ever had.
+</p>
+
+<p>
+It would ask him not to add.
+</p>
+
+<p>
+And he did not yet know whether he could continue to resist that impulse.
+</p>
+
+<p>
+The question remained open.
+</p>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== NAVIGATION ===== -->
+
+<section class="chapter-navigation">
+
+<a href="chapter13.html">
+← Previous Chapter
+</a>
+
+<a href="chapter15.html">
+Next Chapter →
+</a>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+© Bradley Hobbs • The Room Without Windows
+</footer>
+
+</body>
+</html>
