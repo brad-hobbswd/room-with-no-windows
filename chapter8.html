@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chapter Eight | Unearned Stillness</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== RESET ===== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* ===== BODY ===== */
+
+body{
+background:#f6f2eb;
+color:#1f1f1f;
+font-family:'Inter',sans-serif;
+line-height:2;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+linear-gradient(rgba(246,242,235,0.97), rgba(246,242,235,0.97)),
+url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+opacity:0.06;
+pointer-events:none;
+z-index:-1;
+}
+
+/* ===== HEADER ===== */
+
+.site-header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:24px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+backdrop-filter:blur(12px);
+background:rgba(246,242,235,0.45);
+border-bottom:1px solid rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:1.5rem;
+}
+
+.nav-links{
+display:flex;
+gap:32px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#1f1f1f;
+font-size:0.88rem;
+letter-spacing:1px;
+text-transform:uppercase;
+transition:opacity 0.3s ease;
+}
+
+.nav-links a:hover{
+opacity:0.55;
+}
+
+/* ===== HERO ===== */
+
+.chapter-hero{
+padding:220px 8% 120px;
+text-align:center;
+}
+
+.chapter-number{
+font-size:0.92rem;
+letter-spacing:4px;
+text-transform:uppercase;
+opacity:0.6;
+margin-bottom:24px;
+}
+
+.chapter-hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(3.5rem,8vw,6rem);
+font-weight:400;
+line-height:1;
+margin-bottom:28px;
+}
+
+.chapter-intro{
+max-width:760px;
+margin:0 auto;
+font-size:1.05rem;
+color:#444;
+}
+
+/* ===== DIVIDER ===== */
+
+.divider{
+width:1px;
+height:100px;
+background:rgba(0,0,0,0.12);
+margin:0 auto;
+}
+
+/* ===== CHAPTER CONTENT ===== */
+
+.chapter-content{
+padding:120px 8%;
+}
+
+.chapter-inner{
+max-width:760px;
+margin:0 auto;
+}
+
+.chapter-inner p{
+font-size:1.08rem;
+color:#333;
+margin-bottom:34px;
+}
+
+/* ===== DROP CAP ===== */
+
+.chapter-inner p:first-of-type::first-letter{
+font-family:'Cormorant Garamond',serif;
+font-size:5.5rem;
+float:left;
+line-height:0.8;
+padding-right:12px;
+padding-top:10px;
+font-weight:500;
+}
+
+/* ===== NAVIGATION ===== */
+
+.chapter-navigation{
+padding:120px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:30px;
+max-width:1100px;
+margin:0 auto;
+}
+
+.chapter-navigation a{
+text-decoration:none;
+color:#1f1f1f;
+border:1px solid rgba(0,0,0,0.12);
+padding:18px 28px;
+letter-spacing:1px;
+text-transform:uppercase;
+font-size:0.82rem;
+transition:all 0.35s ease;
+background:rgba(255,255,255,0.45);
+backdrop-filter:blur(8px);
+}
+
+.chapter-navigation a:hover{
+background:#1f1f1f;
+color:#f6f2eb;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+padding:40px 8% 60px;
+text-align:center;
+font-size:0.9rem;
+opacity:0.55;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+.site-header{
+padding:20px 6%;
+}
+
+.nav-links{
+gap:18px;
+}
+
+.nav-links a{
+font-size:0.72rem;
+}
+
+.chapter-hero{
+padding:190px 7% 100px;
+}
+
+.chapter-content{
+padding:90px 7%;
+}
+
+.chapter-inner p{
+font-size:1rem;
+}
+
+.chapter-navigation{
+padding:90px 7%;
+flex-direction:column;
+}
+
+.chapter-navigation a{
+width:100%;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+
+<header class="site-header">
+
+<div class="logo">
+The Room Without Windows
+</div>
+
+<nav class="nav-links">
+<a href="../index.html">Home</a>
+<a href="../chapters.html">Chapters</a>
+<a href="../about.html">About</a>
+</nav>
+
+</header>
+
+<!-- ===== HERO ===== -->
+
+<section class="chapter-hero">
+
+<div class="chapter-number">
+Chapter Eight
+</div>
+
+<h1>
+Unearned<br>Stillness
+</h1>
+
+<p class="chapter-intro">
+Stillness follows Elior beyond the room, unsettling his understanding of effort, faith, and presence.
+</p>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== CHAPTER CONTENT ===== -->
+
+<section class="chapter-content">
+
+<div class="chapter-inner">
+
+<p>
+Elior noticed the stillness first in his hands.
+</p>
+
+<p>
+He returned to the workshop as he always did, moving through the morning with practiced purpose. The city was already awake. Voices threaded through the streets, prayer rising audibly from open doorways and gathering places. He passed through it without registering much, carrying something quieter with him, something without sound, something that resisted being named.
+</p>
+
+<p>
+At the workbench, his hands rested on the wood longer than usual before he began.
+</p>
+
+<p>
+He waited.
+</p>
+
+<p>
+The beam was ordinary, no different from hundreds he had shaped before. Yet as he lifted the blade, he became aware of an unfamiliar ease. His movements were unforced. The constant interior commentary that usually accompanied his work, the silent assessment of pace and adequacy, had loosened its grip.
+</p>
+
+<p>
+The awareness unsettled him.
+</p>
+
+<p>
+Stillness, he believed, was meant to follow effort. Peace arrived after labor, after words had been spoken properly, after devotion had been demonstrated. What he carried now had not been earned. It had reached him without visible cost.
+</p>
+
+<p>
+Elior tested it cautiously.
+</p>
+
+<p>
+He set the blade against the grain and began. The wood responded cleanly. The line revealed itself without resistance, as though the material itself acknowledged the patience of his hand.
+</p>
+
+<p>
+He paused, troubled.
+</p>
+
+<p>
+If stillness could arrive without striving, then what had striving been for?
+</p>
+
+<p>
+The question grew heavier as the morning progressed.
+</p>
+
+<p>
+Elior found himself less reactive to the noise that surrounded him. When voices rose nearby in prayer, he felt neither pulled nor opposed. He registered them as one registers weather, present and shaping the air, but no longer directive.
+</p>
+
+<p>
+This unsettled him more deeply than doubt ever had.
+</p>
+
+<p>
+Faith, he had believed, sharpened awareness. What he experienced instead felt like a gentle distance, not from God, but from the compulsion to announce relationship aloud.
+</p>
+
+<p>
+At midday, he stepped outside.
+</p>
+
+<p>
+Sunlight rested easily against stone. A man passed near him praying aloud, his voice strong, rhythmic, sure. Elior listened briefly. The prayer advanced steadily, each phrase reinforcing the next.
+</p>
+
+<p>
+For a moment, he wondered whether something was wrong with him.
+</p>
+
+<p>
+The prayer stirred nothing urgent. It awakened neither admiration nor longing. It invited neither comparison nor response. It simply passed by, complete in itself.
+</p>
+
+<p>
+Unearned stillness did not require evaluation.
+</p>
+
+<p>
+The freedom frightened him.
+</p>
+
+<p>
+If prayer no longer demanded effort, then obedience, understood as persistence, articulation, and repetition, might not be the measure of faithfulness he had assumed. The implication unsettled him profoundly.
+</p>
+
+<p>
+That evening, he returned to the room.
+</p>
+
+<p>
+He did not hurry, nor did he enter with expectation. He approached it cautiously, aware that what had once appeared might not return.
+</p>
+
+<p>
+The room remained unchanged.
+</p>
+
+<p>
+The silence received him without recognition, as it had before.
+</p>
+
+<p>
+Elior sat back against the wall and waited.
+</p>
+
+<p>
+No immediate stillness followed.
+</p>
+
+<p>
+His thoughts returned quickly this time, dense and insistent. Doubt surfaced, sharper now that peace had been known without explanation. For a brief moment, resentment stirred, resentment toward the silence for its refusal to appear on demand, for its inconsistency.
+</p>
+
+<p>
+Stillness, he realized, could not be summoned.
+</p>
+
+<p>
+He remained seated, resisting the impulse to manufacture prayer with words. Minutes passed heavily. The quiet felt thinner now, less assured, more ambiguous.
+</p>
+
+<p>
+Had the stillness been imagined?
+</p>
+
+<p>
+The question disturbed him.
+</p>
+
+<p>
+A faith rooted in perception rather than certainty felt unstable. If peace arrived unpredictably, then prayer could no longer function as transaction or even as disciplined practice.
+</p>
+
+<p>
+Elior breathed slowly, allowing the discomfort to remain.
+</p>
+
+<p>
+And then, not gradually but abruptly, the pressure eased.
+</p>
+
+<p>
+Not into peace, but into acceptance. The effort to recreate what had come before loosened. The need to define the moment dissolved.
+</p>
+
+<p>
+He understood dimly that what had arrived earlier had been gift, not result.
+</p>
+
+<p>
+The realization did not comfort him.
+</p>
+
+<p>
+He had been taught to trust what endured through repetition, what proved itself through consistency. A gift that appeared and disappeared on its own terms offered no certainty to hold.
+</p>
+
+<p>
+He left the room unsettled once more.
+</p>
+
+<p>
+Later, as he lay awake, the city’s voices drifted through the night air. Elsewhere, prayers continued with confidence and clarity.
+</p>
+
+<p>
+Elior did not feel compelled to correct himself.
+</p>
+
+<p>
+Instead, something unfamiliar took shape within him, a patience that allowed him to remain without clarity, to hold stillness as memory rather than demand.
+</p>
+
+<p>
+He did not know whether this marked the deepening of faith or its unraveling.
+</p>
+
+<p>
+The uncertainty remained.
+</p>
+
+<p>
+And yet, he slept.
+</p>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== NAVIGATION ===== -->
+
+<section class="chapter-navigation">
+
+<a href="chapter7.html">
+← Previous Chapter
+</a>
+
+<a href="chapter9.html">
+Next Chapter →
+</a>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+© Bradley Hobbs • The Room Without Windows
+</footer>
+
+</body>
+</html>
