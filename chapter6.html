@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chapter Six | The Room Without Windows</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== RESET ===== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* ===== BODY ===== */
+
+body{
+background:#f6f2eb;
+color:#1f1f1f;
+font-family:'Inter',sans-serif;
+line-height:2;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+linear-gradient(rgba(246,242,235,0.97), rgba(246,242,235,0.97)),
+url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+opacity:0.06;
+pointer-events:none;
+z-index:-1;
+}
+
+/* ===== HEADER ===== */
+
+.site-header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:24px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+backdrop-filter:blur(12px);
+background:rgba(246,242,235,0.45);
+border-bottom:1px solid rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:1.5rem;
+}
+
+.nav-links{
+display:flex;
+gap:32px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#1f1f1f;
+font-size:0.88rem;
+letter-spacing:1px;
+text-transform:uppercase;
+transition:opacity 0.3s ease;
+}
+
+.nav-links a:hover{
+opacity:0.55;
+}
+
+/* ===== HERO ===== */
+
+.chapter-hero{
+padding:220px 8% 120px;
+text-align:center;
+}
+
+.chapter-number{
+font-size:0.92rem;
+letter-spacing:4px;
+text-transform:uppercase;
+opacity:0.6;
+margin-bottom:24px;
+}
+
+.chapter-hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(3.5rem,8vw,6rem);
+font-weight:400;
+line-height:1;
+margin-bottom:28px;
+}
+
+.chapter-intro{
+max-width:760px;
+margin:0 auto;
+font-size:1.05rem;
+color:#444;
+}
+
+/* ===== DIVIDER ===== */
+
+.divider{
+width:1px;
+height:100px;
+background:rgba(0,0,0,0.12);
+margin:0 auto;
+}
+
+/* ===== CHAPTER CONTENT ===== */
+
+.chapter-content{
+padding:120px 8%;
+}
+
+.chapter-inner{
+max-width:760px;
+margin:0 auto;
+}
+
+.chapter-inner p{
+font-size:1.08rem;
+color:#333;
+margin-bottom:34px;
+}
+
+/* ===== DROP CAP ===== */
+
+.chapter-inner p:first-of-type::first-letter{
+font-family:'Cormorant Garamond',serif;
+font-size:5.5rem;
+float:left;
+line-height:0.8;
+padding-right:12px;
+padding-top:10px;
+font-weight:500;
+}
+
+/* ===== NAVIGATION ===== */
+
+.chapter-navigation{
+padding:120px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:30px;
+max-width:1100px;
+margin:0 auto;
+}
+
+.chapter-navigation a{
+text-decoration:none;
+color:#1f1f1f;
+border:1px solid rgba(0,0,0,0.12);
+padding:18px 28px;
+letter-spacing:1px;
+text-transform:uppercase;
+font-size:0.82rem;
+transition:all 0.35s ease;
+background:rgba(255,255,255,0.45);
+backdrop-filter:blur(8px);
+}
+
+.chapter-navigation a:hover{
+background:#1f1f1f;
+color:#f6f2eb;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+padding:40px 8% 60px;
+text-align:center;
+font-size:0.9rem;
+opacity:0.55;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+.site-header{
+padding:20px 6%;
+}
+
+.nav-links{
+gap:18px;
+}
+
+.nav-links a{
+font-size:0.72rem;
+}
+
+.chapter-hero{
+padding:190px 7% 100px;
+}
+
+.chapter-content{
+padding:90px 7%;
+}
+
+.chapter-inner p{
+font-size:1rem;
+}
+
+.chapter-navigation{
+padding:90px 7%;
+flex-direction:column;
+}
+
+.chapter-navigation a{
+width:100%;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+
+<header class="site-header">
+
+<div class="logo">
+The Room Without Windows
+</div>
+
+<nav class="nav-links">
+<a href="../index.html">Home</a>
+<a href="../chapters.html">Chapters</a>
+<a href="../about.html">About</a>
+</nav>
+
+</header>
+
+<!-- ===== HERO ===== -->
+
+<section class="chapter-hero">
+
+<div class="chapter-number">
+Chapter Six
+</div>
+
+<h1>
+The Room<br>Without Windows
+</h1>
+
+<p class="chapter-intro">
+Elior enters a silent room untouched by performance and discovers a different kind of presence.
+</p>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== CHAPTER CONTENT ===== -->
+
+<section class="chapter-content">
+
+<div class="chapter-inner">
+
+<p>
+Elior did not intend to find the room.
+</p>
+
+<p>
+It had always been there, set back from the main portion of the house, narrow and unremarkable. He had passed the door countless times, never seeing it as anything more than a place for forgotten tools, for objects whose usefulness had quietly expired. The door neither invited entry nor resisted it. It existed without demand.
+</p>
+
+<p>
+That evening, he passed it again.
+</p>
+
+<p>
+The house was silent. Night had settled fully. The sounds of the city were muted now, softened by distance and stone, arriving more as suggestion than presence. Elior moved through the house without direction, carrying with him the residue of the interrupted prayer. The silence from that moment still pressed faintly at his thoughts.
+</p>
+
+<p>
+He stopped without knowing why.
+</p>
+
+<p>
+The door stood closed, unchanged. The wood was plain, marked lightly by long past use. There was nothing distinguished about it, nothing that suggested reverence.
+</p>
+
+<p>
+Elior opened it.
+</p>
+
+<p>
+The room beyond was so small that two steps carried him to the far wall. The air felt unchanged, neither stale nor fresh. There were no windows, no shelves, nothing to draw the eye upward or forward. The space offered no orientation.
+</p>
+
+<p>
+He remained in the doorway, uncertain what had drawn him there.
+</p>
+
+<p>
+The room did not feel holy.
+</p>
+
+<p>
+And yet stepping into a place that made no effort to be seen altered something immediately. No light entered directly. The edges softened and dissolved into shadow. The absence of detail demanded attention without providing direction.
+</p>
+
+<p>
+Elior stepped inside and closed the door behind him.
+</p>
+
+<p>
+The sound was final in a way the doors of the main rooms were not. It sealed off the rest of the house and, with it, the city beyond. What little sound remained filtered through faintly, indistinct and stripped of urgency.
+</p>
+
+<p>
+The silence here was different.
+</p>
+
+<p>
+In this room, silence did not follow sound. It preceded it. It rested easily, as though long accustomed to being alone.
+</p>
+
+<p>
+Elior stood at the center of the space.
+</p>
+
+<p>
+His first impulse was to speak. Habit rose immediately, along with the familiar pressure to begin properly, to acknowledge God, to make himself known in the manner he had learned.
+</p>
+
+<p>
+The words did not come.
+</p>
+
+<p>
+This time, the absence did not feel like interruption. It felt anticipated.
+</p>
+
+<p>
+With quiet unease, he realized that nothing in the room responded to him. There was no echo to frame his voice, no light to lift his gaze, no object to mark the passage of time. Without windows, the room belonged entirely to the present.
+</p>
+
+<p>
+Here, prayer could not perform.
+</p>
+
+<p>
+Elior shifted his weight, newly aware of his body in the darkness. The walls felt close but not confining. The floor beneath his feet grounded him, a reminder that he stood somewhere real rather than imagined.
+</p>
+
+<p>
+He waited.
+</p>
+
+<p>
+The impulse to fill the silence returned, insistent yet weaker than before. He felt exposed, not because something observed him, but because nothing required speech.
+</p>
+
+<p>
+The realization unsettled him deeply.
+</p>
+
+<p>
+He had always understood prayer as approach, as movement toward God. Here, there was no sense of direction at all. The room offered no indication of where God might be found.
+</p>
+
+<p>
+It offered only presence.
+</p>
+
+<p>
+Elior leaned back against the wall and let his shoulders rest, as though briefly released from effort. His breathing slowed. He noticed tension loosening in places he had not known were held tight.
+</p>
+
+<p>
+He wondered whether this, too, was failure.
+</p>
+
+<p>
+Without words, without posture, without progression, what remained? Had he withdrawn from prayer entirely, or had prayer withdrawn from him?
+</p>
+
+<p>
+The question remained unanswered.
+</p>
+
+<p>
+Time passed, or perhaps only the idea of time. Without signal or change, it lost its edges. Elior felt it stretch, then soften.
+</p>
+
+<p>
+A memory surfaced quietly: moments from childhood spent hiding in small, enclosed spaces, unnoticed. Those places had felt safe precisely because they were unseen. There had been no performance, no explanation required.
+</p>
+
+<p>
+The memory surprised him.
+</p>
+
+<p>
+He had never associated prayer with safety.
+</p>
+
+<p>
+The silence deepened.
+</p>
+
+<p>
+From somewhere beyond the room, a sound rose and fell again, reaching him distorted and without words. It reminded him of distance, of separation.
+</p>
+
+<p>
+Here, in the unlit space, Elior felt neither near nor far. The familiar categories that framed his faith, approach and distance, doubt and assurance, felt misplaced.
+</p>
+
+<p>
+He did not kneel.
+</p>
+
+<p>
+He did not speak.
+</p>
+
+<p>
+He remained.
+</p>
+
+<p>
+When he finally opened the door and stepped back into the light of the house, something had shifted, though he could not identify where. The room behind him returned immediately to darkness and disuse, unchanged, waiting without invitation.
+</p>
+
+<p>
+Elior closed the door gently.
+</p>
+
+<p>
+He did not know whether he had prayed.
+</p>
+
+<p>
+What unsettled him most was the quiet sense that something sincere had occurred without his initiating it.
+</p>
+
+<p>
+He carried that uncertainty with him through the remainder of the evening, aware that elsewhere the city continued praying audibly and with confidence.
+</p>
+
+<p>
+The room remained where it was.
+</p>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== NAVIGATION ===== -->
+
+<section class="chapter-navigation">
+
+<a href="chapter5.html">
+← Previous Chapter
+</a>
+
+<a href="chapter7.html">
+Next Chapter →
+</a>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+© Bradley Hobbs • The Room Without Windows
+</footer>
+
+</body>
+</html>
