@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chapter Twelve | When Prayers Become Armor</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== RESET ===== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* ===== BODY ===== */
+
+body{
+background:#f6f2eb;
+color:#1f1f1f;
+font-family:'Inter',sans-serif;
+line-height:2;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+linear-gradient(rgba(246,242,235,0.97), rgba(246,242,235,0.97)),
+url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+opacity:0.06;
+pointer-events:none;
+z-index:-1;
+}
+
+/* ===== HEADER ===== */
+
+.site-header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:24px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+backdrop-filter:blur(12px);
+background:rgba(246,242,235,0.45);
+border-bottom:1px solid rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:1.5rem;
+}
+
+.nav-links{
+display:flex;
+gap:32px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#1f1f1f;
+font-size:0.88rem;
+letter-spacing:1px;
+text-transform:uppercase;
+transition:opacity 0.3s ease;
+}
+
+.nav-links a:hover{
+opacity:0.55;
+}
+
+/* ===== HERO ===== */
+
+.chapter-hero{
+padding:220px 8% 120px;
+text-align:center;
+}
+
+.chapter-number{
+font-size:0.92rem;
+letter-spacing:4px;
+text-transform:uppercase;
+opacity:0.6;
+margin-bottom:24px;
+}
+
+.chapter-hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(3.5rem,8vw,6rem);
+font-weight:400;
+line-height:1;
+margin-bottom:28px;
+}
+
+.chapter-intro{
+max-width:760px;
+margin:0 auto;
+font-size:1.05rem;
+color:#444;
+}
+
+/* ===== DIVIDER ===== */
+
+.divider{
+width:1px;
+height:100px;
+background:rgba(0,0,0,0.12);
+margin:0 auto;
+}
+
+/* ===== CHAPTER CONTENT ===== */
+
+.chapter-content{
+padding:120px 8%;
+}
+
+.chapter-inner{
+max-width:760px;
+margin:0 auto;
+}
+
+.chapter-inner p{
+font-size:1.08rem;
+color:#333;
+margin-bottom:34px;
+}
+
+/* ===== DROP CAP ===== */
+
+.chapter-inner p:first-of-type::first-letter{
+font-family:'Cormorant Garamond',serif;
+font-size:5.5rem;
+float:left;
+line-height:0.8;
+padding-right:12px;
+padding-top:10px;
+font-weight:500;
+}
+
+/* ===== NAVIGATION ===== */
+
+.chapter-navigation{
+padding:120px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:30px;
+max-width:1100px;
+margin:0 auto;
+}
+
+.chapter-navigation a{
+text-decoration:none;
+color:#1f1f1f;
+border:1px solid rgba(0,0,0,0.12);
+padding:18px 28px;
+letter-spacing:1px;
+text-transform:uppercase;
+font-size:0.82rem;
+transition:all 0.35s ease;
+background:rgba(255,255,255,0.45);
+backdrop-filter:blur(8px);
+}
+
+.chapter-navigation a:hover{
+background:#1f1f1f;
+color:#f6f2eb;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+padding:40px 8% 60px;
+text-align:center;
+font-size:0.9rem;
+opacity:0.55;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+.site-header{
+padding:20px 6%;
+}
+
+.nav-links{
+gap:18px;
+}
+
+.nav-links a{
+font-size:0.72rem;
+}
+
+.chapter-hero{
+padding:190px 7% 100px;
+}
+
+.chapter-content{
+padding:90px 7%;
+}
+
+.chapter-inner p{
+font-size:1rem;
+}
+
+.chapter-navigation{
+padding:90px 7%;
+flex-direction:column;
+}
+
+.chapter-navigation a{
+width:100%;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+
+<header class="site-header">
+
+<div class="logo">
+The Room Without Windows
+</div>
+
+<nav class="nav-links">
+<a href="../index.html">Home</a>
+<a href="../chapters.html">Chapters</a>
+<a href="../about.html">About</a>
+</nav>
+
+</header>
+
+<!-- ===== HERO ===== -->
+
+<section class="chapter-hero">
+
+<div class="chapter-number">
+Chapter Twelve
+</div>
+
+<h1>
+When Prayers<br>Become Armor
+</h1>
+
+<p class="chapter-intro">
+Elior realizes that some prayers protect the soul from exposure more than they open the soul toward God.
+</p>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== CHAPTER CONTENT ===== -->
+
+<section class="chapter-content">
+
+<div class="chapter-inner">
+
+<p>
+Elior became aware of the weight of his prayers before he understood their purpose.
+</p>
+
+<p>
+Over time they had taken on substance, layered carefully and deliberately. Words were arranged not only to speak, but to hold. He sensed this most clearly when standing among others. In those moments, prayer wrapped itself around him like a garment thickened through years of use, familiar and quietly reassuring.
+</p>
+
+<p>
+Armor, he realized slowly, rarely feels heavy while it is worn.
+</p>
+
+<p>
+Its weight becomes apparent only when one attempts to remove it.
+</p>
+
+<p>
+The realization surfaced one afternoon as Elior listened to a man praying at the edge of the marketplace. The man’s posture was composed, his voice steady. The prayer advanced in a confident rhythm, every phrase closing neatly upon the next. Nothing unexpected entered it. Nothing vulnerable escaped.
+</p>
+
+<p>
+Elior noticed how secure the man appeared within the prayer itself.
+</p>
+
+<p>
+It left no openings. No silence lingered long enough to invite interruption. Each sentence completed the next, forming a structure that supported its speaker while shielding him from exposure.
+</p>
+
+<p>
+Those listening appeared reassured.
+</p>
+
+<p>
+Something shifted within Elior.
+</p>
+
+<p>
+He had once admired this kind of prayer. He had trusted it. Now, standing there, he sensed its other function. Not deception, but defense. The prayer did not invite encounter. It established boundaries.
+</p>
+
+<p>
+He recognized the pattern.
+</p>
+
+<p>
+He had built prayers like this himself.
+</p>
+
+<p>
+They had begun without intention. Phrases adopted for comfort. Repetition used to steady restless thought. Over time they had thickened, layered one upon another, shielding him from being seen. He had learned which words to use when he did not wish to be known.
+</p>
+
+<p>
+The realization unsettled him deeply.
+</p>
+
+<p>
+Armor implied battle.
+</p>
+
+<p>
+Against what had he been protecting himself?
+</p>
+
+<p>
+That evening, he returned to the room without windows.
+</p>
+
+<p>
+The silence met him as it did now, unchanged and unconcerned. He sat against the wall and waited, conscious of the prayers stored within him, ready to rise the moment he allowed them.
+</p>
+
+<p>
+He tested them deliberately.
+</p>
+
+<p>
+He spoke a familiar phrase.
+</p>
+
+<p>
+The words landed heavily in the room, foreign and exposed. They did not settle. They did not dissolve. Without the support of surrounding language, they stood awkwardly alone.
+</p>
+
+<p>
+Elior felt keenly aware of their function.
+</p>
+
+<p>
+The phrase did not open him.
+</p>
+
+<p>
+It protected him.
+</p>
+
+<p>
+He fell silent again.
+</p>
+
+<p>
+Without the permitted weight of structured prayer, he felt suddenly defenseless. His breath quickened almost imperceptibly. His thoughts surfaced unshaped and unguarded. He became aware of how much uncertainty he had carried invisibly, how much weakness he had concealed beneath steady speech.
+</p>
+
+<p>
+In that moment, armor did not keep him safe.
+</p>
+
+<p>
+It kept him distant.
+</p>
+
+<p>
+The recognition pressed against him with unexpected force.
+</p>
+
+<p>
+Prayer, he began to understand, could be used either to approach God or to manage the space between them. Armor did not negate belief. It preserved control.
+</p>
+
+<p>
+He considered the cost.
+</p>
+
+<p>
+To pray without armor would mean remaining exposed longer than was comfortable. It would mean allowing doubt, anxiety, and longing to exist without explanation or containment.
+</p>
+
+<p>
+The prospect frightened him.
+</p>
+
+<p>
+He remained where he was, resisting the urge to reach again for words that would restore structure. The silence felt sharper now, more attentive. It did not accuse, but it no longer felt neutral.
+</p>
+
+<p>
+This, he understood dimly, was exposure.
+</p>
+
+<p>
+He did not know how long he remained there. Time blurred without reference. The room offered no markers. Gradually, urgency subsided, not because comfort arrived, but because effort depleted itself.
+</p>
+
+<p>
+When he finally stood to leave, his body felt unexpectedly light, as though something had been set down without ceremony.
+</p>
+
+<p>
+Outside the room, prayer resumed its audible place in the world. Elior moved again among voices, newly unsettled by how readily words assembled themselves into protection, how easily armor presented itself.
+</p>
+
+<p>
+He did not reject it.
+</p>
+
+<p>
+He simply recognized it.
+</p>
+
+<p>
+Late that night, lying awake, Elior understood something quietly and unwillingly. Armor was not false prayer. It was fearful prayer.
+</p>
+
+<p>
+And fear, once seen, could not easily be unseen.
+</p>
+
+<p>
+Whether he would learn to pray unguarded remained uncertain.
+</p>
+
+<p>
+The armor still fit.
+</p>
+
+<p>
+And the silence still waited.
+</p>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== NAVIGATION ===== -->
+
+<section class="chapter-navigation">
+
+<a href="chapter11.html">
+← Previous Chapter
+</a>
+
+<a href="chapter13.html">
+Next Chapter →
+</a>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+© Bradley Hobbs • The Room Without Windows
+</footer>
+
+</body>
+</html>
