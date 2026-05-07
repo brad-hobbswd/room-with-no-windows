@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chapter One | The City That Learned to Speak</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== RESET ===== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* ===== BODY ===== */
+
+body{
+background:#f6f2eb;
+color:#1f1f1f;
+font-family:'Inter',sans-serif;
+line-height:2;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+linear-gradient(rgba(246,242,235,0.97), rgba(246,242,235,0.97)),
+url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+opacity:0.06;
+pointer-events:none;
+z-index:-1;
+}
+
+/* ===== HEADER ===== */
+
+.site-header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:24px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+backdrop-filter:blur(12px);
+background:rgba(246,242,235,0.45);
+border-bottom:1px solid rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:1.5rem;
+}
+
+.nav-links{
+display:flex;
+gap:32px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#1f1f1f;
+font-size:0.88rem;
+letter-spacing:1px;
+text-transform:uppercase;
+transition:opacity 0.3s ease;
+}
+
+.nav-links a:hover{
+opacity:0.55;
+}
+
+/* ===== HERO ===== */
+
+.chapter-hero{
+padding:220px 8% 120px;
+text-align:center;
+}
+
+.chapter-number{
+font-size:0.92rem;
+letter-spacing:4px;
+text-transform:uppercase;
+opacity:0.6;
+margin-bottom:24px;
+}
+
+.chapter-hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(3.5rem,8vw,6rem);
+font-weight:400;
+line-height:1;
+margin-bottom:28px;
+}
+
+.chapter-intro{
+max-width:760px;
+margin:0 auto;
+font-size:1.05rem;
+color:#444;
+}
+
+/* ===== DIVIDER ===== */
+
+.divider{
+width:1px;
+height:100px;
+background:rgba(0,0,0,0.12);
+margin:0 auto;
+}
+
+/* ===== CHAPTER CONTENT ===== */
+
+.chapter-content{
+padding:120px 8%;
+}
+
+.chapter-inner{
+max-width:760px;
+margin:0 auto;
+}
+
+.chapter-inner p{
+font-size:1.08rem;
+color:#333;
+margin-bottom:34px;
+}
+
+/* ===== DROP CAP ===== */
+
+.chapter-inner p:first-of-type::first-letter{
+font-family:'Cormorant Garamond',serif;
+font-size:5.5rem;
+float:left;
+line-height:0.8;
+padding-right:12px;
+padding-top:10px;
+font-weight:500;
+}
+
+/* ===== NAVIGATION ===== */
+
+.chapter-navigation{
+padding:120px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:30px;
+max-width:1100px;
+margin:0 auto;
+}
+
+.chapter-navigation a{
+text-decoration:none;
+color:#1f1f1f;
+border:1px solid rgba(0,0,0,0.12);
+padding:18px 28px;
+letter-spacing:1px;
+text-transform:uppercase;
+font-size:0.82rem;
+transition:all 0.35s ease;
+background:rgba(255,255,255,0.45);
+backdrop-filter:blur(8px);
+}
+
+.chapter-navigation a:hover{
+background:#1f1f1f;
+color:#f6f2eb;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+padding:40px 8% 60px;
+text-align:center;
+font-size:0.9rem;
+opacity:0.55;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+.site-header{
+padding:20px 6%;
+}
+
+.nav-links{
+gap:18px;
+}
+
+.nav-links a{
+font-size:0.72rem;
+}
+
+.chapter-hero{
+padding:190px 7% 100px;
+}
+
+.chapter-content{
+padding:90px 7%;
+}
+
+.chapter-inner p{
+font-size:1rem;
+}
+
+.chapter-navigation{
+padding:90px 7%;
+flex-direction:column;
+}
+
+.chapter-navigation a{
+width:100%;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+
+<header class="site-header">
+
+<div class="logo">
+The Room Without Windows
+</div>
+
+<nav class="nav-links">
+<a href="../index.html">Home</a>
+<a href="../chapters.html">Chapters</a>
+<a href="../about.html">About</a>
+</nav>
+
+</header>
+
+<!-- ===== HERO ===== -->
+
+<section class="chapter-hero">
+
+<div class="chapter-number">
+Chapter One
+</div>
+
+<h1>
+The City That<br>Learned to Speak
+</h1>
+
+<p class="chapter-intro">
+A city shaped by audible devotion, practiced certainty, and one man quietly unsettled by the sound of prayer.
+</p>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== CHAPTER CONTENT ===== -->
+
+<section class="chapter-content">
+
+<div class="chapter-inner">
+
+<p>
+The city had not always known how to speak to God this way.
+</p>
+
+<p>
+There were places, if one looked carefully, where stone benches curved inward rather than outward, where walls absorbed sound instead of carrying it. In older structures, prayer seemed once to have been shaped for listening as much as for speaking. Those spaces still existed, but they had fallen into disuse. Poorly lit and inconveniently placed, they offered little sense of participation. Most people passed them without noticing.
+</p>
+
+<p>
+Now the city prayed in voices.
+</p>
+
+<p>
+Prayer rose with the morning and lingered into the evening, woven tightly into the rhythms of commerce and movement. It echoed from courtyards before merchants arranged their stalls. It carried from the steps of public buildings, where sound traveled cleanly across stone. It followed people home, layered and overlapping, until it became difficult to tell where one prayer ended and another began.
+</p>
+
+<p>
+Silence was rare here, and faintly uncomfortable.
+</p>
+
+<p>
+A reserved presence was not met with suspicion, yet it drew attention all the same, much like a gap that pulls focus. Words brought comfort. Utterance signaled allegiance. Expression gave form to conviction.
+</p>
+
+<p>
+Each morning, Elior moved through these sounds on his way to the workshop. He did not hurry. Listening was unavoidable. The city pressed words against him from all sides, phrases carefully chosen and spoken with confidence and practiced rhythm.
+</p>
+
+<p>
+He recognized them. He had learned them as a child. He knew where the pauses belonged, where a voice should lift, and where it should settle firmly at the end.
+</p>
+
+<p>
+The words themselves were not false.
+</p>
+
+<p>
+Still, something tightened quietly inside him as he passed.
+</p>
+
+<p>
+He did not doubt God. That was not the struggle. His belief had never wavered in the way some men’s did, never collapsed into resentment or loss. God had always felt near enough to be real.
+</p>
+
+<p>
+What unsettled him was how certain everyone sounded.
+</p>
+
+<p>
+Certainty in the city was audible. It arrived in complete sentences. It closed prayers cleanly, like doors that latched without resistance. When people finished praying, they often looked relieved, as though something had been resolved.
+</p>
+
+<p>
+Elior rarely felt resolved.
+</p>
+
+<p>
+He worked with wood, shaping beams and panels for homes he would never inhabit. The labor grounded him. Wood demanded attention without conversation. It responded honestly to the hands that guided it. When it resisted, it did so quietly, through tension, through grain that refused the blade.
+</p>
+
+<p>
+He appreciated this honesty.
+</p>
+
+<p>
+Prayer, by contrast, had begun to feel performative.
+</p>
+
+<p>
+Even when no audience was present, he sensed the weight of expectation. The words he spoke carried the imprint of how prayer was meant to sound, how long it should last, how confidently it should conclude.
+</p>
+
+<p>
+In the mornings, when he prayed, he often caught himself listening to his own voice, assessing it.
+</p>
+
+<p>
+The habit distressed him.
+</p>
+
+<p>
+He could not stop comparing his words to those he heard in the streets. His prayers sounded smaller to him, unfinished.
+</p>
+
+<p>
+Some mornings, he spoke anyway. On others, he stopped before he began.
+</p>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== NAVIGATION ===== -->
+
+<section class="chapter-navigation">
+
+<a href="../chapters.html">
+← Back to Chapters
+</a>
+
+<a href="chapter2.html">
+Next Chapter →
+</a>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+© Bradley Hobbs • The Room Without Windows
+</footer>
+
+</body>
+</html>
