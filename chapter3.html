@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chapter Three | The Men Who Were Heard</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== RESET ===== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* ===== BODY ===== */
+
+body{
+background:#f6f2eb;
+color:#1f1f1f;
+font-family:'Inter',sans-serif;
+line-height:2;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+linear-gradient(rgba(246,242,235,0.97), rgba(246,242,235,0.97)),
+url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+opacity:0.06;
+pointer-events:none;
+z-index:-1;
+}
+
+/* ===== HEADER ===== */
+
+.site-header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:24px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+backdrop-filter:blur(12px);
+background:rgba(246,242,235,0.45);
+border-bottom:1px solid rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:1.5rem;
+}
+
+.nav-links{
+display:flex;
+gap:32px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#1f1f1f;
+font-size:0.88rem;
+letter-spacing:1px;
+text-transform:uppercase;
+transition:opacity 0.3s ease;
+}
+
+.nav-links a:hover{
+opacity:0.55;
+}
+
+/* ===== HERO ===== */
+
+.chapter-hero{
+padding:220px 8% 120px;
+text-align:center;
+}
+
+.chapter-number{
+font-size:0.92rem;
+letter-spacing:4px;
+text-transform:uppercase;
+opacity:0.6;
+margin-bottom:24px;
+}
+
+.chapter-hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(3.5rem,8vw,6rem);
+font-weight:400;
+line-height:1;
+margin-bottom:28px;
+}
+
+.chapter-intro{
+max-width:760px;
+margin:0 auto;
+font-size:1.05rem;
+color:#444;
+}
+
+/* ===== DIVIDER ===== */
+
+.divider{
+width:1px;
+height:100px;
+background:rgba(0,0,0,0.12);
+margin:0 auto;
+}
+
+/* ===== CHAPTER CONTENT ===== */
+
+.chapter-content{
+padding:120px 8%;
+}
+
+.chapter-inner{
+max-width:760px;
+margin:0 auto;
+}
+
+.chapter-inner p{
+font-size:1.08rem;
+color:#333;
+margin-bottom:34px;
+}
+
+/* ===== DROP CAP ===== */
+
+.chapter-inner p:first-of-type::first-letter{
+font-family:'Cormorant Garamond',serif;
+font-size:5.5rem;
+float:left;
+line-height:0.8;
+padding-right:12px;
+padding-top:10px;
+font-weight:500;
+}
+
+/* ===== NAVIGATION ===== */
+
+.chapter-navigation{
+padding:120px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:30px;
+max-width:1100px;
+margin:0 auto;
+}
+
+.chapter-navigation a{
+text-decoration:none;
+color:#1f1f1f;
+border:1px solid rgba(0,0,0,0.12);
+padding:18px 28px;
+letter-spacing:1px;
+text-transform:uppercase;
+font-size:0.82rem;
+transition:all 0.35s ease;
+background:rgba(255,255,255,0.45);
+backdrop-filter:blur(8px);
+}
+
+.chapter-navigation a:hover{
+background:#1f1f1f;
+color:#f6f2eb;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+padding:40px 8% 60px;
+text-align:center;
+font-size:0.9rem;
+opacity:0.55;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+.site-header{
+padding:20px 6%;
+}
+
+.nav-links{
+gap:18px;
+}
+
+.nav-links a{
+font-size:0.72rem;
+}
+
+.chapter-hero{
+padding:190px 7% 100px;
+}
+
+.chapter-content{
+padding:90px 7%;
+}
+
+.chapter-inner p{
+font-size:1rem;
+}
+
+.chapter-navigation{
+padding:90px 7%;
+flex-direction:column;
+}
+
+.chapter-navigation a{
+width:100%;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+
+<header class="site-header">
+
+<div class="logo">
+The Room Without Windows
+</div>
+
+<nav class="nav-links">
+<a href="../index.html">Home</a>
+<a href="../chapters.html">Chapters</a>
+<a href="../about.html">About</a>
+</nav>
+
+</header>
+
+<!-- ===== HERO ===== -->
+
+<section class="chapter-hero">
+
+<div class="chapter-number">
+Chapter Three
+</div>
+
+<h1>
+The Men Who<br>Were Heard
+</h1>
+
+<p class="chapter-intro">
+Elior watches the voices trusted by the city and begins questioning the certainty carried within public prayer.
+</p>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== CHAPTER CONTENT ===== -->
+
+<section class="chapter-content">
+
+<div class="chapter-inner">
+
+<p>
+Certain men in the city were remembered less for who they were than for how they prayed.
+</p>
+
+<p>
+Their names surfaced in conversation accompanied by subtle nods, as though something settled in the air with their mention. When reassurance was needed, these were the voices people sought. When prayer was expected to be shaped properly, measured, dignified, and concluded with conviction, these men were trusted.
+</p>
+
+<p>
+They spoke as if God were a destination they visited often and returned from without confusion.
+</p>
+
+<p>
+Elior noticed them because others did.
+</p>
+
+<p>
+When one of these men prayed, movement paused around him. Conversations softened. Even those who did not stop walking listened briefly as they passed, comforted by the sound of faith articulated with such assurance.
+</p>
+
+<p>
+The men did not seem proud. They carried their certainty lightly, almost generously, offering it to those who appeared less sure. Their prayers neither rushed nor wandered. Each word arrived exactly where it belonged.
+</p>
+
+<p>
+Elior observed them from a deliberate distance.
+</p>
+
+<p>
+One morning, as the city gathered itself into motion, a man took his place on the steps of a public building. His posture was unremarkable. His presence required no introduction.
+</p>
+
+<p>
+People turned instinctively.
+</p>
+
+<p>
+The prayer began without urgency. Gratitude gave way to acknowledgment, acknowledgment to assurance. The words accumulated gently, building toward a conclusion that felt inevitable, as though it had been present from the beginning. There was no excess, no visible effort.
+</p>
+
+<p>
+Elior listened.
+</p>
+
+<p>
+He did not question the man’s sincerity. That was not what pressed on him. What unsettled him was how little space the prayer left for interruption.
+</p>
+
+<p>
+The silence at the end settled smoothly, as though it belonged there.
+</p>
+
+<p>
+The listeners remained still a moment longer than necessary, reluctant to disturb the sense of completion. Then, quietly, they dispersed. The city resumed its pace, carrying with it the echo of something resolved.
+</p>
+
+<p>
+Elior stayed where he was.
+</p>
+
+<p>
+He felt, unexpectedly, as though he had witnessed something finished elsewhere. The prayer had not drawn him toward God so much as it had served as evidence that there existed a way of praying that closed cleanly.
+</p>
+
+<p>
+He tried to imagine himself praying that way.
+</p>
+
+<p>
+The attempt failed immediately. Not because he lacked words, but because he could not locate the certainty that animated them. When he imagined his own prayers delivered with such assurance, they felt strained, aspirational at best.
+</p>
+
+<p>
+He wondered whether his faith was immature, or simply unpracticed.
+</p>
+
+<p>
+As he walked on, the prayer followed him faintly. Its phrases returned in fragments, each smooth, each assured. He caught himself repeating one line softly, testing how it sounded in his mouth.
+</p>
+
+<p>
+It sounded convincing.
+</p>
+
+<p>
+It did not feel true.
+</p>
+
+<p>
+At the workshop, Elior worked with unusual distraction. His hands moved accurately, but his attention wandered. He thought of the way people gathered around these men, trusting them to articulate what others struggled even to name.
+</p>
+
+<p>
+The men did not appear burdened by doubt. If they experienced uncertainty, it did not surface.
+</p>
+
+<p>
+An unwelcome question took shape slowly within him: was doubt a failure of faith, or merely a lack of language?
+</p>
+
+<p>
+The question unsettled him.
+</p>
+
+<p>
+He had always believed faith was meant to steady a person. Yet now he felt drawn toward a form of faith that did not resemble his own. For the first time, he did not merely feel quiet by comparison, but incomplete.
+</p>
+
+<p>
+Later that afternoon, he passed two men discussing the morning’s prayer.
+</p>
+
+<p>
+“It settles you,” one said. “You leave knowing where you stand.”
+</p>
+
+<p>
+The phrase struck Elior heavily.
+</p>
+
+<p>
+Knowing where one stands.
+</p>
+
+<p>
+It implied orientation, ground beneath the feet, clarity of position. It described something Elior had rarely felt after prayer. His prayers did not tell him where he stood. They made him aware instead of distance, sometimes of nearness, sometimes of vastness.
+</p>
+
+<p>
+He returned home that evening with the unease intact.
+</p>
+
+<p>
+As he prepared to pray, he found himself shaping his words toward the kind of ending he had witnessed that morning. He wanted the prayer to arrive somewhere. He wanted completion, affirmation, the sense of having reached a destination.
+</p>
+
+<p>
+Midway through, he stopped.
+</p>
+
+<p>
+The words had led him to a place he did not recognize.
+</p>
+
+<p>
+He stood uncertainly, unsure whether to continue or begin again. The prayer felt unresolved, yet finishing it felt dishonest. He lowered his head as the silence stretched around him, uncomfortable and exposed.
+</p>
+
+<p>
+In that quiet, a recognition surfaced, subtle but unsettling: the prayers he admired most demanded the least of the one praying afterward.
+</p>
+
+<p>
+They concluded cleanly. They allowed both speaker and listener to move on.
+</p>
+
+<p>
+Elior’s did not.
+</p>
+
+<p>
+He let the prayer remain unfinished and sat down heavily, as though weary from a journey that had not reached its end.
+</p>
+
+<p>
+The absence of resolution pressed against him, but he did not correct it.
+</p>
+
+<p>
+That night, sleep arrived slowly.
+</p>
+
+<p>
+The image of the man on the steps returned again and again, not as accusation, but as invitation. Elior could not tell what he was being invited toward, greater confidence, deeper humility, or something else entirely.
+</p>
+
+<p>
+He knew only this: certainty, when examined closely, carried demands of its own.
+</p>
+
+<p>
+And he was not yet convinced he could meet them.
+</p>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== NAVIGATION ===== -->
+
+<section class="chapter-navigation">
+
+<a href="chapter2.html">
+← Previous Chapter
+</a>
+
+<a href="chapter4.html">
+Next Chapter →
+</a>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+© Bradley Hobbs • The Room Without Windows
+</footer>
+
+</body>
+</html>
