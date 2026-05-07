@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Part Five | The Return</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#f6f2eb;
+color:#1f1f1f;
+font-family:'Inter',sans-serif;
+line-height:1.8;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+linear-gradient(rgba(246,242,235,0.95), rgba(246,242,235,0.95)),
+url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1800&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+opacity:0.06;
+z-index:-1;
+pointer-events:none;
+}
+
+.site-header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:24px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+backdrop-filter:blur(14px);
+background:rgba(246,242,235,0.42);
+border-bottom:1px solid rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:1.5rem;
+}
+
+.nav-links{
+display:flex;
+gap:28px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#1f1f1f;
+font-size:0.8rem;
+letter-spacing:1px;
+text-transform:uppercase;
+}
+
+.hero{
+padding:220px 8% 120px;
+text-align:center;
+}
+
+.part-label{
+font-size:0.8rem;
+letter-spacing:4px;
+text-transform:uppercase;
+opacity:0.5;
+margin-bottom:24px;
+}
+
+.hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(4rem,9vw,7rem);
+font-weight:400;
+line-height:1;
+margin-bottom:26px;
+}
+
+.hero p{
+max-width:760px;
+margin:0 auto;
+font-size:1.08rem;
+color:#444;
+}
+
+.chapters-section{
+padding:0 8% 120px;
+}
+
+.chapter-grid{
+max-width:1000px;
+margin:0 auto;
+display:flex;
+flex-direction:column;
+gap:22px;
+}
+
+.chapter-card{
+display:flex;
+gap:24px;
+padding:28px 30px;
+text-decoration:none;
+color:#1f1f1f;
+border:1px solid rgba(0,0,0,0.08);
+background:rgba(255,255,255,0.45);
+backdrop-filter:blur(10px);
+transition:all 0.35s ease;
+}
+
+.chapter-card:hover{
+transform:translateY(-3px);
+background:#ffffff;
+}
+
+.chapter-number{
+font-size:0.8rem;
+letter-spacing:2px;
+opacity:0.45;
+min-width:42px;
+padding-top:4px;
+}
+
+.chapter-title{
+font-family:'Cormorant Garamond',serif;
+font-size:2rem;
+font-weight:400;
+line-height:1.1;
+}
+
+.bottom-navigation{
+padding:0 8% 120px;
+}
+
+.navigation-box{
+max-width:1000px;
+margin:0 auto;
+display:flex;
+justify-content:space-between;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.navigation-box a{
+text-decoration:none;
+padding:18px 28px;
+border:1px solid rgba(0,0,0,0.08);
+background:rgba(255,255,255,0.45);
+color:#1f1f1f;
+font-size:0.82rem;
+letter-spacing:1px;
+text-transform:uppercase;
+transition:all 0.35s ease;
+}
+
+.navigation-box a:hover{
+background:#1f1f1f;
+color:#f6f2eb;
+}
+
+footer{
+padding:70px 8%;
+text-align:center;
+font-size:0.9rem;
+opacity:0.5;
+}
+
+@media(max-width:768px){
+
+.hero{
+padding:180px 7% 90px;
+}
+
+.chapters-section{
+padding:0 7% 90px;
+}
+
+.bottom-navigation{
+padding:0 7% 90px;
+}
+
+.chapter-card{
+padding:24px 22px;
+gap:18px;
+}
+
+.chapter-title{
+font-size:1.7rem;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<header class="site-header">
+
+<div class="logo">
+The Room Without Windows
+</div>
+
+<nav class="nav-links">
+<a href="index.html">Home</a>
+<a href="chapters.html">Chapters</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="part-label">
+Part Five
+</div>
+
+<h1>
+The Return
+</h1>
+
+<p>
+Elior returns to the city carrying a faith no longer dependent on visibility, certainty, or control.
+</p>
+
+</section>
+
+<section class="chapters-section">
+
+<div class="chapter-grid">
+
+<a href="chapter21.html" class="chapter-card">
+
+<div class="chapter-number">
+21
+</div>
+
+<div class="chapter-title">
+The City Unchanged
+</div>
+
+</a>
+
+<a href="chapter22.html" class="chapter-card">
+
+<div class="chapter-number">
+22
+</div>
+
+<div class="chapter-title">
+The Man Who Prayed Differently
+</div>
+
+</a>
+
+<a href="chapter23.html" class="chapter-card">
+
+<div class="chapter-number">
+23
+</div>
+
+<div class="chapter-title">
+Teaching Without Teaching
+</div>
+
+</a>
+
+<a href="chapter24.html" class="chapter-card">
+
+<div class="chapter-number">
+24
+</div>
+
+<div class="chapter-title">
+The Hidden God
+</div>
+
+</a>
+
+<a href="chapter25.html" class="chapter-card">
+
+<div class="chapter-number">
+25
+</div>
+
+<div class="chapter-title">
+The Door That Never Closed
+</div>
+
+</a>
+
+<a href="epilogue.html" class="chapter-card">
+
+<div class="chapter-number">
+EP
+</div>
+
+<div class="chapter-title">
+Epilogue
+</div>
+
+</a>
+
+</div>
+
+</section>
+
+<section class="bottom-navigation">
+
+<div class="navigation-box">
+
+<a href="part-four.html">
+Previous Part
+</a>
+
+<a href="chapters.html">
+All Chapters
+</a>
+
+</div>
+
+</section>
+
+<footer>
+© Bradley Hobbs • The Room Without Windows
+</footer>
+
+</body>
+</html>
