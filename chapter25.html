@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chapter Twenty Five | The Door That Never Closed</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== RESET ===== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* ===== BODY ===== */
+
+body{
+background:#f6f2eb;
+color:#1f1f1f;
+font-family:'Inter',sans-serif;
+line-height:2;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+linear-gradient(rgba(246,242,235,0.97), rgba(246,242,235,0.97)),
+url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+opacity:0.06;
+pointer-events:none;
+z-index:-1;
+}
+
+/* ===== HEADER ===== */
+
+.site-header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:24px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+backdrop-filter:blur(12px);
+background:rgba(246,242,235,0.45);
+border-bottom:1px solid rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:1.5rem;
+}
+
+.nav-links{
+display:flex;
+gap:32px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#1f1f1f;
+font-size:0.88rem;
+letter-spacing:1px;
+text-transform:uppercase;
+transition:opacity 0.3s ease;
+}
+
+.nav-links a:hover{
+opacity:0.55;
+}
+
+/* ===== HERO ===== */
+
+.chapter-hero{
+padding:220px 8% 120px;
+text-align:center;
+}
+
+.chapter-number{
+font-size:0.92rem;
+letter-spacing:4px;
+text-transform:uppercase;
+opacity:0.6;
+margin-bottom:24px;
+}
+
+.chapter-hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(3.5rem,8vw,6rem);
+font-weight:400;
+line-height:1;
+margin-bottom:28px;
+}
+
+.chapter-intro{
+max-width:760px;
+margin:0 auto;
+font-size:1.05rem;
+color:#444;
+}
+
+/* ===== DIVIDER ===== */
+
+.divider{
+width:1px;
+height:100px;
+background:rgba(0,0,0,0.12);
+margin:0 auto;
+}
+
+/* ===== CHAPTER CONTENT ===== */
+
+.chapter-content{
+padding:120px 8%;
+}
+
+.chapter-inner{
+max-width:760px;
+margin:0 auto;
+}
+
+.chapter-inner p{
+font-size:1.08rem;
+color:#333;
+margin-bottom:34px;
+}
+
+/* ===== DROP CAP ===== */
+
+.chapter-inner p:first-of-type::first-letter{
+font-family:'Cormorant Garamond',serif;
+font-size:5.5rem;
+float:left;
+line-height:0.8;
+padding-right:12px;
+padding-top:10px;
+font-weight:500;
+}
+
+/* ===== NAVIGATION ===== */
+
+.chapter-navigation{
+padding:120px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:30px;
+max-width:1100px;
+margin:0 auto;
+}
+
+.chapter-navigation a{
+text-decoration:none;
+color:#1f1f1f;
+border:1px solid rgba(0,0,0,0.12);
+padding:18px 28px;
+letter-spacing:1px;
+text-transform:uppercase;
+font-size:0.82rem;
+transition:all 0.35s ease;
+background:rgba(255,255,255,0.45);
+backdrop-filter:blur(8px);
+}
+
+.chapter-navigation a:hover{
+background:#1f1f1f;
+color:#f6f2eb;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+padding:40px 8% 60px;
+text-align:center;
+font-size:0.9rem;
+opacity:0.55;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+.site-header{
+padding:20px 6%;
+}
+
+.nav-links{
+gap:18px;
+}
+
+.nav-links a{
+font-size:0.72rem;
+}
+
+.chapter-hero{
+padding:190px 7% 100px;
+}
+
+.chapter-content{
+padding:90px 7%;
+}
+
+.chapter-inner p{
+font-size:1rem;
+}
+
+.chapter-navigation{
+padding:90px 7%;
+flex-direction:column;
+}
+
+.chapter-navigation a{
+width:100%;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+
+<header class="site-header">
+
+<div class="logo">
+The Room Without Windows
+</div>
+
+<nav class="nav-links">
+<a href="../index.html">Home</a>
+<a href="../chapters.html">Chapters</a>
+<a href="../about.html">About</a>
+</nav>
+
+</header>
+
+<!-- ===== HERO ===== -->
+
+<section class="chapter-hero">
+
+<div class="chapter-number">
+Chapter Twenty Five
+</div>
+
+<h1>
+The Door That<br>Never Closed
+</h1>
+
+<p class="chapter-intro">
+Elior realizes the room was never meant to contain God or separate him from life, but to teach him how to remain present within both silence and noise.
+</p>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== CHAPTER CONTENT ===== -->
+
+<section class="chapter-content">
+
+<div class="chapter-inner">
+
+<p>
+For a long time, Elior had believed there was a threshold he would eventually cross.
+</p>
+
+<p>
+He imagined it as a moment of clarity, of release, of arrival into a faith no longer burdened by effort or uncertainty. The room without windows had suggested this possibility. It had implied separation, completion, a space where the labor of becoming might finally rest.
+</p>
+
+<p>
+Now, standing before its memory, Elior understood it differently.
+</p>
+
+<p>
+The door had never been closed.
+</p>
+
+<p>
+The recognition arrived not as revelation, but as correction.
+</p>
+
+<p>
+He saw how readily he had mistaken enclosure for depth. How easily he had assumed that withdrawal signaled faithfulness, that narrowing attention constituted devotion.
+</p>
+
+<p>
+The room had fulfilled its purpose. It had shaped him through silence. It had held noise at bay long enough for something true to surface.
+</p>
+
+<p>
+But it had never required permanence.
+</p>
+
+<p>
+Elior recognized now that the room had not existed to keep the world out.
+</p>
+
+<p>
+It had existed to show him that God could not be kept in.
+</p>
+
+<p>
+The door had remained open because faith, when it was true, did not operate through containment. Anything that survived only in isolation was already fragile.
+</p>
+
+<p>
+The city continued pressing at the edges of his life as it always had. Noise still rose. Prayers were spoken loudly and softly. People continued to gather, believing that structure, belonging, and certainty were necessary for meaning.
+</p>
+
+<p>
+Elior did not oppose them.
+</p>
+
+<p>
+He no longer needed distance.
+</p>
+
+<p>
+He moved easily between silence and sound, between solitude and presence. Each had relinquished its claim to exclusivity.
+</p>
+
+<p>
+The door did not separate the sacred from the ordinary.
+</p>
+
+<p>
+It never had.
+</p>
+
+<p>
+Elior began to recognize how often spiritual language relied on closure. Doors shut behind decisions. Thresholds crossed never to be revisited. Inside and outside fixed into moral clarity.
+</p>
+
+<p>
+This door resisted such metaphor.
+</p>
+
+<p>
+It did not define progress.
+</p>
+
+<p>
+It did not reward sacrifice.
+</p>
+
+<p>
+It did not confirm maturity.
+</p>
+
+<p>
+It simply refused to close.
+</p>
+
+<p>
+There was no final interior space.
+</p>
+
+<p>
+No achieved stillness that insulated one from the movement of the world.
+</p>
+
+<p>
+What Elior had taken for containment had always been permission: permission to withdraw and permission to return; permission to remain silent and permission to speak; permission to pray and permission to rest without guilt.
+</p>
+
+<p>
+Faith did not require choosing between these.
+</p>
+
+<p>
+It required honesty wherever one stood.
+</p>
+
+<p>
+One evening, Elior stood again at the window of his home. The city’s sound rose toward him, layered and familiar. Somewhere, prayers lifted upward. Elsewhere, ambition spoke louder than hope.
+</p>
+
+<p>
+He did not retreat.
+</p>
+
+<p>
+He did not advance.
+</p>
+
+<p>
+He remained.
+</p>
+
+<p>
+He understood then that the room without windows had not taught him how to escape the world.
+</p>
+
+<p>
+It had taught him how to face it without being absorbed.
+</p>
+
+<p>
+The hidden God did not require removal.
+</p>
+
+<p>
+The man who had prayed differently had not withdrawn.
+</p>
+
+<p>
+Teaching without teaching had not demanded silence alone.
+</p>
+
+<p>
+All of it led here.
+</p>
+
+<p>
+To a faith that no longer depended on boundaries to remain true.
+</p>
+
+<p>
+The door had never been the point.
+</p>
+
+<p>
+It existed only until Elior learned that what was formed in quiet must live in noise without defense.
+</p>
+
+<p>
+There was nothing left to protect.
+</p>
+
+<p>
+Nothing left to prove.
+</p>
+
+<p>
+Nothing left to pursue.
+</p>
+
+<p>
+The city remained unchanged.
+</p>
+
+<p>
+God remained hidden.
+</p>
+
+<p>
+Prayer remained both unnecessary and unavoidable.
+</p>
+
+<p>
+And Elior remained.
+</p>
+
+<p>
+Not inside.
+</p>
+
+<p>
+Not outside.
+</p>
+
+<p>
+Present.
+</p>
+
+<p>
+The work did not conclude.
+</p>
+
+<p>
+It continued, without demanding an ending.
+</p>
+
+<p>
+Those who came after him would still build rooms and retreat into them when the world grew too loud. Some would believe those rooms were sacred.
+</p>
+
+<p>
+Elior knew otherwise.
+</p>
+
+<p>
+The room had been a teacher, not a destination.
+</p>
+
+<p>
+The door had never been closed because God had never been confined to what could be separated from life.
+</p>
+
+<p>
+Faith was not discovered behind thresholds.
+</p>
+
+<p>
+It was found in movement and in rest, in listening and restraint, in participation without possession.
+</p>
+
+<p>
+Elior did not mark this understanding with words.
+</p>
+
+<p>
+He did not record it.
+</p>
+
+<p>
+He lived it.
+</p>
+
+<p>
+And the door remained open.
+</p>
+
+<p>
+As it always had.
+</p>
+
+<p>
+Because it had never needed to be closed at all.
+</p>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== NAVIGATION ===== -->
+
+<section class="chapter-navigation">
+
+<a href="chapter24.html">
+← Previous Chapter
+</a>
+
+<a href="epilogue.html">
+Read Epilogue →
+</a>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+© Bradley Hobbs • The Room Without Windows
+</footer>
+
+</body>
+</html>
