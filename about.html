@@ -38,10 +38,10 @@ position:fixed;
 inset:0;
 background:
 linear-gradient(rgba(246,242,235,0.96), rgba(246,242,235,0.96)),
-url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1600&auto=format&fit=crop');
+url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1800&auto=format&fit=crop');
 background-size:cover;
 background-position:center;
-opacity:0.08;
+opacity:0.06;
 pointer-events:none;
 z-index:-1;
 }
@@ -57,7 +57,7 @@ padding:24px 7%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-backdrop-filter:blur(12px);
+backdrop-filter:blur(14px);
 background:rgba(246,242,235,0.45);
 border-bottom:1px solid rgba(0,0,0,0.05);
 z-index:1000;
@@ -65,52 +65,52 @@ z-index:1000;
 
 .logo{
 font-family:'Cormorant Garamond',serif;
-font-size:1.6rem;
+font-size:1.5rem;
 }
 
 .nav-links{
 display:flex;
-gap:32px;
+gap:34px;
 }
 
 .nav-links a{
 text-decoration:none;
 color:#1f1f1f;
-font-size:0.9rem;
+font-size:0.82rem;
 letter-spacing:1px;
 text-transform:uppercase;
 transition:opacity 0.3s ease;
 }
 
 .nav-links a:hover{
-opacity:0.55;
+opacity:0.5;
 }
 
 /* ===== HERO ===== */
 
 .hero{
-padding:220px 8% 140px;
+padding:220px 8% 120px;
 text-align:center;
 }
 
 .hero-subtitle{
-font-size:0.9rem;
+font-size:0.82rem;
 letter-spacing:4px;
 text-transform:uppercase;
-opacity:0.65;
-margin-bottom:24px;
+opacity:0.55;
+margin-bottom:26px;
 }
 
 .hero h1{
 font-family:'Cormorant Garamond',serif;
-font-size:clamp(3.5rem,8vw,6rem);
+font-size:clamp(4rem,9vw,7rem);
 font-weight:400;
 line-height:1;
-margin-bottom:32px;
+margin-bottom:30px;
 }
 
 .hero p{
-max-width:820px;
+max-width:780px;
 margin:0 auto;
 font-size:1.08rem;
 color:#444;
@@ -128,103 +128,89 @@ margin:0 auto;
 /* ===== CONTENT ===== */
 
 .content-section{
-padding:110px 8%;
+padding:120px 8%;
 }
 
 .content-inner{
-max-width:860px;
+max-width:820px;
 margin:0 auto;
 }
 
-.content-title{
+.content-inner h2{
 font-family:'Cormorant Garamond',serif;
-font-size:3rem;
+font-size:clamp(2.5rem,5vw,4rem);
 font-weight:400;
-margin-bottom:34px;
-text-align:center;
-}
-
-.content-text{
-font-size:1.05rem;
-color:#444;
+line-height:1.1;
 margin-bottom:34px;
 }
 
-/* ===== BLOCKQUOTE ===== */
+.content-inner p{
+font-size:1.08rem;
+color:#333;
+margin-bottom:32px;
+}
 
-.quote-block{
-margin:90px auto;
-padding:60px 40px;
+/* ===== QUOTE ===== */
+
+.book-quote{
+margin:80px 0;
+padding:60px;
 border:1px solid rgba(0,0,0,0.08);
-background:rgba(255,255,255,0.45);
-backdrop-filter:blur(10px);
+background:rgba(255,255,255,0.42);
+backdrop-filter:blur(8px);
 text-align:center;
 }
 
-.quote-block p{
+.book-quote p{
 font-family:'Cormorant Garamond',serif;
-font-size:2.5rem;
-font-weight:300;
-line-height:1.3;
-}
-
-/* ===== AUTHOR ===== */
-
-.author-section{
-padding:120px 8%;
-text-align:center;
-}
-
-.author-inner{
-max-width:760px;
-margin:0 auto;
-}
-
-.author-title{
-font-family:'Cormorant Garamond',serif;
-font-size:3rem;
-font-weight:400;
-margin-bottom:28px;
-}
-
-.author-text{
-font-size:1.03rem;
-color:#444;
+font-size:clamp(2rem,4vw,3rem);
+line-height:1.35;
+margin-bottom:0;
 }
 
 /* ===== CTA ===== */
 
 .cta-section{
-padding:150px 8%;
-text-align:center;
+padding:0 8% 140px;
 }
 
-.cta-section h2{
+.cta-box{
+max-width:850px;
+margin:0 auto;
+padding:70px 50px;
+text-align:center;
+border:1px solid rgba(0,0,0,0.08);
+background:rgba(255,255,255,0.45);
+backdrop-filter:blur(8px);
+}
+
+.cta-box h3{
 font-family:'Cormorant Garamond',serif;
-font-size:4rem;
+font-size:clamp(2.4rem,5vw,4rem);
 font-weight:400;
 margin-bottom:24px;
 }
 
-.cta-section p{
-max-width:700px;
-margin:0 auto 42px;
-font-size:1.05rem;
+.cta-box p{
+max-width:620px;
+margin:0 auto 40px;
+font-size:1.02rem;
 color:#444;
 }
 
-.cta-section a{
+.cta-button{
 display:inline-block;
-padding:18px 36px;
-border:1px solid rgba(0,0,0,0.15);
 text-decoration:none;
+padding:18px 32px;
+border:1px solid rgba(0,0,0,0.12);
 color:#1f1f1f;
 letter-spacing:1px;
 text-transform:uppercase;
+font-size:0.82rem;
 transition:all 0.35s ease;
 }
 
-.cta-section a:hover{
+.cta-button:hover{
 background:#1f1f1f;
 color:#f6f2eb;
 }
@@ -232,10 +218,10 @@ color:#f6f2eb;
 /* ===== FOOTER ===== */
 
 footer{
-padding:40px 8% 60px;
+padding:60px 8%;
 text-align:center;
 font-size:0.9rem;
-opacity:0.55;
+opacity:0.5;
 }
 
 /* ===== MOBILE ===== */
@@ -251,31 +237,28 @@ gap:18px;
 }
 
 .nav-links a{
-font-size:0.75rem;
+font-size:0.7rem;
 }
 
 .hero{
-padding:190px 7% 110px;
+padding:180px 7% 100px;
 }
 
 .content-section{
 padding:90px 7%;
 }
 
-.quote-block{
-padding:45px 26px;
-}
-
-.quote-block p{
-font-size:2rem;
-}
-
-.author-section{
-padding:100px 7%;
+.book-quote{
+padding:40px 28px;
+margin:70px 0;
 }
 
 .cta-section{
-padding:120px 7%;
+padding:0 7% 100px;
+}
+
+.cta-box{
+padding:50px 28px;
 }
 
 }
@@ -296,7 +279,7 @@ The Room Without Windows
 <nav class="nav-links">
 <a href="index.html">Home</a>
 <a href="chapters.html">Chapters</a>
-<a href="epilogue.html">Epilogue</a>
+<a href="contact.html">Contact</a>
 </nav>
 
 </header>
@@ -310,125 +293,91 @@ About the Book
 </div>
 
 <h1>
-A Story About<br>Silence and Presence
+The Room Without Windows
 </h1>
 
 <p>
-The Room Without Windows is a contemplative literary parable exploring prayer beyond performance, faith beyond certainty, and the hidden interior life that continues quietly beneath visible religion.
+A contemplative parable about prayer, silence, hiddenness, and the slow reshaping of faith beneath visibility and performance.
 </p>
 
 </section>
 
 <div class="divider"></div>
 
-<!-- ===== SYNOPSIS ===== -->
+<!-- ===== CONTENT ===== -->
 
 <section class="content-section">
 
 <div class="content-inner">
 
-<h2 class="content-title">
-Synopsis
+<h2>
+A story for those who have prayed loudly and quietly
 </h2>
-
-<p class="content-text">
-In a city where prayer fills the streets and certainty is spoken aloud with confidence, Elior begins sensing a quiet fracture within himself. Though surrounded by devotion, repetition, and visible faithfulness, he discovers an unsettling distance between the words he speaks and the truth he carries.
-</p>
-
-<p class="content-text">
-What begins as discomfort gradually leads him toward silence, stillness, and a hidden room untouched by performance. There, prayer slowly changes from something practiced into something endured, less about being heard and more about remaining present without reassurance.
-</p>
-
-<p class="content-text">
-As Elior’s understanding deepens, faith becomes quieter, less visible, and increasingly difficult to explain. Prayer no longer resolves uncertainty or rewards effort. Instead, it reshapes him through hiddenness, honesty, restraint, and the long endurance of presence without recognition.
-</p>
-
-<p class="content-text">
-The Room Without Windows invites readers into a slower kind of spiritual reflection, one where silence is not emptiness, hiddenness is not abandonment, and faith continues even when nothing dramatic remains.
-</p>
-
-<div class="quote-block">
 
 <p>
-“The room had been a teacher,<br>
-not a destination.”
+The Room Without Windows follows Elior, a man living in a city where faith is spoken constantly and confidently. Prayer fills the streets, public spaces, and daily rhythms of life. Words become proof of certainty. Silence becomes unfamiliar.
+</p>
+
+<p>
+As Elior grows increasingly unsettled by the distance between performance and honesty, he discovers a small room hidden within his home, a room without windows, without spectacle, and without demand.
+</p>
+
+<p>
+Inside that silence, prayer slowly changes.
+</p>
+
+<p>
+What begins as discomfort becomes unlearning. What begins as interruption becomes attention. Elior’s faith moves away from certainty, repetition, and visible devotion toward something quieter, more hidden, and more enduring.
+</p>
+
+<div class="book-quote">
+
+<p>
+“The door is open.<br>
+It always has been.”
 </p>
 
 </div>
 
-</div>
-
-</section>
-
-<div class="divider"></div>
-
-<!-- ===== THEMATIC NOTE ===== -->
-
-<section class="content-section">
-
-<div class="content-inner">
-
-<h2 class="content-title">
-Themes Explored
-</h2>
-
-<p class="content-text">
-This novel explores the relationship between silence and speech, public faith and private transformation, repetition and honesty, hiddenness and endurance. Rather than offering answers or instruction, the story remains attentive to the tension between outward devotion and inward sincerity.
+<p>
+This book is written for readers who have wrestled with unanswered prayer, religious performance, exhaustion, hiddenness, and the longing to remain faithful without needing to prove anything.
 </p>
 
-<p class="content-text">
-The book asks difficult questions gently:
-What remains when certainty fades?
-What happens when prayer no longer performs?
-Can faith endure without visible reward?
-What does presence look like when God remains hidden?
+<p>
+Rather than offering formulas or conclusions, the story invites stillness, reflection, and presence. The chapters unfold slowly and intentionally, allowing silence itself to become part of the experience.
 </p>
 
-<p class="content-text">
-Throughout the novel, quiet becomes not escape from the world, but preparation to remain within it honestly.
+<p>
+The Room Without Windows is not a book about escaping the world.
 </p>
 
-</div>
-
-</section>
-
-<div class="divider"></div>
-
-<!-- ===== AUTHOR ===== -->
-
-<section class="author-section">
-
-<div class="author-inner">
-
-<h2 class="author-title">
-About the Author
-</h2>
-
-<p class="author-text">
-Bradley Hobbs writes contemplative spiritual literature centered on grace, hiddenness, healing, prayer, and the interior life of faith. His work explores the spaces between certainty and silence with honesty, restraint, and compassion.
+<p>
+It is about learning how to remain within it honestly.
 </p>
 
 </div>
 
 </section>
-
-<div class="divider"></div>
 
 <!-- ===== CTA ===== -->
 
 <section class="cta-section">
 
-<h2>
+<div class="cta-box">
+
+<h3>
 Begin Reading
-</h2>
+</h3>
 
 <p>
-Twenty five chapters exploring the movement from noise into silence, from performance into presence, and from certainty into enduring faithfulness.
+Enter the quiet unfolding of Elior’s journey through noise, silence, hiddenness, and long faithfulness.
 </p>
 
-<a href="chapters.html">
-Open the Chapters
+<a href="chapters.html" class="cta-button">
+Open Chapters
 </a>
+
+</div>
 
 </section>
 
