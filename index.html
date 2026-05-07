@@ -222,19 +222,15 @@ padding:40px;
 border:1px solid rgba(0,0,0,0.08);
 background:rgba(255,255,255,0.42);
 backdrop-filter:blur(10px);
-transition:transform 0.35s ease;
+transition:all 0.35s ease;
+text-decoration:none;
+color:#1f1f1f;
+display:block;
 }
 
 .part-card:hover{
 transform:translateY(-6px);
-}
-
-.part-label{
-font-size:0.75rem;
-letter-spacing:4px;
-text-transform:uppercase;
-opacity:0.45;
-margin-bottom:18px;
+background:#ffffff;
 }
 
 .part-card h3{
@@ -247,6 +243,10 @@ margin-bottom:18px;
 .part-card p{
 font-size:0.98rem;
 color:#444;
+}
+
+.part-card:hover p{
+color:#1f1f1f;
 }
 
 /* ===== CTA ===== */
@@ -444,7 +444,7 @@ It always has been.”
 
 <div class="parts-grid">
 
-<div class="part-card">
+<a href="part-one.html" class="part-card">
 
 <div class="part-label">
 Part One
@@ -458,9 +458,9 @@ The Noise
 A city filled with confident prayer begins revealing the quiet distance beneath performance and certainty.
 </p>
 
-</div>
+</a>
 
-<div class="part-card">
+<a href="part-two.html" class="part-card">
 
 <div class="part-label">
 Part Two
@@ -474,9 +474,9 @@ The Door
 A hidden room without windows introduces Elior to silence that asks for nothing and explains nothing.
 </p>
 
-</div>
+</a>
 
-<div class="part-card">
+<a href="part-three.html" class="part-card">
 
 <div class="part-label">
 Part Three
@@ -490,9 +490,9 @@ The Unlearning
 Prayer sheds repetition, defense, and performance until only honesty remains.
 </p>
 
-</div>
+</a>
 
-<div class="part-card">
+<a href="part-four.html" class="part-card">
 
 <div class="part-label">
 Part Four
@@ -506,9 +506,9 @@ The Quiet Transformation
 The silence follows Elior beyond the room and reshapes how he speaks, listens, and remains.
 </p>
 
-</div>
+</a>
 
-<div class="part-card">
+<a href="part-five.html" class="part-card">
 
 <div class="part-label">
 Part Five
@@ -522,7 +522,7 @@ The Return
 Elior returns to the city carrying a faith no longer dependent on visibility, certainty, or control.
 </p>
 
-</div>
+</a>
 
 </div>
 
