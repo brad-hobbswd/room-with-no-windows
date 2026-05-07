@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chapter Twenty Four | The Hidden God</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== RESET ===== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* ===== BODY ===== */
+
+body{
+background:#f6f2eb;
+color:#1f1f1f;
+font-family:'Inter',sans-serif;
+line-height:2;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+linear-gradient(rgba(246,242,235,0.97), rgba(246,242,235,0.97)),
+url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+opacity:0.06;
+pointer-events:none;
+z-index:-1;
+}
+
+/* ===== HEADER ===== */
+
+.site-header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:24px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+backdrop-filter:blur(12px);
+background:rgba(246,242,235,0.45);
+border-bottom:1px solid rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:1.5rem;
+}
+
+.nav-links{
+display:flex;
+gap:32px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#1f1f1f;
+font-size:0.88rem;
+letter-spacing:1px;
+text-transform:uppercase;
+transition:opacity 0.3s ease;
+}
+
+.nav-links a:hover{
+opacity:0.55;
+}
+
+/* ===== HERO ===== */
+
+.chapter-hero{
+padding:220px 8% 120px;
+text-align:center;
+}
+
+.chapter-number{
+font-size:0.92rem;
+letter-spacing:4px;
+text-transform:uppercase;
+opacity:0.6;
+margin-bottom:24px;
+}
+
+.chapter-hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(3.5rem,8vw,6rem);
+font-weight:400;
+line-height:1;
+margin-bottom:28px;
+}
+
+.chapter-intro{
+max-width:760px;
+margin:0 auto;
+font-size:1.05rem;
+color:#444;
+}
+
+/* ===== DIVIDER ===== */
+
+.divider{
+width:1px;
+height:100px;
+background:rgba(0,0,0,0.12);
+margin:0 auto;
+}
+
+/* ===== CHAPTER CONTENT ===== */
+
+.chapter-content{
+padding:120px 8%;
+}
+
+.chapter-inner{
+max-width:760px;
+margin:0 auto;
+}
+
+.chapter-inner p{
+font-size:1.08rem;
+color:#333;
+margin-bottom:34px;
+}
+
+/* ===== DROP CAP ===== */
+
+.chapter-inner p:first-of-type::first-letter{
+font-family:'Cormorant Garamond',serif;
+font-size:5.5rem;
+float:left;
+line-height:0.8;
+padding-right:12px;
+padding-top:10px;
+font-weight:500;
+}
+
+/* ===== NAVIGATION ===== */
+
+.chapter-navigation{
+padding:120px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:30px;
+max-width:1100px;
+margin:0 auto;
+}
+
+.chapter-navigation a{
+text-decoration:none;
+color:#1f1f1f;
+border:1px solid rgba(0,0,0,0.12);
+padding:18px 28px;
+letter-spacing:1px;
+text-transform:uppercase;
+font-size:0.82rem;
+transition:all 0.35s ease;
+background:rgba(255,255,255,0.45);
+backdrop-filter:blur(8px);
+}
+
+.chapter-navigation a:hover{
+background:#1f1f1f;
+color:#f6f2eb;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+padding:40px 8% 60px;
+text-align:center;
+font-size:0.9rem;
+opacity:0.55;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+.site-header{
+padding:20px 6%;
+}
+
+.nav-links{
+gap:18px;
+}
+
+.nav-links a{
+font-size:0.72rem;
+}
+
+.chapter-hero{
+padding:190px 7% 100px;
+}
+
+.chapter-content{
+padding:90px 7%;
+}
+
+.chapter-inner p{
+font-size:1rem;
+}
+
+.chapter-navigation{
+padding:90px 7%;
+flex-direction:column;
+}
+
+.chapter-navigation a{
+width:100%;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+
+<header class="site-header">
+
+<div class="logo">
+The Room Without Windows
+</div>
+
+<nav class="nav-links">
+<a href="../index.html">Home</a>
+<a href="../chapters.html">Chapters</a>
+<a href="../about.html">About</a>
+</nav>
+
+</header>
+
+<!-- ===== HERO ===== -->
+
+<section class="chapter-hero">
+
+<div class="chapter-number">
+Chapter Twenty Four
+</div>
+
+<h1>
+The Hidden<br>God
+</h1>
+
+<p class="chapter-intro">
+Elior confronts the unsettling reality of a God who cannot be controlled, explained, or possessed, yet remains faithfully present.
+</p>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== CHAPTER CONTENT ===== -->
+
+<section class="chapter-content">
+
+<div class="chapter-inner">
+
+<p>
+Elior had once believed that God concealed himself as a test.
+</p>
+
+<p>
+The idea had offered a reassuring symmetry. Seeking would be rewarded. Endurance would resolve into revelation. Faith would operate as a sustained invitation, repeated faithfully until it received a clear answer.
+</p>
+
+<p>
+Now that structure no longer held.
+</p>
+
+<p>
+God had not withdrawn abruptly. There had been no moment of disappearance. The hiddenness had emerged slowly, almost unnoticed, as language lost its grip and familiarity thinned into quiet.
+</p>
+
+<p>
+What unsettled Elior most was not the absence of God’s voice, but the absence of response to that absence.
+</p>
+
+<p>
+Earlier in his life, distance had produced anxiety. Silence had compelled effort. Doubt had driven him outward in search of explanation or correction.
+</p>
+
+<p>
+Now, silence existed without urgency.
+</p>
+
+<p>
+God seemed neither nearer nor farther than before.
+</p>
+
+<p>
+This disturbed him more than uncertainty ever had.
+</p>
+
+<p>
+At the workshop, prayers continued. People still spoke of guidance and confirmation, of senses sharpened through devotion, of clarity received in moments of surrender. Elior did not argue with them.
+</p>
+
+<p>
+Their accounts did not feel false.
+</p>
+
+<p>
+They felt incomplete, belonging to a stage of faith he no longer inhabited.
+</p>
+
+<p>
+For a time, he wondered whether something within him had dulled. Perhaps attentiveness had eroded without effort to replace it. Perhaps restraint had become indistinguishable from fatigue.
+</p>
+
+<p>
+He tested himself gently.
+</p>
+
+<p>
+In the evenings, he sat quietly and waited, not for revelation, but for resistance. None came. The space remained still, neither expectant nor empty.
+</p>
+
+<p>
+God did not arrive.
+</p>
+
+<p>
+Neither did despair.
+</p>
+
+<p>
+The absence did not feel punitive. It provoked no longing, no resentment. It felt stable, like ground discovered not to shift when weight was removed.
+</p>
+
+<p>
+This forced Elior to reconsider what he meant by the presence of God.
+</p>
+
+<p>
+He had once understood presence as experience, as awareness sharpened through obedience or intimacy. A felt assurance. A recognizable closeness.
+</p>
+
+<p>
+But what if presence did not require experience.
+</p>
+
+<p>
+What if God was hidden not to obscure himself, but to remain faithful to those who no longer needed him to be visible.
+</p>
+
+<p>
+The thought did not resolve itself.
+</p>
+
+<p>
+It stayed.
+</p>
+
+<p>
+In conversation, Elior noticed how often people spoke of God as though visibility were proof. As though clarity were the reward for proper posture. They equated openness with sincerity and understanding with devotion.
+</p>
+
+<p>
+Elior listened.
+</p>
+
+<p>
+He had spoken this way once.
+</p>
+
+<p>
+Now he suspected that God, if present, might be most faithful where he could not be claimed.
+</p>
+
+<p>
+Hiddenness, he began to see, protected God from use.
+</p>
+
+<p>
+A visible God could be enlisted, explained, invoked for outcomes. Even resisted, which still granted control.
+</p>
+
+<p>
+A hidden God could not be managed.
+</p>
+
+<p>
+The realization did not comfort him.
+</p>
+
+<p>
+It stripped away a final defense. No longer could he appeal to understanding, experience, or even patient waiting.
+</p>
+
+<p>
+He stood with nothing to leverage.
+</p>
+
+<p>
+At night, Elior walked through the city and noticed how ordinary its rhythms remained. Laughter, argument, ambition, routine. God was not apparent in any of it.
+</p>
+
+<p>
+Yet God was not contradicted either.
+</p>
+
+<p>
+The world continued intact, without interruption.
+</p>
+
+<p>
+The thought unsettled him.
+</p>
+
+<p>
+If God did not intervene, then faith no longer functioned as protection. Prayer no longer altered outcomes. Devotion no longer secured meaning.
+</p>
+
+<p>
+What remained when God refused explanation.
+</p>
+
+<p>
+Only relationship.
+</p>
+
+<p>
+Not the relationship of intimacy or dialogue, but the endurance of trust without response.
+</p>
+
+<p>
+The God who hides does not disappear.
+</p>
+
+<p>
+He remains where claims fall silent.
+</p>
+
+<p>
+Elior realized that much of his earlier faith had mistaken clarity for closeness. He had assumed that understanding God meant standing nearer to him.
+</p>
+
+<p>
+Now he wondered whether the opposite might be true.
+</p>
+
+<p>
+Perhaps nearness felt like nothing at all.
+</p>
+
+<p>
+Perhaps God’s hiddenness was not distance, but proximity too complete to perceive.
+</p>
+
+<p>
+This unsettled him deeply.
+</p>
+
+<p>
+If God could be present without being known, then faith did not consist in comprehension.
+</p>
+
+<p>
+It consisted in remaining.
+</p>
+
+<p>
+Remaining without reassurance.
+</p>
+
+<p>
+Remaining without explanation.
+</p>
+
+<p>
+Remaining without converting silence into problem.
+</p>
+
+<p>
+Elior recognized how radical this felt compared to the faith he had inherited. Everything in his formation had aimed toward articulation, experience, confirmation.
+</p>
+
+<p>
+Now God had offered none of it.
+</p>
+
+<p>
+And yet, something endured.
+</p>
+
+<p>
+Not conviction.
+</p>
+
+<p>
+Not certainty.
+</p>
+
+<p>
+Not narrative.
+</p>
+
+<p>
+Only a fidelity without display.
+</p>
+
+<p>
+One night, Elior found himself speaking aloud without intending to pray.
+</p>
+
+<p>
+“I am still here,” he said.
+</p>
+
+<p>
+He did not know to whom the words were directed.
+</p>
+
+<p>
+They did not rise. They settled.
+</p>
+
+<p>
+He understood then that faith in a hidden God did not depend on receiving anything in return.
+</p>
+
+<p>
+It survived by refusing to interpret silence as abandonment.
+</p>
+
+<p>
+This did not feel heroic.
+</p>
+
+<p>
+It felt ordinary.
+</p>
+
+<p>
+The kind of ordinariness that does not announce itself.
+</p>
+
+<p>
+The God who hid did not ask Elior to understand.
+</p>
+
+<p>
+He asked him to remain trustworthy when understanding failed.
+</p>
+
+<p>
+Elior slept that night without consolation and without fear.
+</p>
+
+<p>
+The hidden God had not revealed himself.
+</p>
+
+<p>
+He had withdrawn nothing.
+</p>
+
+<p>
+He was simply not available for possession.
+</p>
+
+<p>
+And in that refusal, Elior sensed something more faithful than clarity had ever been.
+</p>
+
+<p>
+A faith no longer shaped by sight.
+</p>
+
+<p>
+A God no longer spoken for.
+</p>
+
+<p>
+Quietly intact.
+</p>
+
+<p>
+Unclaimed.
+</p>
+
+<p>
+Still.
+</p>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== NAVIGATION ===== -->
+
+<section class="chapter-navigation">
+
+<a href="chapter23.html">
+← Previous Chapter
+</a>
+
+<a href="chapter25.html">
+Next Chapter →
+</a>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+© Bradley Hobbs • The Room Without Windows
+</footer>
+
+</body>
+</html>
