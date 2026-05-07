@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chapter Twenty One | The City Unchanged</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== RESET ===== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* ===== BODY ===== */
+
+body{
+background:#f6f2eb;
+color:#1f1f1f;
+font-family:'Inter',sans-serif;
+line-height:2;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+linear-gradient(rgba(246,242,235,0.97), rgba(246,242,235,0.97)),
+url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+opacity:0.06;
+pointer-events:none;
+z-index:-1;
+}
+
+/* ===== HEADER ===== */
+
+.site-header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:24px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+backdrop-filter:blur(12px);
+background:rgba(246,242,235,0.45);
+border-bottom:1px solid rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:1.5rem;
+}
+
+.nav-links{
+display:flex;
+gap:32px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#1f1f1f;
+font-size:0.88rem;
+letter-spacing:1px;
+text-transform:uppercase;
+transition:opacity 0.3s ease;
+}
+
+.nav-links a:hover{
+opacity:0.55;
+}
+
+/* ===== HERO ===== */
+
+.chapter-hero{
+padding:220px 8% 120px;
+text-align:center;
+}
+
+.chapter-number{
+font-size:0.92rem;
+letter-spacing:4px;
+text-transform:uppercase;
+opacity:0.6;
+margin-bottom:24px;
+}
+
+.chapter-hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(3.5rem,8vw,6rem);
+font-weight:400;
+line-height:1;
+margin-bottom:28px;
+}
+
+.chapter-intro{
+max-width:760px;
+margin:0 auto;
+font-size:1.05rem;
+color:#444;
+}
+
+/* ===== DIVIDER ===== */
+
+.divider{
+width:1px;
+height:100px;
+background:rgba(0,0,0,0.12);
+margin:0 auto;
+}
+
+/* ===== CHAPTER CONTENT ===== */
+
+.chapter-content{
+padding:120px 8%;
+}
+
+.chapter-inner{
+max-width:760px;
+margin:0 auto;
+}
+
+.chapter-inner p{
+font-size:1.08rem;
+color:#333;
+margin-bottom:34px;
+}
+
+/* ===== DROP CAP ===== */
+
+.chapter-inner p:first-of-type::first-letter{
+font-family:'Cormorant Garamond',serif;
+font-size:5.5rem;
+float:left;
+line-height:0.8;
+padding-right:12px;
+padding-top:10px;
+font-weight:500;
+}
+
+/* ===== NAVIGATION ===== */
+
+.chapter-navigation{
+padding:120px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:30px;
+max-width:1100px;
+margin:0 auto;
+}
+
+.chapter-navigation a{
+text-decoration:none;
+color:#1f1f1f;
+border:1px solid rgba(0,0,0,0.12);
+padding:18px 28px;
+letter-spacing:1px;
+text-transform:uppercase;
+font-size:0.82rem;
+transition:all 0.35s ease;
+background:rgba(255,255,255,0.45);
+backdrop-filter:blur(8px);
+}
+
+.chapter-navigation a:hover{
+background:#1f1f1f;
+color:#f6f2eb;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+padding:40px 8% 60px;
+text-align:center;
+font-size:0.9rem;
+opacity:0.55;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+.site-header{
+padding:20px 6%;
+}
+
+.nav-links{
+gap:18px;
+}
+
+.nav-links a{
+font-size:0.72rem;
+}
+
+.chapter-hero{
+padding:190px 7% 100px;
+}
+
+.chapter-content{
+padding:90px 7%;
+}
+
+.chapter-inner p{
+font-size:1rem;
+}
+
+.chapter-navigation{
+padding:90px 7%;
+flex-direction:column;
+}
+
+.chapter-navigation a{
+width:100%;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+
+<header class="site-header">
+
+<div class="logo">
+The Room Without Windows
+</div>
+
+<nav class="nav-links">
+<a href="../index.html">Home</a>
+<a href="../chapters.html">Chapters</a>
+<a href="../about.html">About</a>
+</nav>
+
+</header>
+
+<!-- ===== HERO ===== -->
+
+<section class="chapter-hero">
+
+<div class="chapter-number">
+Chapter Twenty One
+</div>
+
+<h1>
+The City<br>Unchanged
+</h1>
+
+<p class="chapter-intro">
+Elior realizes that inward transformation does not always alter the world around him, and faithfulness must continue without recognition or impact.
+</p>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== CHAPTER CONTENT ===== -->
+
+<section class="chapter-content">
+
+<div class="chapter-inner">
+
+<p>
+The city did not notice.
+</p>
+
+<p>
+The understanding came to Elior slowly, not as disappointment, but as fact. Days passed, then weeks, and nothing in the life of the streets shifted to acknowledge what had taken shape within him. Voices continued to rise at familiar hours. People gathered where they always had. Faith remained audible and patterned, confident in its expression.
+</p>
+
+<p>
+The city was unchanged.
+</p>
+
+<p>
+Elior moved through it quietly, neither concealed nor declared. The stillness he carried did not ripple outward. It invited neither imitation nor resistance. It remained contained, not through effort, but by its nature.
+</p>
+
+<p>
+This unsettled him more than opposition would have.
+</p>
+
+<p>
+If his change had drawn attention, he might have explained it. If it had provoked conflict, he could have defended it. Indifference offered no orientation. There was nothing to press against.
+</p>
+
+<p>
+One morning, he paused in the square where public prayers rose openly. A familiar voice spoke with practiced certainty, shaping language that had steadied many for years. The crowd listened, reassured by continuity.
+</p>
+
+<p>
+Elior listened as well.
+</p>
+
+<p>
+He felt no envy and no correction. The prayer did not contradict what he carried. It existed alongside it. Faith, he saw, did not move as a single body.
+</p>
+
+<p>
+When the prayer ended, the city resumed its pace. Commerce continued. Conversation returned with ease. Elior began walking again.
+</p>
+
+<p>
+Some part of him expected resistance.
+</p>
+
+<p>
+Nothing came.
+</p>
+
+<p>
+As the days unfolded, he recognized how much the earlier stages of his change had depended on contrast. Silence had mattered because of noise. Withdrawal had mattered because of visibility. The room without windows had defined itself against the city’s openness.
+</p>
+
+<p>
+Now, the boundary had softened.
+</p>
+
+<p>
+The silence no longer required contrast to exist. It did not diminish when surrounded by sound. At times, Elior forgot it was present until something drew it forward again. A pause. A restraint. A refusal to hurry.
+</p>
+
+<p>
+He wondered briefly whether this meant the city had prevailed.
+</p>
+
+<p>
+The thought disturbed him, then passed. He had never intended opposition. Still, some part of him had assumed that inward transformation would require visible cost, something legible to others.
+</p>
+
+<p>
+Instead, the cost arrived quietly.
+</p>
+
+<p>
+He noticed it most often in conversation.
+</p>
+
+<p>
+When discussions turned toward faith, Elior listened more than he spoke. When asked directly, he answered truthfully, but without extension. He avoided shaping his words into declarations. The city preferred declarations.
+</p>
+
+<p>
+Some interpreted this as uncertainty. Others as wisdom. Neither reading felt accurate.
+</p>
+
+<p>
+He was neither certain nor wise.
+</p>
+
+<p>
+He was attentive.
+</p>
+
+<p>
+One evening, walking home, Elior passed a gathering clustered around a man whose prayer rose urgently, pressing forward with conviction and need. Hope and relief were visible on the faces of those listening.
+</p>
+
+<p>
+Elior did not stop.
+</p>
+
+<p>
+The realization surprised him.
+</p>
+
+<p>
+There had been a time when such prayer would have drawn him immediately, either to compare himself or to be compared. Now it passed beside him like a strong current he acknowledged without entering.
+</p>
+
+<p>
+He did not judge it.
+</p>
+
+<p>
+He no longer needed it to confirm or correct his own.
+</p>
+
+<p>
+The recognition unsettled him again.
+</p>
+
+<p>
+If prayer could exist without demand, what role did community serve? What purpose did shared rhythm hold when inward formation no longer depended upon it?
+</p>
+
+<p>
+The questions arose quietly and receded without answer.
+</p>
+
+<p>
+He was learning that some questions did not require resolution in order to be lived.
+</p>
+
+<p>
+At the workshop, nothing distinguished him. He worked, spoke when necessary, listened carefully. His patience was sometimes mistaken for indifference. His restraint for lack of conviction.
+</p>
+
+<p>
+He allowed the misunderstandings to remain.
+</p>
+
+<p>
+Explanation would have required language he no longer trusted.
+</p>
+
+<p>
+The city remained unchanged because it had no need to change for his sake.
+</p>
+
+<p>
+The understanding steadied him.
+</p>
+
+<p>
+Faith, he now saw more clearly, did not move outward as force. It did not reorganize the world to justify those who practiced it quietly. The city continued as it always had, accommodating devotion and distraction without distinction.
+</p>
+
+<p>
+His task was not to alter it.
+</p>
+
+<p>
+It was to remain faithful within it.
+</p>
+
+<p>
+One night, standing at his window, Elior listened as prayers rose faintly from several directions. The sounds layered softly into the air, forming the familiar hum of belief.
+</p>
+
+<p>
+He did not enter the room without windows.
+</p>
+
+<p>
+He did not need to.
+</p>
+
+<p>
+The silence remained present, neither diminished nor threatened. The city’s sound did not compete with it.
+</p>
+
+<p>
+The city continued offering voice.
+</p>
+
+<p>
+Elior, changed, continued offering presence.
+</p>
+
+<p>
+There was no reconciliation between them.
+</p>
+
+<p>
+There did not need to be.
+</p>
+
+<p>
+The work ahead, he understood, would be lived quietly, without recognition, without correction, and without expectation that the world acknowledge what prayer had done.
+</p>
+
+<p>
+The city would remain itself.
+</p>
+
+<p>
+So would he.
+</p>
+
+<p>
+And whatever meaning emerged would continue unfolding where no one was watching.
+</p>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== NAVIGATION ===== -->
+
+<section class="chapter-navigation">
+
+<a href="chapter20.html">
+← Previous Chapter
+</a>
+
+<a href="chapter22.html">
+Next Chapter →
+</a>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+© Bradley Hobbs • The Room Without Windows
+</footer>
+
+</body>
+</html>
