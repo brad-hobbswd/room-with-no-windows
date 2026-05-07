@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>404 | The Room Without Windows</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== RESET ===== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* ===== BODY ===== */
+
+body{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:60px 8%;
+background:#f6f2eb;
+color:#1f1f1f;
+font-family:'Inter',sans-serif;
+overflow:hidden;
+position:relative;
+}
+
+/* ===== ATMOSPHERIC BACKGROUND ===== */
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+linear-gradient(rgba(246,242,235,0.95), rgba(246,242,235,0.97)),
+url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1800&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+opacity:0.07;
+z-index:-2;
+}
+
+body::after{
+content:"";
+position:fixed;
+inset:0;
+background:
+radial-gradient(circle at top left, rgba(255,255,255,0.4), transparent 40%),
+radial-gradient(circle at bottom right, rgba(0,0,0,0.05), transparent 50%);
+z-index:-1;
+}
+
+/* ===== CONTAINER ===== */
+
+.error-container{
+max-width:900px;
+text-align:center;
+animation:fadeUp 1.2s ease;
+}
+
+/* ===== ERROR CODE ===== */
+
+.error-code{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(7rem,16vw,14rem);
+font-weight:400;
+line-height:0.9;
+opacity:0.15;
+margin-bottom:30px;
+}
+
+/* ===== TITLE ===== */
+
+.error-container h1{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(3rem,7vw,5.5rem);
+font-weight:400;
+line-height:1;
+margin-bottom:28px;
+}
+
+/* ===== TEXT ===== */
+
+.error-container p{
+max-width:650px;
+margin:0 auto 40px;
+font-size:1.08rem;
+line-height:2;
+color:#444;
+}
+
+/* ===== QUOTE ===== */
+
+.quote{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(1.8rem,4vw,3rem);
+line-height:1.4;
+margin-bottom:50px;
+opacity:0.9;
+}
+
+/* ===== BUTTONS ===== */
+
+.button-group{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.button-group a{
+text-decoration:none;
+padding:18px 32px;
+font-size:0.82rem;
+letter-spacing:1px;
+text-transform:uppercase;
+transition:all 0.35s ease;
+}
+
+.primary-button{
+background:#1f1f1f;
+color:#f6f2eb;
+border:1px solid #1f1f1f;
+}
+
+.primary-button:hover{
+background:transparent;
+color:#1f1f1f;
+}
+
+.secondary-button{
+border:1px solid rgba(0,0,0,0.12);
+background:rgba(255,255,255,0.45);
+backdrop-filter:blur(8px);
+color:#1f1f1f;
+}
+
+.secondary-button:hover{
+background:#1f1f1f;
+color:#f6f2eb;
+}
+
+/* ===== ANIMATION ===== */
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+body{
+padding:40px 7%;
+}
+
+.error-container p{
+font-size:1rem;
+}
+
+.button-group{
+flex-direction:column;
+}
+
+.button-group a{
+width:100%;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="error-container">
+
+<div class="error-code">
+404
+</div>
+
+<h1>
+The Door You Opened<br>
+Was Not Here
+</h1>
+
+<p>
+The page you were looking for may have been moved, renamed, or perhaps never existed at all. Stillness remains, even here.
+</p>
+
+<div class="quote">
+“The door is open.<br>
+It always has been.”
+</div>
+
+<div class="button-group">
+
+<a href="index.html" class="primary-button">
+Return Home
+</a>
+
+<a href="chapters.html" class="secondary-button">
+Open Chapters
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
