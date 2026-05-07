@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chapter Seventeen | Public Faith, Private Roots</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== RESET ===== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* ===== BODY ===== */
+
+body{
+background:#f6f2eb;
+color:#1f1f1f;
+font-family:'Inter',sans-serif;
+line-height:2;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+linear-gradient(rgba(246,242,235,0.97), rgba(246,242,235,0.97)),
+url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+opacity:0.06;
+pointer-events:none;
+z-index:-1;
+}
+
+/* ===== HEADER ===== */
+
+.site-header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:24px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+backdrop-filter:blur(12px);
+background:rgba(246,242,235,0.45);
+border-bottom:1px solid rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:1.5rem;
+}
+
+.nav-links{
+display:flex;
+gap:32px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#1f1f1f;
+font-size:0.88rem;
+letter-spacing:1px;
+text-transform:uppercase;
+transition:opacity 0.3s ease;
+}
+
+.nav-links a:hover{
+opacity:0.55;
+}
+
+/* ===== HERO ===== */
+
+.chapter-hero{
+padding:220px 8% 120px;
+text-align:center;
+}
+
+.chapter-number{
+font-size:0.92rem;
+letter-spacing:4px;
+text-transform:uppercase;
+opacity:0.6;
+margin-bottom:24px;
+}
+
+.chapter-hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(3.5rem,8vw,6rem);
+font-weight:400;
+line-height:1;
+margin-bottom:28px;
+}
+
+.chapter-intro{
+max-width:760px;
+margin:0 auto;
+font-size:1.05rem;
+color:#444;
+}
+
+/* ===== DIVIDER ===== */
+
+.divider{
+width:1px;
+height:100px;
+background:rgba(0,0,0,0.12);
+margin:0 auto;
+}
+
+/* ===== CHAPTER CONTENT ===== */
+
+.chapter-content{
+padding:120px 8%;
+}
+
+.chapter-inner{
+max-width:760px;
+margin:0 auto;
+}
+
+.chapter-inner p{
+font-size:1.08rem;
+color:#333;
+margin-bottom:34px;
+}
+
+/* ===== DROP CAP ===== */
+
+.chapter-inner p:first-of-type::first-letter{
+font-family:'Cormorant Garamond',serif;
+font-size:5.5rem;
+float:left;
+line-height:0.8;
+padding-right:12px;
+padding-top:10px;
+font-weight:500;
+}
+
+/* ===== NAVIGATION ===== */
+
+.chapter-navigation{
+padding:120px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:30px;
+max-width:1100px;
+margin:0 auto;
+}
+
+.chapter-navigation a{
+text-decoration:none;
+color:#1f1f1f;
+border:1px solid rgba(0,0,0,0.12);
+padding:18px 28px;
+letter-spacing:1px;
+text-transform:uppercase;
+font-size:0.82rem;
+transition:all 0.35s ease;
+background:rgba(255,255,255,0.45);
+backdrop-filter:blur(8px);
+}
+
+.chapter-navigation a:hover{
+background:#1f1f1f;
+color:#f6f2eb;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+padding:40px 8% 60px;
+text-align:center;
+font-size:0.9rem;
+opacity:0.55;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+.site-header{
+padding:20px 6%;
+}
+
+.nav-links{
+gap:18px;
+}
+
+.nav-links a{
+font-size:0.72rem;
+}
+
+.chapter-hero{
+padding:190px 7% 100px;
+}
+
+.chapter-content{
+padding:90px 7%;
+}
+
+.chapter-inner p{
+font-size:1rem;
+}
+
+.chapter-navigation{
+padding:90px 7%;
+flex-direction:column;
+}
+
+.chapter-navigation a{
+width:100%;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+
+<header class="site-header">
+
+<div class="logo">
+The Room Without Windows
+</div>
+
+<nav class="nav-links">
+<a href="../index.html">Home</a>
+<a href="../chapters.html">Chapters</a>
+<a href="../about.html">About</a>
+</nav>
+
+</header>
+
+<!-- ===== HERO ===== -->
+
+<section class="chapter-hero">
+
+<div class="chapter-number">
+Chapter Seventeen
+</div>
+
+<h1>
+Public Faith,<br>Private Roots
+</h1>
+
+<p class="chapter-intro">
+Elior learns that the deepest transformations in faith often happen unseen, beneath the surface where no public affirmation can reach.
+</p>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== CHAPTER CONTENT ===== -->
+
+<section class="chapter-content">
+
+<div class="chapter-inner">
+
+<p>
+Elior began to sense that his faith had become difficult to place.
+</p>
+
+<p>
+It no longer declared itself as it once had. There were no obvious markers, no urgency to speak, no visible fervor that others could readily identify. And yet it remained with him unmistakably, shaping his posture in ways that could not be entirely concealed.
+</p>
+
+<p>
+The tension unsettled him.
+</p>
+
+<p>
+In the city, faith existed in the shared air. It was spoken, affirmed, repeated until it became externally verifiable. One could stand nearly anywhere and hear devotion rendered audible, arranged in trusted phrases. Faith had roots, certainly, but its fruit was expected to appear.
+</p>
+
+<p>
+Elior’s roots were buried now.
+</p>
+
+<p>
+In public spaces, he found himself standing quietly at the edges of gatherings where prayer formed communally. He did not withdraw. He listened. He joined when speech was required. Yet his participation no longer functioned as reassurance in the way others anticipated.
+</p>
+
+<p>
+When he prayed aloud, his prayers were brief. When invited to speak, he avoided elaboration. Not by restraint or intention, but because he felt no impulse to explain what had not become clear even to him.
+</p>
+
+<p>
+Some interpreted this as aloofness.
+</p>
+
+<p>
+Others sensed weight.
+</p>
+
+<p>
+Neither assessment felt accurate.
+</p>
+
+<p>
+Elior noticed how often people relied on shared language for reassurance. To pray together was to confirm alignment, to ensure belief still matched across voices. Consistency in speech signaled unity.
+</p>
+
+<p>
+His altered voice disrupted that consistency.
+</p>
+
+<p>
+Once, during a gathering long familiar to him, a man prayed at length, weaving assurance neatly into each phrase. The prayer moved steadily toward conviction and ended cleanly, leaving those listening settled. When Elior was asked afterward to add a word, his contribution felt like a pause inserted into a completed statement.
+</p>
+
+<p>
+No one corrected him.
+</p>
+
+<p>
+Yet afterward, he noticed small shifts. Brief glances. Conversations resumed with a cautious tone. His prayer had failed to echo what was expected.
+</p>
+
+<p>
+He left soon after, unsettled not by rejection, but by the realization that his faith now resisted synchronization.
+</p>
+
+<p>
+This disturbed him deeply.
+</p>
+
+<p>
+Prayer, as he had understood it, was meant to unite.
+</p>
+
+<p>
+Private prayer worked differently. It moved slowly and without concern for coherence. In the room without windows, change occurred without witness. Something had taken hold beneath the surface, resistant to explanation and uninterested in display.
+</p>
+
+<p>
+Roots, he realized, did not concern themselves with whether the visible tree pleased those who passed.
+</p>
+
+<p>
+They simply held.
+</p>
+
+<p>
+One afternoon, Elior spoke briefly with a neighbor about work. The conversation turned, as it often did, toward belief. The neighbor spoke confidently, describing faith as something solid and comprehensible. Elior listened attentively.
+</p>
+
+<p>
+When asked for agreement, he nodded gently without elaboration.
+</p>
+
+<p>
+The response was received as deference.
+</p>
+
+<p>
+Elior did not correct it.
+</p>
+
+<p>
+Correction would have required explanation, and explanation risked reducing what had taken root beyond language. Whatever prayer had begun within him no longer sought validation.
+</p>
+
+<p>
+The isolation was not chosen.
+</p>
+
+<p>
+It arrived as consequence.
+</p>
+
+<p>
+Private prayer reshaped public presence without consulting intention. The roots, working unseen, determined how the branches moved.
+</p>
+
+<p>
+At times, Elior missed clarity. There were days he longed for the ease of legibility, the comfort of speaking with confidence and settling others. He felt brief impulses to restore assurance through language.
+</p>
+
+<p>
+They passed quickly.
+</p>
+
+<p>
+They no longer matched what he carried.
+</p>
+
+<p>
+One evening, standing alone at the threshold of his home, Elior felt the weight of this quietly. His faith now belonged more to night than to day, more to silence than to speech. It accompanied him constantly while offering no sign.
+</p>
+
+<p>
+He did not resent it.
+</p>
+
+<p>
+He did not embrace it.
+</p>
+
+<p>
+It simply existed.
+</p>
+
+<p>
+Around him, the city continued praying openly. Voices rose and fell with confidence. Assurance circulated freely.
+</p>
+
+<p>
+Elior moved among them, rooted elsewhere.
+</p>
+
+<p>
+What would grow from that rooting remained uncertain.
+</p>
+
+<p>
+Public faith asked for fruit that could be named, counted, and recognized.
+</p>
+
+<p>
+Private roots worked without agreement.
+</p>
+
+<p>
+Elior carried both truths without resolution, aware that the tension between them would not dissolve.
+</p>
+
+<p>
+Not here.
+</p>
+
+<p>
+Not yet.
+</p>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== NAVIGATION ===== -->
+
+<section class="chapter-navigation">
+
+<a href="chapter16.html">
+← Previous Chapter
+</a>
+
+<a href="chapter18.html">
+Next Chapter →
+</a>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+© Bradley Hobbs • The Room Without Windows
+</footer>
+
+</body>
+</html>
