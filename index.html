@@ -20,6 +20,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+scroll-behavior:smooth;
 }
 
 /* ===== BODY ===== */
@@ -29,26 +30,37 @@ background:#f6f2eb;
 color:#1f1f1f;
 font-family:'Inter',sans-serif;
 overflow-x:hidden;
-line-height:1.9;
+line-height:1.8;
 }
 
-/* ===== BACKGROUND TEXTURE ===== */
+/* ===== ATMOSPHERIC BACKGROUND ===== */
 
 body::before{
 content:"";
 position:fixed;
 inset:0;
 background:
-linear-gradient(rgba(246,242,235,0.95), rgba(246,242,235,0.95)),
-url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1600&auto=format&fit=crop');
+linear-gradient(rgba(246,242,235,0.92), rgba(246,242,235,0.95)),
+url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1800&auto=format&fit=crop');
 background-size:cover;
 background-position:center;
-opacity:0.12;
-pointer-events:none;
+opacity:0.08;
 z-index:-2;
+pointer-events:none;
 }
 
-/* ===== NAVBAR ===== */
+body::after{
+content:"";
+position:fixed;
+inset:0;
+background:
+radial-gradient(circle at top left, rgba(255,255,255,0.4), transparent 40%),
+radial-gradient(circle at bottom right, rgba(0,0,0,0.05), transparent 50%);
+z-index:-1;
+pointer-events:none;
+}
+
+/* ===== HEADER ===== */
 
 .site-header{
 position:fixed;
@@ -59,8 +71,8 @@ padding:24px 7%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-backdrop-filter:blur(12px);
-background:rgba(246,242,235,0.45);
+backdrop-filter:blur(14px);
+background:rgba(246,242,235,0.42);
 border-bottom:1px solid rgba(0,0,0,0.05);
 z-index:1000;
 }
@@ -68,25 +80,26 @@ z-index:1000;
 .logo{
 font-family:'Cormorant Garamond',serif;
 font-size:1.6rem;
-letter-spacing:1px;
+font-weight:500;
+letter-spacing:0.5px;
 }
 
 .nav-links{
 display:flex;
-gap:32px;
+gap:34px;
 }
 
 .nav-links a{
 text-decoration:none;
 color:#1f1f1f;
-font-size:0.92rem;
+font-size:0.82rem;
 letter-spacing:1px;
 text-transform:uppercase;
 transition:opacity 0.3s ease;
 }
 
 .nav-links a:hover{
-opacity:0.55;
+opacity:0.5;
 }
 
 /* ===== HERO ===== */
@@ -96,164 +109,74 @@ min-height:100vh;
 display:flex;
 align-items:center;
 justify-content:center;
-padding:140px 8% 100px;
+padding:180px 8% 120px;
 text-align:center;
+position:relative;
 }
 
 .hero-content{
-max-width:900px;
-animation:fadeIn 1.8s ease;
+max-width:980px;
+animation:fadeUp 1.4s ease;
 }
 
 .hero-subtitle{
-font-size:0.95rem;
-letter-spacing:4px;
+font-size:0.82rem;
+letter-spacing:5px;
 text-transform:uppercase;
-margin-bottom:24px;
-opacity:0.7;
+opacity:0.55;
+margin-bottom:30px;
 }
 
 .hero h1{
 font-family:'Cormorant Garamond',serif;
-font-size:clamp(4rem,9vw,7.5rem);
+font-size:clamp(4.5rem,10vw,9rem);
 font-weight:400;
-line-height:0.95;
-margin-bottom:34px;
+line-height:0.92;
+margin-bottom:38px;
 }
 
 .hero-description{
-max-width:720px;
+max-width:760px;
 margin:0 auto 46px;
-font-size:1.05rem;
+font-size:1.1rem;
 color:#444;
 }
 
 .hero-buttons{
 display:flex;
 justify-content:center;
-gap:18px;
+gap:22px;
 flex-wrap:wrap;
 }
 
 .hero-buttons a{
-padding:16px 32px;
 text-decoration:none;
-border:1px solid rgba(0,0,0,0.15);
-color:#1f1f1f;
-font-size:0.92rem;
+padding:18px 32px;
+font-size:0.82rem;
 letter-spacing:1px;
 text-transform:uppercase;
 transition:all 0.35s ease;
-background:rgba(255,255,255,0.45);
-backdrop-filter:blur(8px);
 }
 
-.hero-buttons a:hover{
+.primary-button{
 background:#1f1f1f;
 color:#f6f2eb;
+border:1px solid #1f1f1f;
 }
 
-/* ===== DIVIDER ===== */
-
-.divider{
-width:1px;
-height:110px;
-background:rgba(0,0,0,0.15);
-margin:0 auto;
+.primary-button:hover{
+background:transparent;
+color:#1f1f1f;
 }
 
-/* ===== SECTIONS ===== */
-
-.section{
-padding:120px 8%;
-}
-
-.section-inner{
-max-width:900px;
-margin:0 auto;
-text-align:center;
-}
-
-.section-title{
-font-family:'Cormorant Garamond',serif;
-font-size:3rem;
-font-weight:400;
-margin-bottom:28px;
-}
-
-.section-text{
-font-size:1.05rem;
-color:#444;
-max-width:760px;
-margin:0 auto;
-}
-
-/* ===== THEMES ===== */
-
-.themes{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:28px;
-margin-top:70px;
-}
-
-.theme-card{
-padding:38px 28px;
-border:1px solid rgba(0,0,0,0.08);
+.secondary-button{
+border:1px solid rgba(0,0,0,0.12);
+color:#1f1f1f;
 background:rgba(255,255,255,0.4);
 backdrop-filter:blur(8px);
-transition:transform 0.4s ease;
 }
 
-.theme-card:hover{
-transform:translateY(-6px);
-}
-
-.theme-card h3{
-font-family:'Cormorant Garamond',serif;
-font-size:1.9rem;
-font-weight:400;
-margin-bottom:14px;
-}
-
-.theme-card p{
-font-size:0.98rem;
-color:#555;
-}
-
-/* ===== READING CTA ===== */
-
-.reading-section{
-text-align:center;
-padding:140px 8%;
-}
-
-.reading-section h2{
-font-family:'Cormorant Garamond',serif;
-font-size:4rem;
-font-weight:400;
-margin-bottom:24px;
-}
-
-.reading-section p{
-max-width:700px;
-margin:0 auto 42px;
-font-size:1.05rem;
-color:#444;
-}
-
-.reading-section a{
-display:inline-block;
-padding:18px 36px;
-border:1px solid rgba(0,0,0,0.15);
-text-decoration:none;
-color:#1f1f1f;
-letter-spacing:1px;
-text-transform:uppercase;
-transition:all 0.35s ease;
-}
-
-.reading-section a:hover{
+.secondary-button:hover{
 background:#1f1f1f;
 color:#f6f2eb;
 }
@@ -261,39 +184,142 @@ color:#f6f2eb;
 /* ===== QUOTE ===== */
 
 .quote-section{
-padding:180px 8% 140px;
-text-align:center;
+padding:140px 8%;
 }
 
-.quote{
+.quote-box{
+max-width:1000px;
+margin:0 auto;
+padding:90px 60px;
+text-align:center;
+border:1px solid rgba(0,0,0,0.08);
+background:rgba(255,255,255,0.45);
+backdrop-filter:blur(10px);
+}
+
+.quote-box p{
 font-family:'Cormorant Garamond',serif;
-font-size:clamp(2.5rem,6vw,5rem);
-font-weight:300;
-line-height:1.2;
+font-size:clamp(2.3rem,5vw,4.5rem);
+line-height:1.3;
+}
+
+/* ===== PARTS ===== */
+
+.parts-preview{
+padding:0 8% 140px;
+}
+
+.parts-grid{
+max-width:1200px;
+margin:0 auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:28px;
+}
+
+.part-card{
+padding:40px;
+border:1px solid rgba(0,0,0,0.08);
+background:rgba(255,255,255,0.42);
+backdrop-filter:blur(10px);
+transition:transform 0.35s ease;
+}
+
+.part-card:hover{
+transform:translateY(-6px);
+}
+
+.part-label{
+font-size:0.75rem;
+letter-spacing:4px;
+text-transform:uppercase;
+opacity:0.45;
+margin-bottom:18px;
+}
+
+.part-card h3{
+font-family:'Cormorant Garamond',serif;
+font-size:2.2rem;
+font-weight:400;
+margin-bottom:18px;
+}
+
+.part-card p{
+font-size:0.98rem;
+color:#444;
+}
+
+/* ===== CTA ===== */
+
+.final-cta{
+padding:0 8% 140px;
+}
+
+.cta-box{
 max-width:900px;
 margin:0 auto;
+padding:80px 50px;
+text-align:center;
+border:1px solid rgba(0,0,0,0.08);
+background:rgba(255,255,255,0.46);
+backdrop-filter:blur(10px);
+}
+
+.cta-box h2{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(3rem,6vw,5rem);
+font-weight:400;
+margin-bottom:26px;
+}
+
+.cta-box p{
+max-width:620px;
+margin:0 auto 40px;
+font-size:1.05rem;
+color:#444;
+}
+
+.cta-box a{
+display:inline-block;
+text-decoration:none;
+padding:18px 34px;
+background:#1f1f1f;
+color:#f6f2eb;
+font-size:0.82rem;
+letter-spacing:1px;
+text-transform:uppercase;
+transition:all 0.35s ease;
+border:1px solid #1f1f1f;
+}
+
+.cta-box a:hover{
+background:transparent;
+color:#1f1f1f;
 }
 
 /* ===== FOOTER ===== */
 
 footer{
-padding:40px 8% 60px;
+padding:70px 8%;
 text-align:center;
 font-size:0.9rem;
-opacity:0.55;
+opacity:0.5;
 }
 
 /* ===== ANIMATION ===== */
 
-@keyframes fadeIn{
+@keyframes fadeUp{
+
 from{
 opacity:0;
 transform:translateY(30px);
 }
+
 to{
 opacity:1;
 transform:translateY(0);
 }
+
 }
 
 /* ===== MOBILE ===== */
@@ -309,27 +335,35 @@ gap:18px;
 }
 
 .nav-links a{
-font-size:0.75rem;
+font-size:0.7rem;
 }
 
 .hero{
-padding-top:160px;
+padding:170px 7% 90px;
 }
 
 .hero-description{
 font-size:1rem;
 }
 
-.section{
-padding:90px 7%;
-}
-
-.reading-section{
-padding:110px 7%;
-}
-
 .quote-section{
-padding:130px 7% 100px;
+padding:100px 7%;
+}
+
+.quote-box{
+padding:60px 30px;
+}
+
+.parts-preview{
+padding:0 7% 100px;
+}
+
+.final-cta{
+padding:0 7% 100px;
+}
+
+.cta-box{
+padding:55px 28px;
 }
 
 }
@@ -348,9 +382,8 @@ The Room Without Windows
 </div>
 
 <nav class="nav-links">
-<a href="about.html">About</a>
 <a href="chapters.html">Chapters</a>
-<a href="epilogue.html">Epilogue</a>
+<a href="about.html">About</a>
 </nav>
 
 </header>
@@ -366,100 +399,27 @@ A Parable for Those Who Have Prayed Loudly and Quietly
 </div>
 
 <h1>
-The Room<br>Without Windows
+The Room<br>
+Without Windows
 </h1>
 
 <p class="hero-description">
-In a city where prayer is constant and certainty is admired, one man begins discovering a quieter way of remaining before God. Through silence, hiddenness, and the unraveling of performance, Elior enters a faith no longer sustained by visibility or reward.
+A contemplative literary journey through prayer, silence, hiddenness, and the quiet endurance of faith when certainty begins to fall away.
 </p>
 
 <div class="hero-buttons">
-<a href="chapters.html">Begin Reading</a>
-<a href="about.html">About the Book</a>
-</div>
 
-</div>
-
-</section>
-
-<div class="divider"></div>
-
-<!-- ===== ABOUT ===== -->
-
-<section class="section">
-
-<div class="section-inner">
-
-<h2 class="section-title">
-A Quiet Literary Journey
-</h2>
-
-<p class="section-text">
-The Room Without Windows explores prayer beyond performance, faith beyond certainty, and the hidden interior life that often remains unseen by the world. Through the slow transformation of Elior, the novel invites readers into stillness, restraint, honesty, and enduring presence.
-</p>
-
-</div>
-
-</section>
-
-<div class="divider"></div>
-
-<!-- ===== THEMES ===== -->
-
-<section class="section">
-
-<div class="section-inner">
-
-<h2 class="section-title">
-Themes Within the Silence
-</h2>
-
-<div class="themes">
-
-<div class="theme-card">
-<h3>Hiddenness</h3>
-<p>
-Faith that continues without recognition, explanation, or visible reward.
-</p>
-</div>
-
-<div class="theme-card">
-<h3>Stillness</h3>
-<p>
-The discovery that silence may reveal what words cannot sustain.
-</p>
-</div>
-
-<div class="theme-card">
-<h3>Presence</h3>
-<p>
-Prayer no longer treated as performance, but as remaining honestly before God.
-</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<div class="divider"></div>
-
-<!-- ===== BEGIN READING ===== -->
-
-<section class="reading-section">
-
-<h2>
-Begin the Journey
-</h2>
-
-<p>
-Twenty five contemplative chapters tracing the movement from noise into silence, from certainty into trust, and from performance into enduring faithfulness.
-</p>
-
-<a href="chapters.html">
-Open the Chapters
+<a href="chapters.html" class="primary-button">
+Begin Reading
 </a>
+
+<a href="about.html" class="secondary-button">
+About the Book
+</a>
+
+</div>
+
+</div>
 
 </section>
 
@@ -467,9 +427,125 @@ Open the Chapters
 
 <section class="quote-section">
 
-<div class="quote">
+<div class="quote-box">
+
+<p>
 “The door is open.<br>
 It always has been.”
+</p>
+
+</div>
+
+</section>
+
+<!-- ===== PARTS ===== -->
+
+<section class="parts-preview">
+
+<div class="parts-grid">
+
+<div class="part-card">
+
+<div class="part-label">
+Part One
+</div>
+
+<h3>
+The Noise
+</h3>
+
+<p>
+A city filled with confident prayer begins revealing the quiet distance beneath performance and certainty.
+</p>
+
+</div>
+
+<div class="part-card">
+
+<div class="part-label">
+Part Two
+</div>
+
+<h3>
+The Door
+</h3>
+
+<p>
+A hidden room without windows introduces Elior to silence that asks for nothing and explains nothing.
+</p>
+
+</div>
+
+<div class="part-card">
+
+<div class="part-label">
+Part Three
+</div>
+
+<h3>
+The Unlearning
+</h3>
+
+<p>
+Prayer sheds repetition, defense, and performance until only honesty remains.
+</p>
+
+</div>
+
+<div class="part-card">
+
+<div class="part-label">
+Part Four
+</div>
+
+<h3>
+The Quiet Transformation
+</h3>
+
+<p>
+The silence follows Elior beyond the room and reshapes how he speaks, listens, and remains.
+</p>
+
+</div>
+
+<div class="part-card">
+
+<div class="part-label">
+Part Five
+</div>
+
+<h3>
+The Return
+</h3>
+
+<p>
+Elior returns to the city carrying a faith no longer dependent on visibility, certainty, or control.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== CTA ===== -->
+
+<section class="final-cta">
+
+<div class="cta-box">
+
+<h2>
+Enter the Silence
+</h2>
+
+<p>
+Read the full literary parable through all five parts and the epilogue.
+</p>
+
+<a href="chapters.html">
+Open Chapters
+</a>
+
 </div>
 
 </section>
