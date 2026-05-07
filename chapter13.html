@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chapter Thirteen | Watching Others Pray</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== RESET ===== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* ===== BODY ===== */
+
+body{
+background:#f6f2eb;
+color:#1f1f1f;
+font-family:'Inter',sans-serif;
+line-height:2;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+linear-gradient(rgba(246,242,235,0.97), rgba(246,242,235,0.97)),
+url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+opacity:0.06;
+pointer-events:none;
+z-index:-1;
+}
+
+/* ===== HEADER ===== */
+
+.site-header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:24px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+backdrop-filter:blur(12px);
+background:rgba(246,242,235,0.45);
+border-bottom:1px solid rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:1.5rem;
+}
+
+.nav-links{
+display:flex;
+gap:32px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#1f1f1f;
+font-size:0.88rem;
+letter-spacing:1px;
+text-transform:uppercase;
+transition:opacity 0.3s ease;
+}
+
+.nav-links a:hover{
+opacity:0.55;
+}
+
+/* ===== HERO ===== */
+
+.chapter-hero{
+padding:220px 8% 120px;
+text-align:center;
+}
+
+.chapter-number{
+font-size:0.92rem;
+letter-spacing:4px;
+text-transform:uppercase;
+opacity:0.6;
+margin-bottom:24px;
+}
+
+.chapter-hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(3.5rem,8vw,6rem);
+font-weight:400;
+line-height:1;
+margin-bottom:28px;
+}
+
+.chapter-intro{
+max-width:760px;
+margin:0 auto;
+font-size:1.05rem;
+color:#444;
+}
+
+/* ===== DIVIDER ===== */
+
+.divider{
+width:1px;
+height:100px;
+background:rgba(0,0,0,0.12);
+margin:0 auto;
+}
+
+/* ===== CHAPTER CONTENT ===== */
+
+.chapter-content{
+padding:120px 8%;
+}
+
+.chapter-inner{
+max-width:760px;
+margin:0 auto;
+}
+
+.chapter-inner p{
+font-size:1.08rem;
+color:#333;
+margin-bottom:34px;
+}
+
+/* ===== DROP CAP ===== */
+
+.chapter-inner p:first-of-type::first-letter{
+font-family:'Cormorant Garamond',serif;
+font-size:5.5rem;
+float:left;
+line-height:0.8;
+padding-right:12px;
+padding-top:10px;
+font-weight:500;
+}
+
+/* ===== NAVIGATION ===== */
+
+.chapter-navigation{
+padding:120px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:30px;
+max-width:1100px;
+margin:0 auto;
+}
+
+.chapter-navigation a{
+text-decoration:none;
+color:#1f1f1f;
+border:1px solid rgba(0,0,0,0.12);
+padding:18px 28px;
+letter-spacing:1px;
+text-transform:uppercase;
+font-size:0.82rem;
+transition:all 0.35s ease;
+background:rgba(255,255,255,0.45);
+backdrop-filter:blur(8px);
+}
+
+.chapter-navigation a:hover{
+background:#1f1f1f;
+color:#f6f2eb;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+padding:40px 8% 60px;
+text-align:center;
+font-size:0.9rem;
+opacity:0.55;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+.site-header{
+padding:20px 6%;
+}
+
+.nav-links{
+gap:18px;
+}
+
+.nav-links a{
+font-size:0.72rem;
+}
+
+.chapter-hero{
+padding:190px 7% 100px;
+}
+
+.chapter-content{
+padding:90px 7%;
+}
+
+.chapter-inner p{
+font-size:1rem;
+}
+
+.chapter-navigation{
+padding:90px 7%;
+flex-direction:column;
+}
+
+.chapter-navigation a{
+width:100%;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+
+<header class="site-header">
+
+<div class="logo">
+The Room Without Windows
+</div>
+
+<nav class="nav-links">
+<a href="../index.html">Home</a>
+<a href="../chapters.html">Chapters</a>
+<a href="../about.html">About</a>
+</nav>
+
+</header>
+
+<!-- ===== HERO ===== -->
+
+<section class="chapter-hero">
+
+<div class="chapter-number">
+Chapter Thirteen
+</div>
+
+<h1>
+Watching<br>Others Pray
+</h1>
+
+<p class="chapter-intro">
+Elior learns that observing the prayers of others reveals both the beauty and the fear hidden within faith.
+</p>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== CHAPTER CONTENT ===== -->
+
+<section class="chapter-content">
+
+<div class="chapter-inner">
+
+<p>
+Elior found that watching others pray had grown more difficult than praying himself.
+</p>
+
+<p>
+The prayers themselves had not changed. The city continued as it always had, offering its words upward with confidence and familiarity. Voices rose at predictable hours from familiar places. People paused, nodded, and resumed their movement with the comfort of having been aligned again toward something larger than themselves.
+</p>
+
+<p>
+What had changed was Elior’s place among them.
+</p>
+
+<p>
+He no longer listened with the quiet envy he once carried, nor with the tentative admiration learned early. The certainty he had assumed belonged naturally to others now appeared constructed. Carefully, unconsciously, sincerely constructed, but constructed nonetheless.
+</p>
+
+<p>
+This recognition did not harden him.
+</p>
+
+<p>
+It left him exposed.
+</p>
+
+<p>
+Standing now among praying voices, he felt neither superior nor separate. He felt unarmored. To watch others pray without borrowing their structure or measuring himself against them required a form of attentiveness he had never practiced.
+</p>
+
+<p>
+One morning, he stopped in the square as a woman prayed beside the well.
+</p>
+
+<p>
+Her voice trembled at first. The prayer began unevenly, words arriving without rhythm. Elior noticed people nearby hesitate, uncertain whether to linger politely or move on. The prayer failed to gather momentum. It progressed cautiously, as though testing the air.
+</p>
+
+<p>
+He stayed.
+</p>
+
+<p>
+As she continued, her voice steadied, not into confidence, but into persistence. She did not smooth her uncertainty away. She allowed pauses to remain. The silence between phrases stretched longer than custom permitted.
+</p>
+
+<p>
+Elior felt something tighten in his chest.
+</p>
+
+<p>
+The prayer did not protect her.
+</p>
+
+<p>
+It exposed her.
+</p>
+
+<p>
+She stood audible and unguarded, allowing the crowd to witness what she had not resolved. When the prayer ended, there was no sense of closure. She bowed her head briefly and stepped away, uncertain whether she had completed something or simply stopped.
+</p>
+
+<p>
+Life resumed around her.
+</p>
+
+<p>
+Elior remained still.
+</p>
+
+<p>
+He understood how foreign such prayer felt to the city. It offered no reassurance. It steadied no one. It provided no armor, either for the one speaking or for those listening.
+</p>
+
+<p>
+He wondered how often he had avoided praying that way himself.
+</p>
+
+<p>
+Later that day, he watched another man pray, one of the well known voices, practiced and trusted. The prayer flowed smoothly, each phrase sealing neatly into the next. Listeners nodded in recognition. The words carried coherence and authority.
+</p>
+
+<p>
+Elior recognized its beauty.
+</p>
+
+<p>
+He also recognized its shelter.
+</p>
+
+<p>
+The man remained untouched by what he spoke. The prayer moved around him without consequence. It succeeded precisely because it revealed nothing unresolved.
+</p>
+
+<p>
+Elior felt neither resentment nor attraction.
+</p>
+
+<p>
+He felt attentive.
+</p>
+
+<p>
+The prayers, he began to see, mirrored the fears they were designed to contain. Some guarded against silence. Others against shame. Still others against the possibility that faith might not reward composure.
+</p>
+
+<p>
+Watching now required restraint.
+</p>
+
+<p>
+He resisted interpreting what he observed. He resisted fitting it into explanation. He allowed each prayer to remain what it was, an act of reaching, of holding, of defending, of offering.
+</p>
+
+<p>
+This attention unsettled him more than participation ever had.
+</p>
+
+<p>
+To observe without joining offered no reinforcement, no borrowed certainty, no dismissal of his own unease.
+</p>
+
+<p>
+One evening at dusk, Elior paused at the edge of a gathering as a familiar man prayed loudly. The words moved with confidence. People gathered instinctively around the sound.
+</p>
+
+<p>
+Elior stood apart, not out of judgment, but out of care.
+</p>
+
+<p>
+He watched how the crowd relaxed as the prayer unfolded. The rhythm soothed them. The certainty reassured them. The prayer did not ask them to listen so much as it absorbed their listening.
+</p>
+
+<p>
+When it ended, conversation resumed easily.
+</p>
+
+<p>
+Elior felt the subtle pull to step forward, to speak, to affirm.
+</p>
+
+<p>
+He did not.
+</p>
+
+<p>
+Walking home, he recognized something quietly. Watching others pray demanded that he relinquish comparison. Once he had measured his faith against theirs. Now he simply witnessed what faith looked like in another body, another voice.
+</p>
+
+<p>
+No prayer diminished his own.
+</p>
+
+<p>
+No prayer clarified his uncertainty.
+</p>
+
+<p>
+And yet, in observing how others approached God, confidently, carefully, defensively, vulnerably, his understanding deepened without instruction.
+</p>
+
+<p>
+Prayer, he sensed, had less to do with purity of form than with willingness to be seen in whatever form emerged.
+</p>
+
+<p>
+The thought did not soothe him.
+</p>
+
+<p>
+It complicated him.
+</p>
+
+<p>
+That night, alone in his home, Elior did not pray aloud. He remained attentive to the voices he had heard, to the range of faith they revealed.
+</p>
+
+<p>
+He understood then that prayer, when watched honestly, resisted imitation.
+</p>
+
+<p>
+It exposed one’s own fear too clearly.
+</p>
+
+<p>
+And so he returned to the room without windows, not to speak and not to observe, but simply to remain without comparison.
+</p>
+
+<p>
+The city continued praying around him.
+</p>
+
+<p>
+He continued watching, within and without.
+</p>
+
+<p>
+The meaning, if there was one, remained unfinished.
+</p>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== NAVIGATION ===== -->
+
+<section class="chapter-navigation">
+
+<a href="chapter12.html">
+← Previous Chapter
+</a>
+
+<a href="chapter14.html">
+Next Chapter →
+</a>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+© Bradley Hobbs • The Room Without Windows
+</footer>
+
+</body>
+</html>
