@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chapter Fifteen | Being Seen Without Witnesses</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== RESET ===== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* ===== BODY ===== */
+
+body{
+background:#f6f2eb;
+color:#1f1f1f;
+font-family:'Inter',sans-serif;
+line-height:2;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+linear-gradient(rgba(246,242,235,0.97), rgba(246,242,235,0.97)),
+url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+opacity:0.06;
+pointer-events:none;
+z-index:-1;
+}
+
+/* ===== HEADER ===== */
+
+.site-header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:24px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+backdrop-filter:blur(12px);
+background:rgba(246,242,235,0.45);
+border-bottom:1px solid rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:1.5rem;
+}
+
+.nav-links{
+display:flex;
+gap:32px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#1f1f1f;
+font-size:0.88rem;
+letter-spacing:1px;
+text-transform:uppercase;
+transition:opacity 0.3s ease;
+}
+
+.nav-links a:hover{
+opacity:0.55;
+}
+
+/* ===== HERO ===== */
+
+.chapter-hero{
+padding:220px 8% 120px;
+text-align:center;
+}
+
+.chapter-number{
+font-size:0.92rem;
+letter-spacing:4px;
+text-transform:uppercase;
+opacity:0.6;
+margin-bottom:24px;
+}
+
+.chapter-hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(3.5rem,8vw,6rem);
+font-weight:400;
+line-height:1;
+margin-bottom:28px;
+}
+
+.chapter-intro{
+max-width:760px;
+margin:0 auto;
+font-size:1.05rem;
+color:#444;
+}
+
+/* ===== DIVIDER ===== */
+
+.divider{
+width:1px;
+height:100px;
+background:rgba(0,0,0,0.12);
+margin:0 auto;
+}
+
+/* ===== CHAPTER CONTENT ===== */
+
+.chapter-content{
+padding:120px 8%;
+}
+
+.chapter-inner{
+max-width:760px;
+margin:0 auto;
+}
+
+.chapter-inner p{
+font-size:1.08rem;
+color:#333;
+margin-bottom:34px;
+}
+
+/* ===== DROP CAP ===== */
+
+.chapter-inner p:first-of-type::first-letter{
+font-family:'Cormorant Garamond',serif;
+font-size:5.5rem;
+float:left;
+line-height:0.8;
+padding-right:12px;
+padding-top:10px;
+font-weight:500;
+}
+
+/* ===== NAVIGATION ===== */
+
+.chapter-navigation{
+padding:120px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:30px;
+max-width:1100px;
+margin:0 auto;
+}
+
+.chapter-navigation a{
+text-decoration:none;
+color:#1f1f1f;
+border:1px solid rgba(0,0,0,0.12);
+padding:18px 28px;
+letter-spacing:1px;
+text-transform:uppercase;
+font-size:0.82rem;
+transition:all 0.35s ease;
+background:rgba(255,255,255,0.45);
+backdrop-filter:blur(8px);
+}
+
+.chapter-navigation a:hover{
+background:#1f1f1f;
+color:#f6f2eb;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+padding:40px 8% 60px;
+text-align:center;
+font-size:0.9rem;
+opacity:0.55;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+.site-header{
+padding:20px 6%;
+}
+
+.nav-links{
+gap:18px;
+}
+
+.nav-links a{
+font-size:0.72rem;
+}
+
+.chapter-hero{
+padding:190px 7% 100px;
+}
+
+.chapter-content{
+padding:90px 7%;
+}
+
+.chapter-inner p{
+font-size:1rem;
+}
+
+.chapter-navigation{
+padding:90px 7%;
+flex-direction:column;
+}
+
+.chapter-navigation a{
+width:100%;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+
+<header class="site-header">
+
+<div class="logo">
+The Room Without Windows
+</div>
+
+<nav class="nav-links">
+<a href="../index.html">Home</a>
+<a href="../chapters.html">Chapters</a>
+<a href="../about.html">About</a>
+</nav>
+
+</header>
+
+<!-- ===== HERO ===== -->
+
+<section class="chapter-hero">
+
+<div class="chapter-number">
+Chapter Fifteen
+</div>
+
+<h1>
+Being Seen<br>Without Witnesses
+</h1>
+
+<p class="chapter-intro">
+Elior confronts the loneliness of a faith that no longer depends on visibility, recognition, or proof.
+</p>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== CHAPTER CONTENT ===== -->
+
+<section class="chapter-content">
+
+<div class="chapter-inner">
+
+<p>
+Elior had not anticipated how lonely prayer would become.
+</p>
+
+<p>
+At first, the stillness that entered his life carried a quiet intensity that felt companionable, almost intimate. It offered focus without demand. But as the days passed and the simplicity of prayer took deeper hold, he became aware of a solitude he could not share without diminishing it.
+</p>
+
+<p>
+Prayer, stripped of words and witnesses, belonged only to him.
+</p>
+
+<p>
+The recognition unsettled him.
+</p>
+
+<p>
+In the city, faith was visible. It gathered people. It confirmed belonging. Even when prayer was deeply personal, it remained recognizable. One could point to it, describe it, affirm it publicly.
+</p>
+
+<p>
+What Elior carried now resisted all of that.
+</p>
+
+<p>
+Each morning he walked the same streets and passed the same gathering places. He greeted the same people. Nothing about him marked an interior shift. His faith did not announce itself. It claimed no attention and offered no proof.
+</p>
+
+<p>
+This anonymity disturbed him more than disbelief ever had.
+</p>
+
+<p>
+Only then did he recognize how deeply he had relied on being seen.
+</p>
+
+<p>
+One afternoon, a passing acquaintance asked him casually whether he had prayed that day.
+</p>
+
+<p>
+The question startled him.
+</p>
+
+<p>
+He hesitated before responding, aware that any answer would misrepresent the truth. To say yes suggested something measurable and defined. To say no dismissed the attention he had carried quietly for hours without shaping into language.
+</p>
+
+<p>
+He answered neither honestly nor falsely. He replied in a way that ended the exchange.
+</p>
+
+<p>
+The discomfort lingered after the conversation had passed.
+</p>
+
+<p>
+Prayer, he realized, had become unverifiable.
+</p>
+
+<p>
+Even to himself.
+</p>
+
+<p>
+In the room without windows, he no longer marked time or effort. There were no signs of success or failure. Some days brought stillness. Others did not. Neither offered explanation.
+</p>
+
+<p>
+He began to wonder whether God could tell the difference.
+</p>
+
+<p>
+The thought was not theological. It was personal. It revealed a fear he had not faced before, the fear that prayer mattered less than he had believed.
+</p>
+
+<p>
+Would anything be lost if it left no trace?
+</p>
+
+<p>
+That evening, Elior entered the room later than usual. He moved carefully, as though wary of intruding on something that might already be present. The silence met him without affirmation.
+</p>
+
+<p>
+He sat.
+</p>
+
+<p>
+This time, stillness did not come easily. His thoughts drifted. Doubt pressed closer. The room felt less like shelter and more like exposure.
+</p>
+
+<p>
+He caught himself longing for clarity, for confirmation, for some sign that he was not merely alone in the dark.
+</p>
+
+<p>
+The longing surprised him.
+</p>
+
+<p>
+For weeks he had accepted the absence of response as honesty. Now he felt the full cost of that acceptance. To be seen by God alone meant relinquishing the assurance of being known by others.
+</p>
+
+<p>
+Elior shifted against the wall, restless.
+</p>
+
+<p>
+The silence did not respond.
+</p>
+
+<p>
+He felt the temptation to make the moment legible, to speak aloud, to shape prayer in a form that could be recognized and affirmed. Doing so would have reassured him. It would have signaled devotion, if only to himself.
+</p>
+
+<p>
+He resisted.
+</p>
+
+<p>
+Remaining unseen required a trust he was not certain he possessed.
+</p>
+
+<p>
+The room offered no guidance.
+</p>
+
+<p>
+Time passed unevenly. The discomfort did not disappear, but it softened. The longing remained exposed and unanswered, and in that exposure it retained its weight.
+</p>
+
+<p>
+He understood then that prayer without witnesses did not protect him from doubt.
+</p>
+
+<p>
+It required him to carry it.
+</p>
+
+<p>
+The realization brought no peace.
+</p>
+
+<p>
+It brought clarity.
+</p>
+
+<p>
+When he eventually stood to leave, he felt no sense of completion. The prayer, if it could be called that, had produced neither reassurance nor direction. What it had produced was endurance, the capacity to remain present without reward.
+</p>
+
+<p>
+Outside the room, life resumed easily. Voices rose from the street. Faith was spoken confidently elsewhere. Others would sleep assured of having been seen.
+</p>
+
+<p>
+Elior moved among them quietly, carrying a practice that could not be measured or confirmed.
+</p>
+
+<p>
+And yet beneath the loneliness, something steady began to form. Not conviction. Not certainty. A simple willingness to remain before God without proof.
+</p>
+
+<p>
+The willingness did not feel virtuous.
+</p>
+
+<p>
+It felt necessary.
+</p>
+
+<p>
+That night, Elior lay awake aware that prayer had taken him somewhere he could not reverse. He could still speak when asked. He could still pray aloud when expected.
+</p>
+
+<p>
+But he would do so knowing that the truest expression of his faith now existed unseen, unwitnessed, and unconfirmed.
+</p>
+
+<p>
+The awareness stayed with him, unsettled and active.
+</p>
+
+<p>
+To be seen without witnesses, he understood, required surrender without assurance.
+</p>
+
+<p>
+And the city would never know.
+</p>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== NAVIGATION ===== -->
+
+<section class="chapter-navigation">
+
+<a href="chapter14.html">
+← Previous Chapter
+</a>
+
+<a href="chapter16.html">
+Next Chapter →
+</a>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+© Bradley Hobbs • The Room Without Windows
+</footer>
+
+</body>
+</html>
