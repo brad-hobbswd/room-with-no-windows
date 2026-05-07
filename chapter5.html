@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chapter Five | A Prayer Interrupted</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== RESET ===== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* ===== BODY ===== */
+
+body{
+background:#f6f2eb;
+color:#1f1f1f;
+font-family:'Inter',sans-serif;
+line-height:2;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+linear-gradient(rgba(246,242,235,0.97), rgba(246,242,235,0.97)),
+url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+opacity:0.06;
+pointer-events:none;
+z-index:-1;
+}
+
+/* ===== HEADER ===== */
+
+.site-header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:24px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+backdrop-filter:blur(12px);
+background:rgba(246,242,235,0.45);
+border-bottom:1px solid rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:1.5rem;
+}
+
+.nav-links{
+display:flex;
+gap:32px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#1f1f1f;
+font-size:0.88rem;
+letter-spacing:1px;
+text-transform:uppercase;
+transition:opacity 0.3s ease;
+}
+
+.nav-links a:hover{
+opacity:0.55;
+}
+
+/* ===== HERO ===== */
+
+.chapter-hero{
+padding:220px 8% 120px;
+text-align:center;
+}
+
+.chapter-number{
+font-size:0.92rem;
+letter-spacing:4px;
+text-transform:uppercase;
+opacity:0.6;
+margin-bottom:24px;
+}
+
+.chapter-hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(3.5rem,8vw,6rem);
+font-weight:400;
+line-height:1;
+margin-bottom:28px;
+}
+
+.chapter-intro{
+max-width:760px;
+margin:0 auto;
+font-size:1.05rem;
+color:#444;
+}
+
+/* ===== DIVIDER ===== */
+
+.divider{
+width:1px;
+height:100px;
+background:rgba(0,0,0,0.12);
+margin:0 auto;
+}
+
+/* ===== CHAPTER CONTENT ===== */
+
+.chapter-content{
+padding:120px 8%;
+}
+
+.chapter-inner{
+max-width:760px;
+margin:0 auto;
+}
+
+.chapter-inner p{
+font-size:1.08rem;
+color:#333;
+margin-bottom:34px;
+}
+
+/* ===== DROP CAP ===== */
+
+.chapter-inner p:first-of-type::first-letter{
+font-family:'Cormorant Garamond',serif;
+font-size:5.5rem;
+float:left;
+line-height:0.8;
+padding-right:12px;
+padding-top:10px;
+font-weight:500;
+}
+
+/* ===== NAVIGATION ===== */
+
+.chapter-navigation{
+padding:120px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:30px;
+max-width:1100px;
+margin:0 auto;
+}
+
+.chapter-navigation a{
+text-decoration:none;
+color:#1f1f1f;
+border:1px solid rgba(0,0,0,0.12);
+padding:18px 28px;
+letter-spacing:1px;
+text-transform:uppercase;
+font-size:0.82rem;
+transition:all 0.35s ease;
+background:rgba(255,255,255,0.45);
+backdrop-filter:blur(8px);
+}
+
+.chapter-navigation a:hover{
+background:#1f1f1f;
+color:#f6f2eb;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+padding:40px 8% 60px;
+text-align:center;
+font-size:0.9rem;
+opacity:0.55;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+.site-header{
+padding:20px 6%;
+}
+
+.nav-links{
+gap:18px;
+}
+
+.nav-links a{
+font-size:0.72rem;
+}
+
+.chapter-hero{
+padding:190px 7% 100px;
+}
+
+.chapter-content{
+padding:90px 7%;
+}
+
+.chapter-inner p{
+font-size:1rem;
+}
+
+.chapter-navigation{
+padding:90px 7%;
+flex-direction:column;
+}
+
+.chapter-navigation a{
+width:100%;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+
+<header class="site-header">
+
+<div class="logo">
+The Room Without Windows
+</div>
+
+<nav class="nav-links">
+<a href="../index.html">Home</a>
+<a href="../chapters.html">Chapters</a>
+<a href="../about.html">About</a>
+</nav>
+
+</header>
+
+<!-- ===== HERO ===== -->
+
+<section class="chapter-hero">
+
+<div class="chapter-number">
+Chapter Five
+</div>
+
+<h1>
+A Prayer<br>Interrupted
+</h1>
+
+<p class="chapter-intro">
+A familiar prayer fractures unexpectedly, exposing silence, honesty, and the fear of unfinished faith.
+</p>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== CHAPTER CONTENT ===== -->
+
+<section class="chapter-content">
+
+<div class="chapter-inner">
+
+<p>
+The interruption did not announce itself.
+</p>
+
+<p>
+Elior began praying as he always did, standing upright, hands loosely folded, his mind already arranging the familiar progression of words. His body remembered the posture even when his thoughts resisted it. Prayer, like breathing, had acquired form through repetition.
+</p>
+
+<p>
+He spoke the opening phrases without hesitation.
+</p>
+
+<p>
+They arrived smoothly, practiced and intact, carrying a quiet reassurance. There was comfort in beginning correctly, in aligning himself once more with what he knew.
+</p>
+
+<p>
+As he continued, his attention shifted. Not outward, toward God, as he intended, but inward, toward the sound of his own voice. He noticed the cadence first, the steady rhythm, the rise and fall he recognized from others. He noticed how little effort it required to continue.
+</p>
+
+<p>
+The awareness unsettled him.
+</p>
+
+<p>
+The words were accurate. They were not empty precisely, but they no longer felt anchored. They moved forward without resistance, propelled by habit rather than conviction.
+</p>
+
+<p>
+Halfway through a sentence, Elior stopped.
+</p>
+
+<p>
+The words simply did not arrive.
+</p>
+
+<p>
+There was no distraction to blame. No sound fractured his focus. The silence entered naturally, as though it had been waiting for its moment.
+</p>
+
+<p>
+Elior stood motionless, uncertain whether he had lost his place or arrived somewhere new.
+</p>
+
+<p>
+The interruption exposed something he had long avoided noticing. He did not know how to continue honestly. The next phrase waited, memorized and ready, but he could not speak it. It felt like stepping onto ground he did not trust.
+</p>
+
+<p>
+Discomfort sharpened.
+</p>
+
+<p>
+He waited for the familiar instinct to correct the pause, to push forward quickly and close the gap. That impulse did not come. In its place, a deeper resistance surfaced, quiet but firm.
+</p>
+
+<p>
+He remained silent.
+</p>
+
+<p>
+Time warped subtly without progression. Without direction, there was only awareness. His breathing grew louder. The room seemed to contract around him.
+</p>
+
+<p>
+Had he failed to pray?
+</p>
+
+<p>
+The question pressed heavily. Prayer, as he understood it, required continuity. One did not abandon it partway through. One completed what one began.
+</p>
+
+<p>
+And yet, finishing felt impossible.
+</p>
+
+<p>
+Elior lowered his hands slowly, as though setting aside something unfinished. The posture itself began to feel unnecessary. He leaned back against the wall, tension settling into his shoulders.
+</p>
+
+<p>
+There was no relief in stopping, only exposure.
+</p>
+
+<p>
+A reluctant thought emerged: what if this was not interruption, but honesty?
+</p>
+
+<p>
+He dismissed it at once. Honesty, he believed, should clarify, even when it unsettled. This felt disorienting. Unfinished things demanded resolution.
+</p>
+
+<p>
+Outside, the city moved on undisturbed. Voices drifted faintly through walls and open spaces, prayers spoken confidently elsewhere, proceeding without fracture.
+</p>
+
+<p>
+Elior felt increasingly alone.
+</p>
+
+<p>
+He tried once more to speak, guiding himself gently back toward the words he had paused before. The phrase hovered just beyond his reach, familiar and accessible.
+</p>
+
+<p>
+He did not take it.
+</p>
+
+<p>
+Instead, a strange stillness settled in its place. Not peace. Not clarity. Simply presence.
+</p>
+
+<p>
+It felt insufficient.
+</p>
+
+<p>
+Elior straightened and stepped away. The prayer ended not in resolution, but in abandonment. The silence remained behind him as he moved on.
+</p>
+
+<p>
+Later that evening, the interruption returned without warning.
+</p>
+
+<p>
+He revisited it carefully, as though it contained instruction he had failed to grasp. He remembered the exact instant the words ceased to feel necessary. He remembered the pressure to continue, and his refusal.
+</p>
+
+<p>
+The refusal unsettled him more than the silence itself.
+</p>
+
+<p>
+He wondered what others would have thought if they had seen him stop that way. He imagined the subtle discomfort, the quiet judgment. Prayer was meant to gather certainty, not fracture it.
+</p>
+
+<p>
+Lying awake, listening to the city murmur and breathe beyond his walls, he realized he had never considered the possibility that prayer might uncover what remained unresolved rather than repair it.
+</p>
+
+<p>
+The realization offered no reassurance.
+</p>
+
+<p>
+But it did not release him.
+</p>
+
+<p>
+The silence from that moment settled into memory, unfinished and persistent, asking nothing, requiring nothing, yet refusing to fade.
+</p>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== NAVIGATION ===== -->
+
+<section class="chapter-navigation">
+
+<a href="chapter4.html">
+← Previous Chapter
+</a>
+
+<a href="chapter6.html">
+Next Chapter →
+</a>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+© Bradley Hobbs • The Room Without Windows
+</footer>
+
+</body>
+</html>
