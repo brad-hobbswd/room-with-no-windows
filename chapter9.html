@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chapter Nine | When Words Become Honest</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== RESET ===== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* ===== BODY ===== */
+
+body{
+background:#f6f2eb;
+color:#1f1f1f;
+font-family:'Inter',sans-serif;
+line-height:2;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+linear-gradient(rgba(246,242,235,0.97), rgba(246,242,235,0.97)),
+url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+opacity:0.06;
+pointer-events:none;
+z-index:-1;
+}
+
+/* ===== HEADER ===== */
+
+.site-header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:24px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+backdrop-filter:blur(12px);
+background:rgba(246,242,235,0.45);
+border-bottom:1px solid rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:1.5rem;
+}
+
+.nav-links{
+display:flex;
+gap:32px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#1f1f1f;
+font-size:0.88rem;
+letter-spacing:1px;
+text-transform:uppercase;
+transition:opacity 0.3s ease;
+}
+
+.nav-links a:hover{
+opacity:0.55;
+}
+
+/* ===== HERO ===== */
+
+.chapter-hero{
+padding:220px 8% 120px;
+text-align:center;
+}
+
+.chapter-number{
+font-size:0.92rem;
+letter-spacing:4px;
+text-transform:uppercase;
+opacity:0.6;
+margin-bottom:24px;
+}
+
+.chapter-hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(3.5rem,8vw,6rem);
+font-weight:400;
+line-height:1;
+margin-bottom:28px;
+}
+
+.chapter-intro{
+max-width:760px;
+margin:0 auto;
+font-size:1.05rem;
+color:#444;
+}
+
+/* ===== DIVIDER ===== */
+
+.divider{
+width:1px;
+height:100px;
+background:rgba(0,0,0,0.12);
+margin:0 auto;
+}
+
+/* ===== CHAPTER CONTENT ===== */
+
+.chapter-content{
+padding:120px 8%;
+}
+
+.chapter-inner{
+max-width:760px;
+margin:0 auto;
+}
+
+.chapter-inner p{
+font-size:1.08rem;
+color:#333;
+margin-bottom:34px;
+}
+
+/* ===== DROP CAP ===== */
+
+.chapter-inner p:first-of-type::first-letter{
+font-family:'Cormorant Garamond',serif;
+font-size:5.5rem;
+float:left;
+line-height:0.8;
+padding-right:12px;
+padding-top:10px;
+font-weight:500;
+}
+
+/* ===== NAVIGATION ===== */
+
+.chapter-navigation{
+padding:120px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:30px;
+max-width:1100px;
+margin:0 auto;
+}
+
+.chapter-navigation a{
+text-decoration:none;
+color:#1f1f1f;
+border:1px solid rgba(0,0,0,0.12);
+padding:18px 28px;
+letter-spacing:1px;
+text-transform:uppercase;
+font-size:0.82rem;
+transition:all 0.35s ease;
+background:rgba(255,255,255,0.45);
+backdrop-filter:blur(8px);
+}
+
+.chapter-navigation a:hover{
+background:#1f1f1f;
+color:#f6f2eb;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+padding:40px 8% 60px;
+text-align:center;
+font-size:0.9rem;
+opacity:0.55;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+.site-header{
+padding:20px 6%;
+}
+
+.nav-links{
+gap:18px;
+}
+
+.nav-links a{
+font-size:0.72rem;
+}
+
+.chapter-hero{
+padding:190px 7% 100px;
+}
+
+.chapter-content{
+padding:90px 7%;
+}
+
+.chapter-inner p{
+font-size:1rem;
+}
+
+.chapter-navigation{
+padding:90px 7%;
+flex-direction:column;
+}
+
+.chapter-navigation a{
+width:100%;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+
+<header class="site-header">
+
+<div class="logo">
+The Room Without Windows
+</div>
+
+<nav class="nav-links">
+<a href="../index.html">Home</a>
+<a href="../chapters.html">Chapters</a>
+<a href="../about.html">About</a>
+</nav>
+
+</header>
+
+<!-- ===== HERO ===== -->
+
+<section class="chapter-hero">
+
+<div class="chapter-number">
+Chapter Nine
+</div>
+
+<h1>
+When Words<br>Become Honest
+</h1>
+
+<p class="chapter-intro">
+A single honest word unsettles Elior more deeply than any carefully shaped prayer ever could.
+</p>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== CHAPTER CONTENT ===== -->
+
+<section class="chapter-content">
+
+<div class="chapter-inner">
+
+<p>
+The word arrived when Elior was no longer searching for it.
+</p>
+
+<p>
+He returned to the room without windows late in the afternoon, after the workshop had emptied and the light outside had begun to thin. The walk home was uneventful. His feet followed their familiar route, yet his attention felt oddly untethered. The unease from the morning remained with him, quiet but persistent, like a thought waiting to be recognized.
+</p>
+
+<p>
+He entered the room expecting nothing.
+</p>
+
+<p>
+The door closed. The silence endured. His body had learned the shape of the space now. He lowered himself to the floor along the far wall and rested his back against the stone. The room held him without response or suggestion.
+</p>
+
+<p>
+At first, his thoughts scattered as they had before. Fragments of the day rose briefly and dissolved. The stillness he had known earlier did not follow him here. In its place was a mild restlessness, an undercurrent of expectancy he did not know how to dismiss.
+</p>
+
+<p>
+He waited longer than felt reasonable.
+</p>
+
+<p>
+Prayer, as he had been taught, demanded participation. If nothing occurred, one adjusted posture, repeated familiar words, changed focus. Here, none of those measures felt appropriate. The silence resisted handling. It neither invited nor refused him.
+</p>
+
+<p>
+Then, without urgency, the word surfaced.
+</p>
+
+<p>
+It did not arrive fully formed. At first it registered as sensation, pressure in the chest, a narrowing of breath. Elior became aware that his body had sensed something before his mind understood it. The word followed slowly, almost reluctantly, as though hesitant to be named.
+</p>
+
+<p>
+It was not a word he had practiced.
+</p>
+
+<p>
+It carried no assurance and asked nothing. It was neither devotional nor explanatory. It did not align itself as praise or confession. It was simply true.
+</p>
+
+<p>
+When he spoke it, the sound felt unfamiliar.
+</p>
+
+<p>
+The word was small. It named neither virtue nor resolution. It exposed something unmet, something fragile, without attempting to repair it.
+</p>
+
+<p>
+Elior waited for consequence.
+</p>
+
+<p>
+Nothing shifted decisively. The silence did not deepen or recede. The room did not respond. There was no closure, no rush of relief to confirm that he had spoken correctly.
+</p>
+
+<p>
+What surprised him was not the absence of response, but the absence of resistance.
+</p>
+
+<p>
+The word rested where it had been placed. It did not ask to be repeated. It did not invite expansion. It felt finished in a way his longer prayers never had.
+</p>
+
+<p>
+Elior felt suddenly exposed.
+</p>
+
+<p>
+To speak the word again would not strengthen it. It would thin it. Repetition would turn it into performance, remove it from the place it had come from, somewhere beneath intention and effort.
+</p>
+
+<p>
+He remained silent.
+</p>
+
+<p>
+Time passed.
+</p>
+
+<p>
+A subtle awareness settled over him, not peace, but alignment. For the first time he could recall, his inner state and his speech had met precisely. The distance he had long carried between what he said and what he believed had narrowed, briefly and exactly.
+</p>
+
+<p>
+The narrowing disturbed him more than relief ever had.
+</p>
+
+<p>
+If honesty required only a single word, what had all those hours of prayer been for? Had he concealed truth beneath layers of reverence, choosing language expansive enough to keep himself safely hidden?
+</p>
+
+<p>
+The question unsettled him deeply.
+</p>
+
+<p>
+He stood and opened the door without ceremony. Sound returned abruptly, almost too loud. He stepped back into the house, carrying the word with him carefully, as though it might fracture if examined.
+</p>
+
+<p>
+That evening, as he moved through the shared spaces of the house, the urge to explain what had occurred tugged faintly at him. Explanation would have rendered the experience manageable. It would have translated it into insight rather than leaving it as encounter.
+</p>
+
+<p>
+He resisted.
+</p>
+
+<p>
+Before sleeping, he lay awake for some time, aware of the room beyond the wall, unchanged and indifferent. The word did not return. He did not call for it.
+</p>
+
+<p>
+Instead, another awareness emerged, a quiet attentiveness to language itself. Words felt heavier now, more accountable. He noticed how readily he used them to avoid precision.
+</p>
+
+<p>
+Prayer, he suspected, might begin at the cost of speech.
+</p>
+
+<p>
+He did not pursue the thought.
+</p>
+
+<p>
+The single word remained sufficient, unresolved and unexpanded.
+</p>
+
+<p>
+And in its restraint, it continued to speak.
+</p>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== NAVIGATION ===== -->
+
+<section class="chapter-navigation">
+
+<a href="chapter8.html">
+← Previous Chapter
+</a>
+
+<a href="chapter10.html">
+Next Chapter →
+</a>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+© Bradley Hobbs • The Room Without Windows
+</footer>
+
+</body>
+</html>
