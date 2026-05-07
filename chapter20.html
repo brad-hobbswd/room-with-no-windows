@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chapter Twenty | The Long Faithfulness</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== RESET ===== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* ===== BODY ===== */
+
+body{
+background:#f6f2eb;
+color:#1f1f1f;
+font-family:'Inter',sans-serif;
+line-height:2;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+linear-gradient(rgba(246,242,235,0.97), rgba(246,242,235,0.97)),
+url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+opacity:0.06;
+pointer-events:none;
+z-index:-1;
+}
+
+/* ===== HEADER ===== */
+
+.site-header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:24px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+backdrop-filter:blur(12px);
+background:rgba(246,242,235,0.45);
+border-bottom:1px solid rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:1.5rem;
+}
+
+.nav-links{
+display:flex;
+gap:32px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#1f1f1f;
+font-size:0.88rem;
+letter-spacing:1px;
+text-transform:uppercase;
+transition:opacity 0.3s ease;
+}
+
+.nav-links a:hover{
+opacity:0.55;
+}
+
+/* ===== HERO ===== */
+
+.chapter-hero{
+padding:220px 8% 120px;
+text-align:center;
+}
+
+.chapter-number{
+font-size:0.92rem;
+letter-spacing:4px;
+text-transform:uppercase;
+opacity:0.6;
+margin-bottom:24px;
+}
+
+.chapter-hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(3.5rem,8vw,6rem);
+font-weight:400;
+line-height:1;
+margin-bottom:28px;
+}
+
+.chapter-intro{
+max-width:760px;
+margin:0 auto;
+font-size:1.05rem;
+color:#444;
+}
+
+/* ===== DIVIDER ===== */
+
+.divider{
+width:1px;
+height:100px;
+background:rgba(0,0,0,0.12);
+margin:0 auto;
+}
+
+/* ===== CHAPTER CONTENT ===== */
+
+.chapter-content{
+padding:120px 8%;
+}
+
+.chapter-inner{
+max-width:760px;
+margin:0 auto;
+}
+
+.chapter-inner p{
+font-size:1.08rem;
+color:#333;
+margin-bottom:34px;
+}
+
+/* ===== DROP CAP ===== */
+
+.chapter-inner p:first-of-type::first-letter{
+font-family:'Cormorant Garamond',serif;
+font-size:5.5rem;
+float:left;
+line-height:0.8;
+padding-right:12px;
+padding-top:10px;
+font-weight:500;
+}
+
+/* ===== NAVIGATION ===== */
+
+.chapter-navigation{
+padding:120px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:30px;
+max-width:1100px;
+margin:0 auto;
+}
+
+.chapter-navigation a{
+text-decoration:none;
+color:#1f1f1f;
+border:1px solid rgba(0,0,0,0.12);
+padding:18px 28px;
+letter-spacing:1px;
+text-transform:uppercase;
+font-size:0.82rem;
+transition:all 0.35s ease;
+background:rgba(255,255,255,0.45);
+backdrop-filter:blur(8px);
+}
+
+.chapter-navigation a:hover{
+background:#1f1f1f;
+color:#f6f2eb;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+padding:40px 8% 60px;
+text-align:center;
+font-size:0.9rem;
+opacity:0.55;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+.site-header{
+padding:20px 6%;
+}
+
+.nav-links{
+gap:18px;
+}
+
+.nav-links a{
+font-size:0.72rem;
+}
+
+.chapter-hero{
+padding:190px 7% 100px;
+}
+
+.chapter-content{
+padding:90px 7%;
+}
+
+.chapter-inner p{
+font-size:1rem;
+}
+
+.chapter-navigation{
+padding:90px 7%;
+flex-direction:column;
+}
+
+.chapter-navigation a{
+width:100%;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+
+<header class="site-header">
+
+<div class="logo">
+The Room Without Windows
+</div>
+
+<nav class="nav-links">
+<a href="../index.html">Home</a>
+<a href="../chapters.html">Chapters</a>
+<a href="../about.html">About</a>
+</nav>
+
+</header>
+
+<!-- ===== HERO ===== -->
+
+<section class="chapter-hero">
+
+<div class="chapter-number">
+Chapter Twenty
+</div>
+
+<h1>
+The Long<br>Faithfulness
+</h1>
+
+<p class="chapter-intro">
+Elior enters a quieter season where faith no longer depends on intensity, but on the patient endurance of remaining present over time.
+</p>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== CHAPTER CONTENT ===== -->
+
+<section class="chapter-content">
+
+<div class="chapter-inner">
+
+<p>
+Time returned quietly.
+</p>
+
+<p>
+Not all at once, and not with ceremony. It arrived the way erosion does, patiently and without announcement, reshaping what remained through presence rather than force. Elior noticed it not through sudden insight, but through season and repetition. Mornings began to resemble one another again. Work settled back into rhythm rather than demand.
+</p>
+
+<p>
+Prayer, once a moment set apart sharply from everything else, now moved in concert with time.
+</p>
+
+<p>
+This unsettled him more than intensity ever had.
+</p>
+
+<p>
+At first, prayer had arrived as attention, carving space and requiring withdrawal. Then it reshaped silence, emptied speech, altered his voice. Now, it asked almost nothing.
+</p>
+
+<p>
+It simply remained.
+</p>
+
+<p>
+Elior woke each morning without urgency. The impulse to orient the day through words no longer pressed against him. He did not measure belief by beginnings or conclusions. Some mornings carried awareness. Others did not.
+</p>
+
+<p>
+He learned not to assign meaning to the difference.
+</p>
+
+<p>
+This restraint was difficult.
+</p>
+
+<p>
+Faith had trained him to watch for signs, to interpret presence through sensation, clarity, or consistency. The long faithfulness he now inhabited resisted such evaluation. It offered nothing to record, nothing to announce.
+</p>
+
+<p>
+It asked only that he remain.
+</p>
+
+<p>
+At the workshop, weeks passed without incident. Wood yielded to patient hands. Errors were made and corrected without drama. The stillness he carried did not remove difficulty.
+</p>
+
+<p>
+It removed urgency.
+</p>
+
+<p>
+Elior found he could endure interruption without fracture. When plans shifted, he adapted without resentment. When words failed him, silence no longer accused him of absence. Life revealed fewer sharp edges, not because it had softened, but because he no longer reacted immediately to its contours.
+</p>
+
+<p>
+This change did not attract attention.
+</p>
+
+<p>
+No one remarked upon it.
+</p>
+
+<p>
+The city continued its devotion audibly and earnestly. Prayers rose and fell according to practice. Seasons of emphasis returned predictably. Faith remained cyclical and visible.
+</p>
+
+<p>
+Elior moved among it quietly. He participated when needed, listened when appropriate, and offered little that could be praised or dismissed. His faith did not intensify.
+</p>
+
+<p>
+It endured.
+</p>
+
+<p>
+Some evenings, he entered the room without windows. Other evenings, he did not. The distinction no longer carried weight. The room neither summoned nor dismissed him.
+</p>
+
+<p>
+It simply existed.
+</p>
+
+<p>
+Elior understood then that what had once felt like discovery had settled into something quieter and more demanding. Faithfulness, stripped of urgency, required patience rather than effort. It asked him to remain where nothing occurred dramatically.
+</p>
+
+<p>
+This tested him.
+</p>
+
+<p>
+At times, the urge to revive fervor returned. He remembered the sharp certainty of earlier moments, the sense of purpose that accompanied intense prayer. The desire for clarity surfaced faintly, an old instinct seeking relevance.
+</p>
+
+<p>
+He did not indulge it.
+</p>
+
+<p>
+He knew now that faithfulness could be compromised as easily by excess as by neglect.
+</p>
+
+<p>
+The long faithfulness did not shield him from doubt.
+</p>
+
+<p>
+It taught him to live alongside it.
+</p>
+
+<p>
+Some days, God felt distant. On others, presence hovered quietly without name. Elior no longer attempted to rank these experiences or resolve the space between them.
+</p>
+
+<p>
+They passed.
+</p>
+
+<p>
+Time continued its work.
+</p>
+
+<p>
+Years began to take form without spiritual milestones. At first, the absence unsettled him. Faith had once supplied occasions to mark, moments to recount.
+</p>
+
+<p>
+Now, the work remained interior and slow, resistant to narration.
+</p>
+
+<p>
+Once, a younger man asked him how long he had believed.
+</p>
+
+<p>
+The question startled him.
+</p>
+
+<p>
+He considered answering with stories, with formative prayers or turning points. None felt accurate. The truth could not be condensed without distortion.
+</p>
+
+<p>
+He answered simply.
+</p>
+
+<p>
+The conversation moved on.
+</p>
+
+<p>
+That night, Elior lay awake considering the question. Faith was no longer something he could locate within memory or intention. It had dispersed into him, shaping attention, response, endurance.
+</p>
+
+<p>
+The long faithfulness, he understood, would never be dramatic.
+</p>
+
+<p>
+It would never conclude.
+</p>
+
+<p>
+It would continue asking him to remain without measure, to trust that presence did not require sensation, and that prayer, once learned, no longer required rehearsal.
+</p>
+
+<p>
+As sleep approached, the realization settled gently: faithfulness was not about preserving intensity.
+</p>
+
+<p>
+It was about endurance.
+</p>
+
+<p>
+The city continued beyond his walls, faithful in its sound.
+</p>
+
+<p>
+Elior rested in the quiet, carrying a practice that would never announce itself, never resolve, and never be finished.
+</p>
+
+<p>
+Tomorrow would arrive without promise or explanation.
+</p>
+
+<p>
+That was enough.
+</p>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== NAVIGATION ===== -->
+
+<section class="chapter-navigation">
+
+<a href="chapter19.html">
+← Previous Chapter
+</a>
+
+<a href="chapter21.html">
+Next Chapter →
+</a>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+© Bradley Hobbs • The Room Without Windows
+</footer>
+
+</body>
+</html>
