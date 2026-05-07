@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chapter Two | The Worth of Words</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== RESET ===== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* ===== BODY ===== */
+
+body{
+background:#f6f2eb;
+color:#1f1f1f;
+font-family:'Inter',sans-serif;
+line-height:2;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+linear-gradient(rgba(246,242,235,0.97), rgba(246,242,235,0.97)),
+url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+opacity:0.06;
+pointer-events:none;
+z-index:-1;
+}
+
+/* ===== HEADER ===== */
+
+.site-header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:24px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+backdrop-filter:blur(12px);
+background:rgba(246,242,235,0.45);
+border-bottom:1px solid rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:1.5rem;
+}
+
+.nav-links{
+display:flex;
+gap:32px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#1f1f1f;
+font-size:0.88rem;
+letter-spacing:1px;
+text-transform:uppercase;
+transition:opacity 0.3s ease;
+}
+
+.nav-links a:hover{
+opacity:0.55;
+}
+
+/* ===== HERO ===== */
+
+.chapter-hero{
+padding:220px 8% 120px;
+text-align:center;
+}
+
+.chapter-number{
+font-size:0.92rem;
+letter-spacing:4px;
+text-transform:uppercase;
+opacity:0.6;
+margin-bottom:24px;
+}
+
+.chapter-hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(3.5rem,8vw,6rem);
+font-weight:400;
+line-height:1;
+margin-bottom:28px;
+}
+
+.chapter-intro{
+max-width:760px;
+margin:0 auto;
+font-size:1.05rem;
+color:#444;
+}
+
+/* ===== DIVIDER ===== */
+
+.divider{
+width:1px;
+height:100px;
+background:rgba(0,0,0,0.12);
+margin:0 auto;
+}
+
+/* ===== CHAPTER CONTENT ===== */
+
+.chapter-content{
+padding:120px 8%;
+}
+
+.chapter-inner{
+max-width:760px;
+margin:0 auto;
+}
+
+.chapter-inner p{
+font-size:1.08rem;
+color:#333;
+margin-bottom:34px;
+}
+
+/* ===== DROP CAP ===== */
+
+.chapter-inner p:first-of-type::first-letter{
+font-family:'Cormorant Garamond',serif;
+font-size:5.5rem;
+float:left;
+line-height:0.8;
+padding-right:12px;
+padding-top:10px;
+font-weight:500;
+}
+
+/* ===== NAVIGATION ===== */
+
+.chapter-navigation{
+padding:120px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:30px;
+max-width:1100px;
+margin:0 auto;
+}
+
+.chapter-navigation a{
+text-decoration:none;
+color:#1f1f1f;
+border:1px solid rgba(0,0,0,0.12);
+padding:18px 28px;
+letter-spacing:1px;
+text-transform:uppercase;
+font-size:0.82rem;
+transition:all 0.35s ease;
+background:rgba(255,255,255,0.45);
+backdrop-filter:blur(8px);
+}
+
+.chapter-navigation a:hover{
+background:#1f1f1f;
+color:#f6f2eb;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+padding:40px 8% 60px;
+text-align:center;
+font-size:0.9rem;
+opacity:0.55;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+.site-header{
+padding:20px 6%;
+}
+
+.nav-links{
+gap:18px;
+}
+
+.nav-links a{
+font-size:0.72rem;
+}
+
+.chapter-hero{
+padding:190px 7% 100px;
+}
+
+.chapter-content{
+padding:90px 7%;
+}
+
+.chapter-inner p{
+font-size:1rem;
+}
+
+.chapter-navigation{
+padding:90px 7%;
+flex-direction:column;
+}
+
+.chapter-navigation a{
+width:100%;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+
+<header class="site-header">
+
+<div class="logo">
+The Room Without Windows
+</div>
+
+<nav class="nav-links">
+<a href="../index.html">Home</a>
+<a href="../chapters.html">Chapters</a>
+<a href="../about.html">About</a>
+</nav>
+
+</header>
+
+<!-- ===== HERO ===== -->
+
+<section class="chapter-hero">
+
+<div class="chapter-number">
+Chapter Two
+</div>
+
+<h1>
+The Worth<br>of Words
+</h1>
+
+<p class="chapter-intro">
+Prayer begins revealing the tension between language, repetition, sincerity, and the fear hidden beneath speech.
+</p>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== CHAPTER CONTENT ===== -->
+
+<section class="chapter-content">
+
+<div class="chapter-inner">
+
+<p>
+Elior learned restraint long before he learned speech.
+</p>
+
+<p>
+The workshop taught it first. Wood did not respond well to force. It accepted the blade only when the hand followed its grain. Press too insistently, and the surface splintered in protest. Rush the shaping, and the wood weakened in ways invisible at first but disastrous later. The material carried memory. Every error remained long after the flaw itself was concealed.
+</p>
+
+<p>
+Elior worked slowly because slowness allowed the truth of a piece to emerge.
+</p>
+
+<p>
+As the years passed, he noticed that prayer appeared governed by a different impulse.
+</p>
+
+<p>
+People did not approach it patiently. Prayer, as practiced in the city, favored momentum. Phrases arrived in rapid succession, each reinforcing the next, leaving no space for resistance or reconsideration. The prayers that drew admiration moved cleanly and confidently, as though certainty itself were proof of devotion.
+</p>
+
+<p>
+Elior listened closely.
+</p>
+
+<p>
+He listened for pauses.
+</p>
+
+<p>
+There were very few.
+</p>
+
+<p>
+Words filled the air continually, not only in formal prayers but in the casual invocations threaded through conversation. The language of devotion had become reflexive. People reached for familiar phrases the way one reached for tools kept always within arm’s reach.
+</p>
+
+<p>
+One afternoon, as Elior worked alone, it occurred to him that words had become a way of managing fear.
+</p>
+
+<p>
+The thought unsettled him.
+</p>
+
+<p>
+He had always believed that words mattered. He respected language deeply. Yet beneath their abundance he sensed anxiety, as though the city feared that silence might allow doubt to surface.
+</p>
+
+<p>
+In the evenings, Elior tried to pray as he had been taught.
+</p>
+
+<p>
+His posture held firm. His voice carried precision. He chose language weighted with command, moving within cadences that inspired confidence in those who listened.
+</p>
+
+<p>
+Yet as the words left his mouth, he felt himself pulling away from them. His attention divided. One part of him addressed God. The other observed the performance, measuring its adequacy.
+</p>
+
+<p>
+He grew increasingly aware of this separation.
+</p>
+
+<p>
+When the prayers ended, relief followed. Not peace, exactly, but the comfort of completion. He had fulfilled the obligation. He had done what was expected.
+</p>
+
+<p>
+Still, something remained unsettled.
+</p>
+
+<p>
+On nights when exhaustion overtook discipline, Elior lay awake listening to the city’s low hum. Prayers drifted through open windows and thin walls. Some were whispered. Others rose with confidence, assured of their direction.
+</p>
+
+<p>
+He wondered what would happen if no words were offered at all.
+</p>
+
+<p>
+The idea felt irresponsible.
+</p>
+
+<p>
+Prayer, he believed, required effort. Silence felt like neglect, as though not speaking meant not caring. And yet when he tried to speak honestly, the words often stalled. His truest thoughts arrived without clarity, resistant to structure.
+</p>
+
+<p>
+One night, partway through a familiar prayer, Elior stopped.
+</p>
+
+<p>
+Not because he had finished, but because he could no longer tell whom the words were for. They sounded rehearsed even to him, and speaking them felt strangely detached from the presence he meant to acknowledge.
+</p>
+
+<p>
+He waited, anticipating discomfort.
+</p>
+
+<p>
+Instead, there was only stillness.
+</p>
+
+<p>
+The moment passed before he fully understood it, quickly overtaken by habit. The prayer resumed, concluded, and faded.
+</p>
+
+<p>
+But the interruption lingered.
+</p>
+
+<p>
+The next day, while shaping a beam, Elior eased the pressure of his hand. Without insistence, the blade moved differently. The wood revealed a line he had not intended, subtle but strong.
+</p>
+
+<p>
+He paused, considering.
+</p>
+
+<p>
+Words, he realized, were meant to follow something, not impose themselves upon it.
+</p>
+
+<p>
+The insight disturbed him more than it comforted him.
+</p>
+
+<p>
+If prayer depended so heavily on words, what happened when words failed? If repetition signified fidelity, where did sincerity reside?
+</p>
+
+<p>
+That evening, as he prepared to pray again, Elior hesitated. He stood in place as the words formed as they always had. He felt the familiar urge to begin, to proceed, to conclude.
+</p>
+
+<p>
+Instead, he remained silent.
+</p>
+
+<p>
+The silence was brief. He filled it quickly and moved on.
+</p>
+
+<p>
+Even so, he could not forget what had surfaced the night before, that sense of closeness without articulation, of attention without speech.
+</p>
+
+<p>
+He wondered, unwillingly, whether his words were accomplishing less than he hoped.
+</p>
+
+<p>
+The prayer ended.
+</p>
+
+<p>
+The question did not.
+</p>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== NAVIGATION ===== -->
+
+<section class="chapter-navigation">
+
+<a href="chapter1.html">
+← Previous Chapter
+</a>
+
+<a href="chapter3.html">
+Next Chapter →
+</a>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+© Bradley Hobbs • The Room Without Windows
+</footer>
+
+</body>
+</html>
