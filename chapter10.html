@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chapter Ten | The God Who Requires Nothing</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== RESET ===== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* ===== BODY ===== */
+
+body{
+background:#f6f2eb;
+color:#1f1f1f;
+font-family:'Inter',sans-serif;
+line-height:2;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+linear-gradient(rgba(246,242,235,0.97), rgba(246,242,235,0.97)),
+url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+opacity:0.06;
+pointer-events:none;
+z-index:-1;
+}
+
+/* ===== HEADER ===== */
+
+.site-header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:24px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+backdrop-filter:blur(12px);
+background:rgba(246,242,235,0.45);
+border-bottom:1px solid rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:1.5rem;
+}
+
+.nav-links{
+display:flex;
+gap:32px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#1f1f1f;
+font-size:0.88rem;
+letter-spacing:1px;
+text-transform:uppercase;
+transition:opacity 0.3s ease;
+}
+
+.nav-links a:hover{
+opacity:0.55;
+}
+
+/* ===== HERO ===== */
+
+.chapter-hero{
+padding:220px 8% 120px;
+text-align:center;
+}
+
+.chapter-number{
+font-size:0.92rem;
+letter-spacing:4px;
+text-transform:uppercase;
+opacity:0.6;
+margin-bottom:24px;
+}
+
+.chapter-hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(3.5rem,8vw,6rem);
+font-weight:400;
+line-height:1;
+margin-bottom:28px;
+}
+
+.chapter-intro{
+max-width:760px;
+margin:0 auto;
+font-size:1.05rem;
+color:#444;
+}
+
+/* ===== DIVIDER ===== */
+
+.divider{
+width:1px;
+height:100px;
+background:rgba(0,0,0,0.12);
+margin:0 auto;
+}
+
+/* ===== CHAPTER CONTENT ===== */
+
+.chapter-content{
+padding:120px 8%;
+}
+
+.chapter-inner{
+max-width:760px;
+margin:0 auto;
+}
+
+.chapter-inner p{
+font-size:1.08rem;
+color:#333;
+margin-bottom:34px;
+}
+
+/* ===== DROP CAP ===== */
+
+.chapter-inner p:first-of-type::first-letter{
+font-family:'Cormorant Garamond',serif;
+font-size:5.5rem;
+float:left;
+line-height:0.8;
+padding-right:12px;
+padding-top:10px;
+font-weight:500;
+}
+
+/* ===== NAVIGATION ===== */
+
+.chapter-navigation{
+padding:120px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:30px;
+max-width:1100px;
+margin:0 auto;
+}
+
+.chapter-navigation a{
+text-decoration:none;
+color:#1f1f1f;
+border:1px solid rgba(0,0,0,0.12);
+padding:18px 28px;
+letter-spacing:1px;
+text-transform:uppercase;
+font-size:0.82rem;
+transition:all 0.35s ease;
+background:rgba(255,255,255,0.45);
+backdrop-filter:blur(8px);
+}
+
+.chapter-navigation a:hover{
+background:#1f1f1f;
+color:#f6f2eb;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+padding:40px 8% 60px;
+text-align:center;
+font-size:0.9rem;
+opacity:0.55;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+.site-header{
+padding:20px 6%;
+}
+
+.nav-links{
+gap:18px;
+}
+
+.nav-links a{
+font-size:0.72rem;
+}
+
+.chapter-hero{
+padding:190px 7% 100px;
+}
+
+.chapter-content{
+padding:90px 7%;
+}
+
+.chapter-inner p{
+font-size:1rem;
+}
+
+.chapter-navigation{
+padding:90px 7%;
+flex-direction:column;
+}
+
+.chapter-navigation a{
+width:100%;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+
+<header class="site-header">
+
+<div class="logo">
+The Room Without Windows
+</div>
+
+<nav class="nav-links">
+<a href="../index.html">Home</a>
+<a href="../chapters.html">Chapters</a>
+<a href="../about.html">About</a>
+</nav>
+
+</header>
+
+<!-- ===== HERO ===== -->
+
+<section class="chapter-hero">
+
+<div class="chapter-number">
+Chapter Ten
+</div>
+
+<h1>
+The God Who<br>Requires Nothing
+</h1>
+
+<p class="chapter-intro">
+Elior confronts the unsettling possibility that God’s presence does not depend on effort, repetition, or proof.
+</p>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== CHAPTER CONTENT ===== -->
+
+<section class="chapter-content">
+
+<div class="chapter-inner">
+
+<p>
+Elior did not return to the room the next day.
+</p>
+
+<p>
+The omission surprised him. It did not feel like refusal or resistance. It arrived without explanation, as though something in him understood that repetition might alter what had been given. The room had made no request for loyalty. It had not demanded habit.
+</p>
+
+<p>
+It waited without concern.
+</p>
+
+<p>
+Elior moved through the morning unsettled by this freedom. Prayer, as he had known it, depended on discipline. One arrived. One persisted. Absence carried consequence. The possibility that God might remain present without being addressed felt contradictory, almost dangerous.
+</p>
+
+<p>
+And yet, the absence of urgency produced no guilt.
+</p>
+
+<p>
+He worked as he always did, shaping wood and listening for the resistance of the grain. The workshop carried a different quiet now, less imposed and more permitted. No part of him felt compelled to sanctify the work with words. The work itself seemed to command sufficient attention.
+</p>
+
+<p>
+This disturbed him.
+</p>
+
+<p>
+Had prayer been reduced to a technique for focusing the mind? Had he simply replaced language with labor, exchanging one practice for another?
+</p>
+
+<p>
+The question lingered beneath his movements, unanswered.
+</p>
+
+<p>
+As the day progressed, Elior noticed how often prayer appeared elsewhere without intent. A moment of attention while lifting a beam. A brief awareness of breath while standing still. None of these moments sought explanation. None asked to be preserved.
+</p>
+
+<p>
+If prayer was presence, it was arriving without request.
+</p>
+
+<p>
+Late in the afternoon, he passed a familiar corner where public prayer often gathered listeners. A man stood there speaking with confidence, shaping his words toward assurance. A small group listened respectfully.
+</p>
+
+<p>
+Elior paused out of habit.
+</p>
+
+<p>
+He listened, not critically and not admiringly, but attentively. The prayer moved forward with clarity, anchored in certainty. It resolved what it named. When it ended, the silence closed neatly behind it.
+</p>
+
+<p>
+Elior realized he felt no distance from the man.
+</p>
+
+<p>
+Nor did he feel alignment.
+</p>
+
+<p>
+The prayer existed complete in itself.
+</p>
+
+<p>
+He continued on.
+</p>
+
+<p>
+That evening, Elior found himself thinking often about effort, about how deeply it had formed his understanding of faith. Effort demonstrated sincerity. Sacrifice proved devotion. Repetition built trust.
+</p>
+
+<p>
+If nothing was now required, he did not know how to orient himself.
+</p>
+
+<p>
+The idea felt impersonal, as though relationship dissolved without exchange. What kind of communion made no demand?
+</p>
+
+<p>
+He lay awake longer than usual, aware of the tension but unwilling to resolve it. Resolution implied control, and control felt opposed to what he had encountered.
+</p>
+
+<p>
+Eventually, he rose and stepped into the narrow corridor.
+</p>
+
+<p>
+The door to the room remained closed.
+</p>
+
+<p>
+He stood before it with his hand lifted, undecided. He could enter. He could sit. He could wait for silence or speech.
+</p>
+
+<p>
+He did none of these.
+</p>
+
+<p>
+The decision not to enter felt as intentional as entry had once been. For the first time, Elior considered that prayer might involve restraint as much as action, that attentiveness included knowing when to leave a space untouched.
+</p>
+
+<p>
+He turned away.
+</p>
+
+<p>
+In the days that followed, he did not keep count.
+</p>
+
+<p>
+Sometimes he returned to the room. Sometimes he did not. At times words surfaced briefly. More often they did not. Each moment unfolded without pattern or predictability.
+</p>
+
+<p>
+The absence of structure unsettled him at first, yet gradually it loosened something rigid within him. He no longer measured the spiritual worth of a day by what he had said or how long he had remained silent.
+</p>
+
+<p>
+God, it seemed, did not keep score.
+</p>
+
+<p>
+The realization brought no comfort.
+</p>
+
+<p>
+It brought responsibility.
+</p>
+
+<p>
+To remain present without managing outcome demanded a kind of faith he had never practiced before, one not defined by deeds, words, or consistency.
+</p>
+
+<p>
+One evening, standing alone at the threshold of his house, Elior felt the full weight of that freedom. He could speak or remain silent. He could enter or pass by. None of these choices ensured closeness or distance.
+</p>
+
+<p>
+The relationship existed independently of him.
+</p>
+
+<p>
+This unsettled him profoundly.
+</p>
+
+<p>
+And yet, beneath the unease, something endured. The quiet awareness that God required nothing from him in order to be present, and that such a presence, offered without condition, would always resist explanation, security, and control.
+</p>
+
+<p>
+Elior stepped inside.
+</p>
+
+<p>
+The room remained behind him, still and unclaimed, offering nothing and withholding nothing.
+</p>
+
+<p>
+The silence continued its unremarkable work.
+</p>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== NAVIGATION ===== -->
+
+<section class="chapter-navigation">
+
+<a href="chapter9.html">
+← Previous Chapter
+</a>
+
+<a href="chapter11.html">
+Next Chapter →
+</a>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+© Bradley Hobbs • The Room Without Windows
+</footer>
+
+</body>
+</html>
