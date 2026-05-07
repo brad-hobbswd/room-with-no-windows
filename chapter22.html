@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chapter Twenty Two | The Man Who Prayed Differently</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== RESET ===== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* ===== BODY ===== */
+
+body{
+background:#f6f2eb;
+color:#1f1f1f;
+font-family:'Inter',sans-serif;
+line-height:2;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+linear-gradient(rgba(246,242,235,0.97), rgba(246,242,235,0.97)),
+url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+opacity:0.06;
+pointer-events:none;
+z-index:-1;
+}
+
+/* ===== HEADER ===== */
+
+.site-header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:24px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+backdrop-filter:blur(12px);
+background:rgba(246,242,235,0.45);
+border-bottom:1px solid rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:1.5rem;
+}
+
+.nav-links{
+display:flex;
+gap:32px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#1f1f1f;
+font-size:0.88rem;
+letter-spacing:1px;
+text-transform:uppercase;
+transition:opacity 0.3s ease;
+}
+
+.nav-links a:hover{
+opacity:0.55;
+}
+
+/* ===== HERO ===== */
+
+.chapter-hero{
+padding:220px 8% 120px;
+text-align:center;
+}
+
+.chapter-number{
+font-size:0.92rem;
+letter-spacing:4px;
+text-transform:uppercase;
+opacity:0.6;
+margin-bottom:24px;
+}
+
+.chapter-hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(3.5rem,8vw,6rem);
+font-weight:400;
+line-height:1;
+margin-bottom:28px;
+}
+
+.chapter-intro{
+max-width:760px;
+margin:0 auto;
+font-size:1.05rem;
+color:#444;
+}
+
+/* ===== DIVIDER ===== */
+
+.divider{
+width:1px;
+height:100px;
+background:rgba(0,0,0,0.12);
+margin:0 auto;
+}
+
+/* ===== CHAPTER CONTENT ===== */
+
+.chapter-content{
+padding:120px 8%;
+}
+
+.chapter-inner{
+max-width:760px;
+margin:0 auto;
+}
+
+.chapter-inner p{
+font-size:1.08rem;
+color:#333;
+margin-bottom:34px;
+}
+
+/* ===== DROP CAP ===== */
+
+.chapter-inner p:first-of-type::first-letter{
+font-family:'Cormorant Garamond',serif;
+font-size:5.5rem;
+float:left;
+line-height:0.8;
+padding-right:12px;
+padding-top:10px;
+font-weight:500;
+}
+
+/* ===== NAVIGATION ===== */
+
+.chapter-navigation{
+padding:120px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:30px;
+max-width:1100px;
+margin:0 auto;
+}
+
+.chapter-navigation a{
+text-decoration:none;
+color:#1f1f1f;
+border:1px solid rgba(0,0,0,0.12);
+padding:18px 28px;
+letter-spacing:1px;
+text-transform:uppercase;
+font-size:0.82rem;
+transition:all 0.35s ease;
+background:rgba(255,255,255,0.45);
+backdrop-filter:blur(8px);
+}
+
+.chapter-navigation a:hover{
+background:#1f1f1f;
+color:#f6f2eb;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+padding:40px 8% 60px;
+text-align:center;
+font-size:0.9rem;
+opacity:0.55;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+.site-header{
+padding:20px 6%;
+}
+
+.nav-links{
+gap:18px;
+}
+
+.nav-links a{
+font-size:0.72rem;
+}
+
+.chapter-hero{
+padding:190px 7% 100px;
+}
+
+.chapter-content{
+padding:90px 7%;
+}
+
+.chapter-inner p{
+font-size:1rem;
+}
+
+.chapter-navigation{
+padding:90px 7%;
+flex-direction:column;
+}
+
+.chapter-navigation a{
+width:100%;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+
+<header class="site-header">
+
+<div class="logo">
+The Room Without Windows
+</div>
+
+<nav class="nav-links">
+<a href="../index.html">Home</a>
+<a href="../chapters.html">Chapters</a>
+<a href="../about.html">About</a>
+</nav>
+
+</header>
+
+<!-- ===== HERO ===== -->
+
+<section class="chapter-hero">
+
+<div class="chapter-number">
+Chapter Twenty Two
+</div>
+
+<h1>
+The Man Who<br>Prayed Differently
+</h1>
+
+<p class="chapter-intro">
+Elior encounters a man whose prayer no longer seeks outcome or recognition, revealing a deeper understanding of faithfulness.
+</p>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== CHAPTER CONTENT ===== -->
+
+<section class="chapter-content">
+
+<div class="chapter-inner">
+
+<p>
+Elior noticed the man before he noticed the prayer.
+</p>
+
+<p>
+It was not the man’s voice that first drew attention, but his stillness. In a place where prayer often rose with gesture and urgency, this man stood without signal. His posture did not invite gathering. His presence did not organize space around him.
+</p>
+
+<p>
+He stood slightly apart, though not intentionally. Those who passed did not pause. Those speaking nearby did not lower their voices.
+</p>
+
+<p>
+Elior might have continued on as well, if something in the man’s waiting had not felt familiar.
+</p>
+
+<p>
+When the prayer came, it arrived without preparation. There was no clearing of the throat, no framing phrase. It did not announce itself as prayer at all. The words were spoken softly, not muttered, but unprojected, as though meant neither to persuade nor to remain.
+</p>
+
+<p>
+Elior stopped.
+</p>
+
+<p>
+The prayer made no identifiable request. It did not appeal for intervention or protection or change. It moved slowly and attentively, naming neither need nor outcome. The language was plain. The rhythm unhurried.
+</p>
+
+<p>
+No one nearby seemed to notice.
+</p>
+
+<p>
+The man did not close his eyes or lift his face. His attention appeared settled, neither withdrawn nor demonstrative, as though directed toward a presence already acknowledged.
+</p>
+
+<p>
+Elior listened.
+</p>
+
+<p>
+What unsettled him was not the prayer’s difference, but its absence of contrast. It did not set itself against the surrounding prayers. It did not sharpen itself through restraint or boldness. It simply existed, intact within its own intention.
+</p>
+
+<p>
+It reminded him of silence that no longer required opposition in order to endure.
+</p>
+
+<p>
+When the prayer ended, nothing around it changed. The man did not linger. He resumed walking without ceremony and disappeared naturally into the street.
+</p>
+
+<p>
+Elior followed at a distance, unsure why.
+</p>
+
+<p>
+They walked without interaction for some time, absorbed by the movement of the city. At a crossing where their paths diverged, Elior spoke.
+</p>
+
+<p>
+“That prayer,” he said quietly, without judgment or admiration. “It was different.”
+</p>
+
+<p>
+The man turned and met his gaze with a lack of surprise that suggested the comment neither disrupted nor required explanation.
+</p>
+
+<p>
+“Yes,” he said. “It has become so.”
+</p>
+
+<p>
+They stood for a moment. The man offered no defense. Elior waited.
+</p>
+
+<p>
+After a pause, Elior asked, “Why do you pray that way?”
+</p>
+
+<p>
+The man considered the question carefully, not as challenge, but as genuine curiosity.
+</p>
+
+<p>
+“I do not think it is a way,” he replied. “I think it is what remains when other purposes fall away.”
+</p>
+
+<p>
+They began walking again, now side by side.
+</p>
+
+<p>
+“For a long time,” the man continued, “I prayed because I wanted something to happen. When that failed, I prayed so that I would feel something. When even that diminished, I prayed because I did not want to be forgotten.”
+</p>
+
+<p>
+Elior listened closely.
+</p>
+
+<p>
+“And when that no longer worked,” the man said, “I discovered that I was still speaking. Not because it accomplished anything, but because I had already arrived somewhere I could not leave.”
+</p>
+
+<p>
+Elior did not respond. The man seemed unconcerned with filling the space.
+</p>
+
+<p>
+After several steps, he added, “I do not pray in order to be heard. I pray because I am already here.”
+</p>
+
+<p>
+They separated without ceremony. Elior did not ask the man’s name. It did not matter.
+</p>
+
+<p>
+As he continued on, Elior felt something settle rather than open. He had not been instructed. Nothing had been defined.
+</p>
+
+<p>
+Yet the prayer’s orientation had become clear.
+</p>
+
+<p>
+It did not seek to cross a distance between speaker and God. It assumed that distance had already been addressed, not through effort, but through presence.
+</p>
+
+<p>
+For years, Elior had understood prayer as movement toward. Even in quietness, even in restraint, it had retained direction.
+</p>
+
+<p>
+This prayer did not move.
+</p>
+
+<p>
+It rested.
+</p>
+
+<p>
+That evening, Elior returned home and sat without entering the room without windows. He felt neither drawn inward nor compelled outward.
+</p>
+
+<p>
+He thought of the man standing unobserved, his prayer occurring without effect, without acknowledgment, without response.
+</p>
+
+<p>
+The thought unsettled him more than contradiction ever had.
+</p>
+
+<p>
+If prayer could exist without purpose, without evidence, without interior reassurance, then it could not be employed. It could not be measured. It could not confirm identity.
+</p>
+
+<p>
+It could only remain faithful.
+</p>
+
+<p>
+The realization did not comfort him.
+</p>
+
+<p>
+He recognized how long prayer had functioned for him as orientation within a shared world of belief. Even silence had once served as posture, as resistance, as distinction.
+</p>
+
+<p>
+This prayer offered none of that.
+</p>
+
+<p>
+It belonged neither to explanation nor defense.
+</p>
+
+<p>
+It belonged nowhere else.
+</p>
+
+<p>
+That night, Elior attempted to pray in the manner he had witnessed. He found he could not. His words still carried intent. His silence still anticipated response.
+</p>
+
+<p>
+He stopped.
+</p>
+
+<p>
+The failure did not trouble him as much as he expected.
+</p>
+
+<p>
+He understood that the prayer he had witnessed was not a form to be imitated, but the remainder of a long unmaking. To reproduce it would have turned it into performance.
+</p>
+
+<p>
+So he waited.
+</p>
+
+<p>
+Later, lying in darkness, he realized the encounter had altered something essential, not in how he prayed, but in how he regarded prayer itself.
+</p>
+
+<p>
+He would no longer assume that what was visible was what mattered.
+</p>
+
+<p>
+Nor would he assume that what went unseen was absent.
+</p>
+
+<p>
+Faith, he was learning, sometimes continues long after its public forms are no longer necessary.
+</p>
+
+<p>
+The man had not offered him a path to follow.
+</p>
+
+<p>
+He had revealed what remains when paths are finished.
+</p>
+
+<p>
+Elior slept without resolution.
+</p>
+
+<p>
+And in the quiet, nothing required him to pray at all.
+</p>
+
+<p>
+Which, he sensed, might itself have been the prayer.
+</p>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== NAVIGATION ===== -->
+
+<section class="chapter-navigation">
+
+<a href="chapter21.html">
+← Previous Chapter
+</a>
+
+<a href="chapter23.html">
+Next Chapter →
+</a>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+© Bradley Hobbs • The Room Without Windows
+</footer>
+
+</body>
+</html>
