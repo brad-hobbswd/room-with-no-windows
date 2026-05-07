@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chapter Sixteen | A Changed Voice</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== RESET ===== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* ===== BODY ===== */
+
+body{
+background:#f6f2eb;
+color:#1f1f1f;
+font-family:'Inter',sans-serif;
+line-height:2;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+linear-gradient(rgba(246,242,235,0.97), rgba(246,242,235,0.97)),
+url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+opacity:0.06;
+pointer-events:none;
+z-index:-1;
+}
+
+/* ===== HEADER ===== */
+
+.site-header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:24px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+backdrop-filter:blur(12px);
+background:rgba(246,242,235,0.45);
+border-bottom:1px solid rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:1.5rem;
+}
+
+.nav-links{
+display:flex;
+gap:32px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#1f1f1f;
+font-size:0.88rem;
+letter-spacing:1px;
+text-transform:uppercase;
+transition:opacity 0.3s ease;
+}
+
+.nav-links a:hover{
+opacity:0.55;
+}
+
+/* ===== HERO ===== */
+
+.chapter-hero{
+padding:220px 8% 120px;
+text-align:center;
+}
+
+.chapter-number{
+font-size:0.92rem;
+letter-spacing:4px;
+text-transform:uppercase;
+opacity:0.6;
+margin-bottom:24px;
+}
+
+.chapter-hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(3.5rem,8vw,6rem);
+font-weight:400;
+line-height:1;
+margin-bottom:28px;
+}
+
+.chapter-intro{
+max-width:760px;
+margin:0 auto;
+font-size:1.05rem;
+color:#444;
+}
+
+/* ===== DIVIDER ===== */
+
+.divider{
+width:1px;
+height:100px;
+background:rgba(0,0,0,0.12);
+margin:0 auto;
+}
+
+/* ===== CHAPTER CONTENT ===== */
+
+.chapter-content{
+padding:120px 8%;
+}
+
+.chapter-inner{
+max-width:760px;
+margin:0 auto;
+}
+
+.chapter-inner p{
+font-size:1.08rem;
+color:#333;
+margin-bottom:34px;
+}
+
+/* ===== DROP CAP ===== */
+
+.chapter-inner p:first-of-type::first-letter{
+font-family:'Cormorant Garamond',serif;
+font-size:5.5rem;
+float:left;
+line-height:0.8;
+padding-right:12px;
+padding-top:10px;
+font-weight:500;
+}
+
+/* ===== NAVIGATION ===== */
+
+.chapter-navigation{
+padding:120px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:30px;
+max-width:1100px;
+margin:0 auto;
+}
+
+.chapter-navigation a{
+text-decoration:none;
+color:#1f1f1f;
+border:1px solid rgba(0,0,0,0.12);
+padding:18px 28px;
+letter-spacing:1px;
+text-transform:uppercase;
+font-size:0.82rem;
+transition:all 0.35s ease;
+background:rgba(255,255,255,0.45);
+backdrop-filter:blur(8px);
+}
+
+.chapter-navigation a:hover{
+background:#1f1f1f;
+color:#f6f2eb;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+padding:40px 8% 60px;
+text-align:center;
+font-size:0.9rem;
+opacity:0.55;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+.site-header{
+padding:20px 6%;
+}
+
+.nav-links{
+gap:18px;
+}
+
+.nav-links a{
+font-size:0.72rem;
+}
+
+.chapter-hero{
+padding:190px 7% 100px;
+}
+
+.chapter-content{
+padding:90px 7%;
+}
+
+.chapter-inner p{
+font-size:1rem;
+}
+
+.chapter-navigation{
+padding:90px 7%;
+flex-direction:column;
+}
+
+.chapter-navigation a{
+width:100%;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+
+<header class="site-header">
+
+<div class="logo">
+The Room Without Windows
+</div>
+
+<nav class="nav-links">
+<a href="../index.html">Home</a>
+<a href="../chapters.html">Chapters</a>
+<a href="../about.html">About</a>
+</nav>
+
+</header>
+
+<!-- ===== HERO ===== -->
+
+<section class="chapter-hero">
+
+<div class="chapter-number">
+Chapter Sixteen
+</div>
+
+<h1>
+A Changed<br>Voice
+</h1>
+
+<p class="chapter-intro">
+Elior discovers that prayer has not silenced him completely, but has transformed the weight and purpose of every word he speaks.
+</p>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== CHAPTER CONTENT ===== -->
+
+<section class="chapter-content">
+
+<div class="chapter-inner">
+
+<p>
+The change did not announce itself.
+</p>
+
+<p>
+Elior noticed it first in conversation, not in prayer. Words that had once arrived without effort now hesitated. He paused where he had not paused before, weighed phrasing with unusual care, or abandoned it entirely.
+</p>
+
+<p>
+At first, he assumed fatigue. Silence had become familiar, and he thought speech merely needed time to recover. But as days passed, the change held. His voice had not weakened. It had narrowed.
+</p>
+
+<p>
+Others noticed.
+</p>
+
+<p>
+One person asked whether he was unwell. Another remarked, without unkindness, that he spoke less than he once had. Their observations unsettled him more than curiosity ever had. Speech had always been available when required. That it now resisted him suggested a shift deeper than habit.
+</p>
+
+<p>
+Elior listened to his voice when it did emerge.
+</p>
+
+<p>
+It felt heavier.
+</p>
+
+<p>
+Each word seemed to require justification before leaving him, as though momentum alone could no longer carry it. Familiar phrases dissolved before reaching his mouth. Language he had once shared easily now felt broad and imprecise, ill suited to what he carried.
+</p>
+
+<p>
+He had not lost belief.
+</p>
+
+<p>
+He had lost fluency.
+</p>
+
+<p>
+Prayer had not taught him what to say.
+</p>
+
+<p>
+It had taught him what could no longer be said casually.
+</p>
+
+<p>
+One afternoon, a small gathering formed near the workshop. A familiar voice asked Elior to pray aloud. The request was open, unremarkable, offered with trust. Nothing in the moment suggested that refusal was anticipated.
+</p>
+
+<p>
+Elior stood, aware of the attention settling around him.
+</p>
+
+<p>
+He did not decline.
+</p>
+
+<p>
+He also did not begin at once.
+</p>
+
+<p>
+The pause lengthened, growing uncomfortable. Expectation pressed toward sound. When he finally spoke, his voice was quieter than he intended.
+</p>
+
+<p>
+The words were few.
+</p>
+
+<p>
+They carried no sense of direction, no confident closure. When he stopped, there was stillness, but not the settled stillness he remembered from earlier years. People waited briefly, as though something more were meant to follow.
+</p>
+
+<p>
+Nothing did.
+</p>
+
+<p>
+The moment passed without comment.
+</p>
+
+<p>
+No one reproached him. No one praised him. Conversation resumed carefully, as if stepping around something left unnamed.
+</p>
+
+<p>
+Elior felt exposed.
+</p>
+
+<p>
+That night, alone, he thought through the moment.
+</p>
+
+<p>
+What unsettled him was not the silence. He had learned to live comfortably with that. What disturbed him was how public speech now demanded more from him than quiet ever had. Each word risked misalignment. Each phrase risked distortion.
+</p>
+
+<p>
+In the room without windows, prayer had become spacious.
+</p>
+
+<p>
+In public, it had become constrained.
+</p>
+
+<p>
+The contrast weighed on him.
+</p>
+
+<p>
+In the days that followed, Elior noticed how much speech had once carried him through religious life. Words had affirmed belonging. They had reassured others of his steadiness, his conviction, his place.
+</p>
+
+<p>
+Now, when he spoke, people listened more closely.
+</p>
+
+<p>
+Not with admiration, but with attention.
+</p>
+
+<p>
+The absence of ornament unsettled them. His voice no longer resolved expectation. It did not reassure by abundance.
+</p>
+
+<p>
+Elior made no attempt to correct this.
+</p>
+
+<p>
+Correction would have required explanation.
+</p>
+
+<p>
+The truth was simpler and more difficult. Prayer had emptied his speech of excess. What remained had weight, and weight could not be multiplied without cost.
+</p>
+
+<p>
+He continued praying privately as he had been, sometimes in silence, sometimes with a few unguarded words. In that space, nothing demanded conclusion. Speech was free from performance.
+</p>
+
+<p>
+Outside the room, speech required courage.
+</p>
+
+<p>
+He felt this most sharply when he chose not to speak at all. Silence, once interpreted as absence, now felt intentional. Others mistook it for reserve or withdrawal.
+</p>
+
+<p>
+Elior accepted the misunderstanding.
+</p>
+
+<p>
+Late one evening, walking alone, he spoke aloud without intending to. The sound surprised him. The sentence was ordinary, unfinished. Even so, he felt the familiar hesitation, the pause where language had once flowed unimpeded.
+</p>
+
+<p>
+He stopped mid phrase.
+</p>
+
+<p>
+The city noticed nothing.
+</p>
+
+<p>
+Words, once plentiful, had become something shared deliberately rather than spent freely.
+</p>
+
+<p>
+Prayer had changed his voice not by strengthening it, but by disciplining it.
+</p>
+
+<p>
+This restraint did not make him wise.
+</p>
+
+<p>
+It made him careful.
+</p>
+
+<p>
+As he prepared for sleep that night, Elior understood something quietly. Prayer had not altered what he believed. It had altered what he was willing to claim aloud.
+</p>
+
+<p>
+The silence had followed him out of the room.
+</p>
+
+<p>
+And it was teaching him when to speak.
+</p>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== NAVIGATION ===== -->
+
+<section class="chapter-navigation">
+
+<a href="chapter15.html">
+← Previous Chapter
+</a>
+
+<a href="chapter17.html">
+Next Chapter →
+</a>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+© Bradley Hobbs • The Room Without Windows
+</footer>
+
+</body>
+</html>
