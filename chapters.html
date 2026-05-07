@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chapters | The Room Without Windows</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== RESET ===== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* ===== BODY ===== */
+
+body{
+background:#f6f2eb;
+color:#1f1f1f;
+font-family:'Inter',sans-serif;
+line-height:1.9;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+linear-gradient(rgba(246,242,235,0.95), rgba(246,242,235,0.95)),
+url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+opacity:0.08;
+pointer-events:none;
+z-index:-1;
+}
+
+/* ===== HEADER ===== */
+
+.site-header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:24px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+backdrop-filter:blur(12px);
+background:rgba(246,242,235,0.45);
+border-bottom:1px solid rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:1.6rem;
+}
+
+.nav-links{
+display:flex;
+gap:32px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#1f1f1f;
+font-size:0.9rem;
+letter-spacing:1px;
+text-transform:uppercase;
+transition:opacity 0.3s ease;
+}
+
+.nav-links a:hover{
+opacity:0.55;
+}
+
+/* ===== HERO ===== */
+
+.hero{
+padding:210px 8% 130px;
+text-align:center;
+}
+
+.hero-subtitle{
+font-size:0.92rem;
+letter-spacing:4px;
+text-transform:uppercase;
+margin-bottom:24px;
+opacity:0.65;
+}
+
+.hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(3.5rem,8vw,6rem);
+font-weight:400;
+line-height:1;
+margin-bottom:30px;
+}
+
+.hero p{
+max-width:760px;
+margin:0 auto;
+font-size:1.05rem;
+color:#444;
+}
+
+/* ===== DIVIDER ===== */
+
+.divider{
+width:1px;
+height:100px;
+background:rgba(0,0,0,0.12);
+margin:0 auto;
+}
+
+/* ===== PARTS ===== */
+
+.part-section{
+padding:100px 8%;
+}
+
+.part-inner{
+max-width:1000px;
+margin:0 auto;
+}
+
+.part-title{
+font-family:'Cormorant Garamond',serif;
+font-size:3.4rem;
+font-weight:400;
+margin-bottom:16px;
+text-align:center;
+}
+
+.part-description{
+text-align:center;
+max-width:700px;
+margin:0 auto 70px;
+font-size:1rem;
+color:#555;
+}
+
+/* ===== CHAPTER GRID ===== */
+
+.chapter-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:28px;
+}
+
+/* ===== CHAPTER CARD ===== */
+
+.chapter-card{
+padding:36px 30px;
+border:1px solid rgba(0,0,0,0.08);
+background:rgba(255,255,255,0.42);
+backdrop-filter:blur(10px);
+transition:all 0.4s ease;
+}
+
+.chapter-card:hover{
+transform:translateY(-8px);
+border-color:rgba(0,0,0,0.18);
+}
+
+.chapter-number{
+font-size:0.85rem;
+letter-spacing:2px;
+text-transform:uppercase;
+opacity:0.5;
+margin-bottom:16px;
+}
+
+.chapter-card h3{
+font-family:'Cormorant Garamond',serif;
+font-size:2rem;
+font-weight:400;
+line-height:1.2;
+margin-bottom:18px;
+}
+
+.chapter-card p{
+font-size:0.96rem;
+color:#555;
+margin-bottom:28px;
+}
+
+.chapter-card a{
+text-decoration:none;
+color:#1f1f1f;
+letter-spacing:1px;
+text-transform:uppercase;
+font-size:0.82rem;
+border-bottom:1px solid rgba(0,0,0,0.25);
+padding-bottom:5px;
+transition:opacity 0.3s ease;
+}
+
+.chapter-card a:hover{
+opacity:0.55;
+}
+
+/* ===== FINAL QUOTE ===== */
+
+.quote-section{
+padding:170px 8% 120px;
+text-align:center;
+}
+
+.quote{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(2.4rem,6vw,5rem);
+font-weight:300;
+line-height:1.2;
+max-width:900px;
+margin:0 auto;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+padding:40px 8% 60px;
+text-align:center;
+font-size:0.9rem;
+opacity:0.55;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+.site-header{
+padding:20px 6%;
+}
+
+.nav-links{
+gap:18px;
+}
+
+.nav-links a{
+font-size:0.75rem;
+}
+
+.hero{
+padding:180px 7% 110px;
+}
+
+.part-section{
+padding:80px 7%;
+}
+
+.quote-section{
+padding:120px 7% 90px;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+
+<header class="site-header">
+
+<div class="logo">
+The Room Without Windows
+</div>
+
+<nav class="nav-links">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="epilogue.html">Epilogue</a>
+</nav>
+
+</header>
+
+<!-- ===== HERO ===== -->
+
+<section class="hero">
+
+<div class="hero-subtitle">
+Twenty Five Chapters
+</div>
+
+<h1>
+Enter the Silence
+</h1>
+
+<p>
+A contemplative literary journey through noise, stillness, hiddenness, endurance, and the slow transformation of faith beyond performance.
+</p>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== PART ONE ===== -->
+
+<section class="part-section">
+
+<div class="part-inner">
+
+<h2 class="part-title">
+Part One: The Noise
+</h2>
+
+<p class="part-description">
+The city speaks constantly. Prayer fills the streets. Elior begins sensing a distance he cannot explain.
+</p>
+
+<div class="chapter-grid">
+
+<div class="chapter-card">
+<div class="chapter-number">Chapter One</div>
+<h3>The City That Learned to Speak</h3>
+<p>
+A city shaped by audible devotion and the growing unease of one listener.
+</p>
+<a href="chapters/chapter1.html">Read Chapter</a>
+</div>
+
+<div class="chapter-card">
+<div class="chapter-number">Chapter Two</div>
+<h3>The Worth of Words</h3>
+<p>
+Prayer begins revealing the tension between language and sincerity.
+</p>
+<a href="chapters/chapter2.html">Read Chapter</a>
+</div>
+
+<div class="chapter-card">
+<div class="chapter-number">Chapter Three</div>
+<h3>The Men Who Were Heard</h3>
+<p>
+Elior observes the prayers that shape public certainty.
+</p>
+<a href="chapters/chapter3.html">Read Chapter</a>
+</div>
+
+<div class="chapter-card">
+<div class="chapter-number">Chapter Four</div>
+<h3>Elior the Listener</h3>
+<p>
+Listening becomes both instinct and burden.
+</p>
+<a href="chapters/chapter4.html">Read Chapter</a>
+</div>
+
+<div class="chapter-card">
+<div class="chapter-number">Chapter Five</div>
+<h3>A Prayer Interrupted</h3>
+<p>
+A familiar prayer fractures into unexpected silence.
+</p>
+<a href="chapters/chapter5.html">Read Chapter</a>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== PART TWO ===== -->
+
+<section class="part-section">
+
+<div class="part-inner">
+
+<h2 class="part-title">
+Part Two: The Door
+</h2>
+
+<p class="part-description">
+The room without windows becomes a place of stillness, exposure, and unanswered presence.
+</p>
+
+<div class="chapter-grid">
+
+<div class="chapter-card">
+<div class="chapter-number">Chapter Six</div>
+<h3>The Room Without Windows</h3>
+<p>
+Elior discovers a silent room untouched by performance.
+</p>
+<a href="chapters/chapter6.html">Read Chapter</a>
+</div>
+
+<div class="chapter-card">
+<div class="chapter-number">Chapter Seven</div>
+<h3>The First Silence</h3>
+<p>
+Stillness begins reshaping Elior from within.
+</p>
+<a href="chapters/chapter7.html">Read Chapter</a>
+</div>
+
+<div class="chapter-card">
+<div class="chapter-number">Chapter Eight</div>
+<h3>Unearned Stillness</h3>
+<p>
+Peace arrives without effort and unsettles everything.
+</p>
+<a href="chapters/chapter8.html">Read Chapter</a>
+</div>
+
+<div class="chapter-card">
+<div class="chapter-number">Chapter Nine</div>
+<h3>When Words Become Honest</h3>
+<p>
+A single truthful word changes Elior’s understanding of prayer.
+</p>
+<a href="chapters/chapter9.html">Read Chapter</a>
+</div>
+
+<div class="chapter-card">
+<div class="chapter-number">Chapter Ten</div>
+<h3>The God Who Requires Nothing</h3>
+<p>
+Faith loosens from obligation and performance.
+</p>
+<a href="chapters/chapter10.html">Read Chapter</a>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== FINAL CTA ===== -->
+
+<section class="quote-section">
+
+<div class="quote">
+“The door is open.<br>
+It always has been.”
+</div>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+© Bradley Hobbs • The Room Without Windows
+</footer>
+
+</body>
+</html>
