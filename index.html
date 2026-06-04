@@ -105,11 +105,11 @@ opacity:0.5;
 /* ===== HERO ===== */
 
 .hero{
-min-height:100vh;
+min-height:auto;
 display:flex;
 align-items:center;
 justify-content:center;
-padding:180px 8% 120px;
+padding:140px 8% 80px;
 text-align:center;
 position:relative;
 }
@@ -117,6 +117,16 @@ position:relative;
 .hero-content{
 max-width:980px;
 animation:fadeUp 1.4s ease;
+}
+
+.hero-banner{
+width:100%;
+max-width:1200px;
+display:block;
+margin:0 auto 50px;
+border-radius:12px;
+box-shadow:
+0 25px 60px rgba(0,0,0,.18);
 }
 
 .hero-subtitle{
@@ -339,11 +349,12 @@ font-size:0.7rem;
 }
 
 .hero{
-padding:170px 7% 90px;
+padding:140px 7% 70px;
 }
 
-.hero-description{
-font-size:1rem;
+.hero-banner{
+margin-bottom:35px;
+border-radius:8px;
 }
 
 .quote-section{
@@ -394,18 +405,11 @@ The Room Without Windows
 
 <div class="hero-content">
 
-<div class="hero-subtitle">
-A Parable for Those Who Have Prayed Loudly and Quietly
-</div>
-
-<h1>
-The Room<br>
-Without Windows
-</h1>
-
-<p class="hero-description">
-A contemplative literary journey through prayer, silence, hiddenness, and the quiet endurance of faith when certainty begins to fall away.
-</p>
+<img
+src="C052690E-0099-47EC-BAA0-D3A36148F4A7.png"
+alt="The Room Without Windows by Bradley Hobbs"
+class="hero-banner"
+>
 
 <div class="hero-buttons">
 
@@ -420,7 +424,6 @@ About the Book
 </div>
 
 </div>
-
 </section>
 
 <!-- ===== QUOTE ===== -->
